@@ -57,25 +57,282 @@
         var player = "a1";
         var pont = 0;
         var frutaLoca;
-        var a1, a2, a3, a4, a5, a6, a7, a8 = false;
+        var a1, a2, a3, a4, a5, a6, a7, a8, b1, b2, b3, b4, b5, b6, b7, b8, c1, c2, c3, c4, c5, c6, c7, c8, d1, d2, d3, d4, d5, d6, d7, d8, e1, e2, e3, e4, e5, e6, e7, e8, f1, f2, f3, f4, f5, f6, f7, f8, g1, g2, g3, g4, g5, g6, g7, g8, g9, h1, h2, h3, h4, h5, h6, h7, h8 = false;
         /*for(var x = 1; x < 9999; x++){
             setTimeout(function(){ 
                 disparar();
             }, 2000*x);
         }*/
-         /* for(var x = 1; x < 10; x++){
+          for(var x = 1; x < 9999; x++){
             setTimeout(function(){ 
-                console.log(cometa);
-            }, 500*x);
-        }*/
+                gerarFruta();
+            }, 2000*x);
+        }
         gerarFruta();
         function gerarFruta(){
-            //frutaLoca = Math.floor(Math.random() * 63);
-            frutaLoca = 7;
-            if(frutaLoca === 0){}
+            frutaLoca = Math.floor(Math.random() * 63);
+            if(frutaLoca === 0){
+                document.getElementById('a1').style.backgroundColor = "darkgreen";
+                a1 = true;
+            }
+            else if(frutaLoca === 1){
+                document.getElementById('a2').style.backgroundColor = "darkgreen";
+                a2 = true;
+            }
+            else if(frutaLoca === 2){
+                document.getElementById('a3').style.backgroundColor = "darkgreen";
+                a3 = true;
+            }
+            else if(frutaLoca === 3){
+                document.getElementById('a4').style.backgroundColor = "darkgreen";
+                a4 = true;
+            }
+            else if(frutaLoca === 4){
+                document.getElementById('a5').style.backgroundColor = "darkgreen";
+                a5 = true;
+            }
+            else if(frutaLoca === 5){
+                document.getElementById('a6').style.backgroundColor = "darkgreen";
+                a6 = true;
+            }
+            else if(frutaLoca === 6){
+                document.getElementById('a7').style.backgroundColor = "darkgreen";
+                a7 = true;
+            }
             else if(frutaLoca === 7){
                 document.getElementById('a8').style.backgroundColor = "darkgreen";
                 a8 = true;
+            }
+            //Coluna B
+            else if(frutaLoca === 8){
+                document.getElementById('b1').style.backgroundColor = "darkgreen";
+                b1 = true;
+            }
+            else if(frutaLoca === 9){
+                document.getElementById('b2').style.backgroundColor = "darkgreen";
+                b2 = true;
+            }
+            else if(frutaLoca === 10){
+                document.getElementById('b3').style.backgroundColor = "darkgreen";
+                b3 = true;
+            }
+            else if(frutaLoca === 11){
+                document.getElementById('b4').style.backgroundColor = "darkgreen";
+                b4 = true;
+            }
+            else if(frutaLoca === 12){
+                document.getElementById('b5').style.backgroundColor = "darkgreen";
+                b5 = true;
+            }
+            else if(frutaLoca === 13){
+                document.getElementById('b6').style.backgroundColor = "darkgreen";
+                b6 = true;
+            }
+            else if(frutaLoca === 14){
+                document.getElementById('b7').style.backgroundColor = "darkgreen";
+                b7 = true;
+            }
+            else if(frutaLoca === 15){
+                document.getElementById('b8').style.backgroundColor = "darkgreen";
+                b8 = true;
+            }
+            //Coluna C
+            else if(frutaLoca === 16){
+                document.getElementById('c1').style.backgroundColor = "darkgreen";
+                c1 = true;
+            }
+            else if(frutaLoca === 17){
+                document.getElementById('c2').style.backgroundColor = "darkgreen";
+                c2 = true;
+            }
+            else if(frutaLoca === 18){
+                document.getElementById('c3').style.backgroundColor = "darkgreen";
+                c3 = true;
+            }
+            else if(frutaLoca === 19){
+                document.getElementById('c4').style.backgroundColor = "darkgreen";
+                c4 = true;
+            }
+            else if(frutaLoca === 20){
+                document.getElementById('c5').style.backgroundColor = "darkgreen";
+                c5 = true;
+            }
+            else if(frutaLoca === 21){
+                document.getElementById('c6').style.backgroundColor = "darkgreen";
+                c6 = true;
+            }
+            else if(frutaLoca === 22){
+                document.getElementById('c7').style.backgroundColor = "darkgreen";
+                c7 = true;
+            }
+            else if(frutaLoca === 23){
+                document.getElementById('c8').style.backgroundColor = "darkgreen";
+                c8 = true;
+            }
+            //Coluna D
+            else if(frutaLoca === 24){
+                document.getElementById('d1').style.backgroundColor = "darkgreen";
+                d1 = true;
+            }
+            else if(frutaLoca === 25){
+                document.getElementById('d2').style.backgroundColor = "darkgreen";
+                d2 = true;
+            }
+            else if(frutaLoca === 26){
+                document.getElementById('d3').style.backgroundColor = "darkgreen";
+                d3 = true;
+            }
+            else if(frutaLoca === 27){
+                document.getElementById('d4').style.backgroundColor = "darkgreen";
+                d4 = true;
+            }
+            else if(frutaLoca === 28){
+                document.getElementById('d5').style.backgroundColor = "darkgreen";
+                d5 = true;
+            }
+            else if(frutaLoca === 29){
+                document.getElementById('d6').style.backgroundColor = "darkgreen";
+                d6 = true;
+            }
+            else if(frutaLoca === 30){
+                document.getElementById('d7').style.backgroundColor = "darkgreen";
+                d7 = true;
+            }
+            else if(frutaLoca === 31){
+                document.getElementById('d8').style.backgroundColor = "darkgreen";
+                d8 = true;
+            }
+            //Coluna E
+            else if(frutaLoca === 32){
+                document.getElementById('e1').style.backgroundColor = "darkgreen";
+                e1 = true;
+            }
+            else if(frutaLoca === 33){
+                document.getElementById('e2').style.backgroundColor = "darkgreen";
+                e2 = true;
+            }
+            else if(frutaLoca === 34){
+                document.getElementById('e3').style.backgroundColor = "darkgreen";
+                e3 = true;
+            }
+            else if(frutaLoca === 35){
+                document.getElementById('e4').style.backgroundColor = "darkgreen";
+                e4 = true;
+            }
+            else if(frutaLoca === 36){
+                document.getElementById('e5').style.backgroundColor = "darkgreen";
+                e5 = true;
+            }
+            else if(frutaLoca === 37){
+                document.getElementById('e6').style.backgroundColor = "darkgreen";
+                e6 = true;
+            }
+            else if(frutaLoca === 38){
+                document.getElementById('e7').style.backgroundColor = "darkgreen";
+                e7 = true;
+            }
+            else if(frutaLoca === 39){
+                document.getElementById('e8').style.backgroundColor = "darkgreen";
+                e8 = true;
+            }
+            //Coluna F
+            else if(frutaLoca === 40){
+                document.getElementById('f1').style.backgroundColor = "darkgreen";
+                f1 = true;
+            }
+            else if(frutaLoca === 41){
+                document.getElementById('f2').style.backgroundColor = "darkgreen";
+                f2 = true;
+            }
+            else if(frutaLoca === 42){
+                document.getElementById('f3').style.backgroundColor = "darkgreen";
+                f3 = true;
+            }
+            else if(frutaLoca === 43){
+                document.getElementById('f4').style.backgroundColor = "darkgreen";
+                f4 = true;
+            }
+            else if(frutaLoca === 44){
+                document.getElementById('f5').style.backgroundColor = "darkgreen";
+                f5 = true;
+            }
+            else if(frutaLoca === 45){
+                document.getElementById('f6').style.backgroundColor = "darkgreen";
+                f6 = true;
+            }
+            else if(frutaLoca === 46){
+                document.getElementById('f7').style.backgroundColor = "darkgreen";
+                f7 = true;
+            }
+            else if(frutaLoca === 47){
+                document.getElementById('f8').style.backgroundColor = "darkgreen";
+                f8 = true;
+            }
+            //Coluna G
+            else if(frutaLoca === 48){
+                document.getElementById('g1').style.backgroundColor = "darkgreen";
+                g1 = true;
+            }
+            else if(frutaLoca === 49){
+                document.getElementById('g2').style.backgroundColor = "darkgreen";
+                g2 = true;
+            }
+            else if(frutaLoca === 50){
+                document.getElementById('g3').style.backgroundColor = "darkgreen";
+                g3 = true;
+            }
+            else if(frutaLoca === 51){
+                document.getElementById('g4').style.backgroundColor = "darkgreen";
+                g4 = true;
+            }
+            else if(frutaLoca === 52){
+                document.getElementById('g5').style.backgroundColor = "darkgreen";
+                g5 = true;
+            }
+            else if(frutaLoca === 53){
+                document.getElementById('g6').style.backgroundColor = "darkgreen";
+                g6 = true;
+            }
+            else if(frutaLoca === 54){
+                document.getElementById('g7').style.backgroundColor = "darkgreen";
+                g7 = true;
+            }
+            else if(frutaLoca === 55){
+                document.getElementById('g8').style.backgroundColor = "darkgreen";
+                g8 = true;
+            }
+            //Coluna H
+            else if(frutaLoca === 56){
+                document.getElementById('h1').style.backgroundColor = "darkgreen";
+                h1 = true;
+            }
+            else if(frutaLoca === 57){
+                document.getElementById('h2').style.backgroundColor = "darkgreen";
+                h2 = true;
+            }
+            else if(frutaLoca === 58){
+                document.getElementById('h3').style.backgroundColor = "darkgreen";
+                h3 = true;
+            }
+            else if(frutaLoca === 59){
+                document.getElementById('h4').style.backgroundColor = "darkgreen";
+                h4 = true;
+            }
+            else if(frutaLoca === 60){
+                document.getElementById('h5').style.backgroundColor = "darkgreen";
+                h5 = true;
+            }
+            else if(frutaLoca === 61){
+                document.getElementById('h6').style.backgroundColor = "darkgreen";
+                h6 = true;
+            }
+            else if(frutaLoca === 62){
+                document.getElementById('h7').style.backgroundColor = "darkgreen";
+                h7 = true;
+            }
+            else if(frutaLoca === 63){
+                document.getElementById('h8').style.backgroundColor = "darkgreen";
+                h8 = true;
             }
         }  
         function direita(){
