@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="iso-8859-1">
+        <title>Game</title>
+<!--        <link href="style/animation.css" rel="stylesheet" type="text/css">-->
+      <style>
+          *{
+              margin: 0;
+              padding: 0;
+          }
+          body{
+              background-color: #222;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              color: white;
+          }
+          .container{
+              border: 1px solid black;
+              width: 416px;
+              height: auto;
+              display: flex;
+              flex-wrap: wrap;
+              background-color: aliceblue;
+              color: black;
+          }
+          .container div{
+              width: 50px;
+              height: 50px;
+              border: 1px solid black;
+              text-align: center;
+              line-height: 50px;
+          }
+          #a1{
+              background-color: blue;
+          }
+          
+      </style>
+  </head>
+  <body>
+    <h2 id="pont">Pontuação: 0</h2>
+    <div class="container">
+        <div id="h1">H1</div><div id="h2">H2</div><div id="h3">H3</div><div id="h4">H4</div><div id="h5">H5</div><div id="h6">H6</div><div id="h7">H7</div><div id="h8">H8</div>
+        <div id="g1">G1</div><div id="g2">G2</div><div id="g3">G3</div><div id="g4">G4</div><div id="g5">G5</div><div id="g6">G6</div><div id="g7">G7</div><div id="g8">G8</div>
+        <div id="f1">F1</div><div id="f2">F2</div><div id="f3">F3</div><div id="f4">F4</div><div id="f5">F5</div><div id="f6">F6</div><div id="f7">F7</div><div id="f8">F8</div>
+        <div id="e1">E1</div><div id="e2">E2</div><div id="e3">E3</div><div id="e4">E4</div><div id="e5">E5</div><div id="e6">E6</div><div id="e7">E7</div><div id="e8">E8</div>
+        <div id="d1">D1</div><div id="d2">D2</div><div id="d3">D3</div><div id="d4">D4</div><div id="d5">D5</div><div id="d6">D6</div><div id="d7">D7</div><div id="d8">D8</div>
+        <div id="c1">C1</div><div id="c2">C2</div><div id="c3">C3</div><div id="c4">C4</div><div id="c5">C5</div><div id="c6">C6</div><div id="c7">C7</div><div id="c8">C8</div>
+        <div id="b1">B1</div><div id="b2">B2</div><div id="b3">B3</div><div id="b4">B4</div><div id="b5">B5</div><div id="b6">B6</div><div id="b7">B7</div><div id="b8">B8</div>
+        <div id="a1">A1</div><div id="a2">A2</div><div id="a3">A3</div><div id="a4">A4</div><div id="a5">A5</div><div id="a6">A6</div><div id="a7">A7</div><div id="a8">A8</div>
+    </div>
+      <script>
+        var player = "a1";
+        var pont = 0;
+        var frutaLoca;
+        var a1, a2, a3, a4, a5, a6, a7, a8 = false;
+        /*for(var x = 1; x < 9999; x++){
+            setTimeout(function(){ 
+                disparar();
+            }, 2000*x);
+        }*/
+         /* for(var x = 1; x < 10; x++){
+            setTimeout(function(){ 
+                console.log(cometa);
+            }, 500*x);
+        }*/
+        gerarFruta();
+        function gerarFruta(){
+            //frutaLoca = Math.floor(Math.random() * 63);
+            frutaLoca = 7;
+            if(frutaLoca === 0){}
+            else if(frutaLoca === 7){
+                document.getElementById('a8').style.backgroundColor = "darkgreen";
+                a8 = true;
+            }
+        }  
+        function direita(){
+            if(player === "a1"){
+                player = "a2";
+                document.getElementById('a1').style.backgroundColor = "transparent";
+                document.getElementById('a2').style.backgroundColor = "blue";
+            }
+            else if(player === "a2"){
+                player = "a3";
+                document.getElementById('a2').style.backgroundColor = "transparent";
+                document.getElementById('a3').style.backgroundColor = "blue";
+            }
+            else if(player === "a3"){
+                player = "a4";
+                document.getElementById('a3').style.backgroundColor = "transparent";
+                document.getElementById('a4').style.backgroundColor = "blue";
+            }
+            else if(player === "a4"){
+                player = "a5";
+                document.getElementById('a4').style.backgroundColor = "transparent";
+                document.getElementById('a5').style.backgroundColor = "blue";
+            }
+            else if(player === "a5"){
+                player = "a6";
+                document.getElementById('a5').style.backgroundColor = "transparent";
+                document.getElementById('a6').style.backgroundColor = "blue";
+            }
+            else if(player === "a6"){
+                player = "a7";
+                document.getElementById('a6').style.backgroundColor = "transparent";
+                document.getElementById('a7').style.backgroundColor = "blue";
+            }
+            else if(player === "a7"){
+                player = "a8";
+                document.getElementById('a7').style.backgroundColor = "transparent";
+                document.getElementById('a8').style.backgroundColor = "blue";
+                if(a8 === true){
+                    a8 = false;
+                    pont = pont + 100;
+                    document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                }
+            }
+            else if(player === "b1"){
+                player = "b2";
+                document.getElementById('b1').style.backgroundColor = "transparent";
+                document.getElementById('b2').style.backgroundColor = "blue";
+            }
+            else if(player === "b2"){
+                player = "b3";
+                document.getElementById('b2').style.backgroundColor = "transparent";
+                document.getElementById('b3').style.backgroundColor = "blue";
+            }
+            else if(player === "b3"){
+                player = "b4";
+                document.getElementById('b3').style.backgroundColor = "transparent";
+                document.getElementById('b4').style.backgroundColor = "blue";
+            }
+            else if(player === "b4"){
+                player = "b5";
+                document.getElementById('b4').style.backgroundColor = "transparent";
+                document.getElementById('b5').style.backgroundColor = "blue";
+            }
+            else if(player === "b5"){
+                player = "b6";
+                document.getElementById('b5').style.backgroundColor = "transparent";
+                document.getElementById('b6').style.backgroundColor = "blue";
+            }
+            else if(player === "b6"){
+                player = "b7";
+                document.getElementById('b6').style.backgroundColor = "transparent";
+                document.getElementById('b7').style.backgroundColor = "blue";
+            }
+            else if(player === "b7"){
+                player = "b8";
+                document.getElementById('b7').style.backgroundColor = "transparent";
+                document.getElementById('b8').style.backgroundColor = "blue";
+            }
+            else if(player === "c1"){
+                player = "c2";
+                document.getElementById('c1').style.backgroundColor = "transparent";
+                document.getElementById('c2').style.backgroundColor = "blue";
+            }
+            else if(player === "c2"){
+                player = "c3";
+                document.getElementById('c2').style.backgroundColor = "transparent";
+                document.getElementById('c3').style.backgroundColor = "blue";
+            }
+            else if(player === "c3"){
+                player = "c4";
+                document.getElementById('c3').style.backgroundColor = "transparent";
+                document.getElementById('c4').style.backgroundColor = "blue";
+            }
+            else if(player === "c4"){
+                player = "c5";
+                document.getElementById('c4').style.backgroundColor = "transparent";
+                document.getElementById('c5').style.backgroundColor = "blue";
+            }
+            else if(player === "c5"){
+                player = "c6";
+                document.getElementById('c5').style.backgroundColor = "transparent";
+                document.getElementById('c6').style.backgroundColor = "blue";
+            }
+            else if(player === "c6"){
+                player = "c7";
+                document.getElementById('c6').style.backgroundColor = "transparent";
+                document.getElementById('c7').style.backgroundColor = "blue";
+            }
+            else if(player === "c7"){
+                player = "c8";
+                document.getElementById('c7').style.backgroundColor = "transparent";
+                document.getElementById('c8').style.backgroundColor = "blue";
+            }
+            else if(player === "d1"){
+                player = "d2";
+                document.getElementById('d1').style.backgroundColor = "transparent";
+                document.getElementById('d2').style.backgroundColor = "blue";
+            }
+            else if(player === "d2"){
+                player = "d3";
+                document.getElementById('d2').style.backgroundColor = "transparent";
+                document.getElementById('d3').style.backgroundColor = "blue";
+            }
+            else if(player === "d3"){
+                player = "d4";
+                document.getElementById('d3').style.backgroundColor = "transparent";
+                document.getElementById('d4').style.backgroundColor = "blue";
+            }
+            else if(player === "d4"){
+                player = "d5";
+                document.getElementById('d4').style.backgroundColor = "transparent";
+                document.getElementById('d5').style.backgroundColor = "blue";
+            }
+            else if(player === "d5"){
+                player = "d6";
+                document.getElementById('d5').style.backgroundColor = "transparent";
+                document.getElementById('d6').style.backgroundColor = "blue";
+            }
+            else if(player === "d6"){
+                player = "d7";
+                document.getElementById('d6').style.backgroundColor = "transparent";
+                document.getElementById('d7').style.backgroundColor = "blue";
+            }
+            else if(player === "d7"){
+                player = "d8";
+                document.getElementById('d7').style.backgroundColor = "transparent";
+                document.getElementById('d8').style.backgroundColor = "blue";
+            }
+            else if(player === "e1"){
+                player = "e2";
+                document.getElementById('e1').style.backgroundColor = "transparent";
+                document.getElementById('e2').style.backgroundColor = "blue";
+            }
+            else if(player === "e2"){
+                player = "e3";
+                document.getElementById('e2').style.backgroundColor = "transparent";
+                document.getElementById('e3').style.backgroundColor = "blue";
+            }
+            else if(player === "e3"){
+                player = "e4";
+                document.getElementById('e3').style.backgroundColor = "transparent";
+                document.getElementById('e4').style.backgroundColor = "blue";
+            }
+            else if(player === "e4"){
+                player = "e5";
+                document.getElementById('e4').style.backgroundColor = "transparent";
+                document.getElementById('e5').style.backgroundColor = "blue";
+            }
+            else if(player === "e5"){
+                player = "e6";
+                document.getElementById('e5').style.backgroundColor = "transparent";
+                document.getElementById('e6').style.backgroundColor = "blue";
+            }
+            else if(player === "e6"){
+                player = "e7";
+                document.getElementById('e6').style.backgroundColor = "transparent";
+                document.getElementById('e7').style.backgroundColor = "blue";
+            }
+            else if(player === "e7"){
+                player = "e8";
+                document.getElementById('e7').style.backgroundColor = "transparent";
+                document.getElementById('e8').style.backgroundColor = "blue";
+            }
+            else if(player === "f1"){
+                player = "f2";
+                document.getElementById('f1').style.backgroundColor = "transparent";
+                document.getElementById('f2').style.backgroundColor = "blue";
+            }
+            else if(player === "f2"){
+                player = "f3";
+                document.getElementById('f2').style.backgroundColor = "transparent";
+                document.getElementById('f3').style.backgroundColor = "blue";
+            }
+            else if(player === "f3"){
+                player = "f4";
+                document.getElementById('f3').style.backgroundColor = "transparent";
+                document.getElementById('f4').style.backgroundColor = "blue";
+            }
+            else if(player === "f4"){
+                player = "f5";
+                document.getElementById('f4').style.backgroundColor = "transparent";
+                document.getElementById('f5').style.backgroundColor = "blue";
+            }
+            else if(player === "f5"){
+                player = "f6";
+                document.getElementById('f5').style.backgroundColor = "transparent";
+                document.getElementById('f6').style.backgroundColor = "blue";
+            }
+            else if(player === "f6"){
+                player = "f7";
+                document.getElementById('f6').style.backgroundColor = "transparent";
+                document.getElementById('f7').style.backgroundColor = "blue";
+            }
+            else if(player === "f7"){
+                player = "f8";
+                document.getElementById('f7').style.backgroundColor = "transparent";
+                document.getElementById('f8').style.backgroundColor = "blue";
+            }
+            else if(player === "g1"){
+                player = "g2";
+                document.getElementById('g1').style.backgroundColor = "transparent";
+                document.getElementById('g2').style.backgroundColor = "blue";
+            }
+            else if(player === "g2"){
+                player = "g3";
+                document.getElementById('g2').style.backgroundColor = "transparent";
+                document.getElementById('g3').style.backgroundColor = "blue";
+            }
+            else if(player === "g3"){
+                player = "g4";
+                document.getElementById('g3').style.backgroundColor = "transparent";
+                document.getElementById('g4').style.backgroundColor = "blue";
+            }
+            else if(player === "g4"){
+                player = "g5";
+                document.getElementById('g4').style.backgroundColor = "transparent";
+                document.getElementById('g5').style.backgroundColor = "blue";
+            }
+            else if(player === "g5"){
+                player = "g6";
+                document.getElementById('g5').style.backgroundColor = "transparent";
+                document.getElementById('g6').style.backgroundColor = "blue";
+            }
+            else if(player === "g6"){
+                player = "g7";
+                document.getElementById('g6').style.backgroundColor = "transparent";
+                document.getElementById('g7').style.backgroundColor = "blue";
+            }
+            else if(player === "g7"){
+                player = "g8";
+                document.getElementById('g7').style.backgroundColor = "transparent";
+                document.getElementById('g8').style.backgroundColor = "blue";
+            }
+            else if(player === "h1"){
+                player = "h2";
+                document.getElementById('h1').style.backgroundColor = "transparent";
+                document.getElementById('h2').style.backgroundColor = "blue";
+            }
+            else if(player === "h2"){
+                player = "h3";
+                document.getElementById('h2').style.backgroundColor = "transparent";
+                document.getElementById('h3').style.backgroundColor = "blue";
+            }
+            else if(player === "h3"){
+                player = "h4";
+                document.getElementById('h3').style.backgroundColor = "transparent";
+                document.getElementById('h4').style.backgroundColor = "blue";
+            }
+            else if(player === "h4"){
+                player = "h5";
+                document.getElementById('h4').style.backgroundColor = "transparent";
+                document.getElementById('h5').style.backgroundColor = "blue";
+            }
+            else if(player === "h5"){
+                player = "h6";
+                document.getElementById('h5').style.backgroundColor = "transparent";
+                document.getElementById('h6').style.backgroundColor = "blue";
+            }
+            else if(player === "h6"){
+                player = "h7";
+                document.getElementById('h6').style.backgroundColor = "transparent";
+                document.getElementById('h7').style.backgroundColor = "blue";
+            }
+            else if(player === "h7"){
+                player = "h8";
+                document.getElementById('h7').style.backgroundColor = "transparent";
+                document.getElementById('h8').style.backgroundColor = "blue";
+            }
+            else{}
+        }
+        function esquerda(){
+            if(player === "a8"){
+                player = "a7";
+                document.getElementById('a8').style.backgroundColor = "transparent";
+                document.getElementById('a7').style.backgroundColor = "blue";
+            }
+            else if(player === "a7"){
+                player = "a6";
+                document.getElementById('a7').style.backgroundColor = "transparent";
+                document.getElementById('a6').style.backgroundColor = "blue";
+            }
+            else if(player === "a6"){
+                player = "a5";
+                document.getElementById('a6').style.backgroundColor = "transparent";
+                document.getElementById('a5').style.backgroundColor = "blue";
+            }
+            else if(player === "a5"){
+                player = "a4";
+                document.getElementById('a5').style.backgroundColor = "transparent";
+                document.getElementById('a4').style.backgroundColor = "blue";
+            }
+            else if(player === "a4"){
+                player = "a3";
+                document.getElementById('a4').style.backgroundColor = "transparent";
+                document.getElementById('a3').style.backgroundColor = "blue";
+            }
+            else if(player === "a3"){
+                player = "a2";
+                document.getElementById('a3').style.backgroundColor = "transparent";
+                document.getElementById('a2').style.backgroundColor = "blue";
+            }
+            else if(player === "a2"){
+                player = "a1";
+                document.getElementById('a2').style.backgroundColor = "transparent";
+                document.getElementById('a1').style.backgroundColor = "blue";
+            }
+            else if(player === "b8"){
+                player = "b7";
+                document.getElementById('b8').style.backgroundColor = "transparent";
+                document.getElementById('b7').style.backgroundColor = "blue";
+            }
+            else if(player === "b7"){
+                player = "b6";
+                document.getElementById('b7').style.backgroundColor = "transparent";
+                document.getElementById('b6').style.backgroundColor = "blue";
+            }
+            else if(player === "b6"){
+                player = "b5";
+                document.getElementById('b6').style.backgroundColor = "transparent";
+                document.getElementById('b5').style.backgroundColor = "blue";
+            }
+            else if(player === "b5"){
+                player = "b4";
+                document.getElementById('b5').style.backgroundColor = "transparent";
+                document.getElementById('b4').style.backgroundColor = "blue";
+            }
+            else if(player === "b4"){
+                player = "b3";
+                document.getElementById('b4').style.backgroundColor = "transparent";
+                document.getElementById('b3').style.backgroundColor = "blue";
+            }
+            else if(player === "b3"){
+                player = "b2";
+                document.getElementById('b3').style.backgroundColor = "transparent";
+                document.getElementById('b2').style.backgroundColor = "blue";
+            }
+            else if(player === "b2"){
+                player = "b1";
+                document.getElementById('b2').style.backgroundColor = "transparent";
+                document.getElementById('b1').style.backgroundColor = "blue";
+            }
+            else if(player === "c8"){
+                player = "c7";
+                document.getElementById('c8').style.backgroundColor = "transparent";
+                document.getElementById('c7').style.backgroundColor = "blue";
+            }
+            else if(player === "c7"){
+                player = "c6";
+                document.getElementById('c7').style.backgroundColor = "transparent";
+                document.getElementById('c6').style.backgroundColor = "blue";
+            }
+            else if(player === "c6"){
+                player = "c5";
+                document.getElementById('c6').style.backgroundColor = "transparent";
+                document.getElementById('c5').style.backgroundColor = "blue";
+            }
+            else if(player === "c5"){
+                player = "c4";
+                document.getElementById('c5').style.backgroundColor = "transparent";
+                document.getElementById('c4').style.backgroundColor = "blue";
+            }
+            else if(player === "c4"){
+                player = "c3";
+                document.getElementById('c4').style.backgroundColor = "transparent";
+                document.getElementById('c3').style.backgroundColor = "blue";
+            }
+            else if(player === "c3"){
+                player = "c2";
+                document.getElementById('c3').style.backgroundColor = "transparent";
+                document.getElementById('c2').style.backgroundColor = "blue";
+            }
+            else if(player === "c2"){
+                player = "c1";
+                document.getElementById('c2').style.backgroundColor = "transparent";
+                document.getElementById('c1').style.backgroundColor = "blue";
+            }
+            else if(player === "d8"){
+                player = "d7";
+                document.getElementById('d8').style.backgroundColor = "transparent";
+                document.getElementById('d7').style.backgroundColor = "blue";
+            }
+            else if(player === "d7"){
+                player = "d6";
+                document.getElementById('d7').style.backgroundColor = "transparent";
+                document.getElementById('d6').style.backgroundColor = "blue";
+            }
+            else if(player === "d6"){
+                player = "d5";
+                document.getElementById('d6').style.backgroundColor = "transparent";
+                document.getElementById('d5').style.backgroundColor = "blue";
+            }
+            else if(player === "d5"){
+                player = "d4";
+                document.getElementById('d5').style.backgroundColor = "transparent";
+                document.getElementById('d4').style.backgroundColor = "blue";
+            }
+            else if(player === "d4"){
+                player = "d3";
+                document.getElementById('d4').style.backgroundColor = "transparent";
+                document.getElementById('d3').style.backgroundColor = "blue";
+            }
+            else if(player === "d3"){
+                player = "d2";
+                document.getElementById('d3').style.backgroundColor = "transparent";
+                document.getElementById('d2').style.backgroundColor = "blue";
+            }
+            else if(player === "d2"){
+                player = "d1";
+                document.getElementById('d2').style.backgroundColor = "transparent";
+                document.getElementById('d1').style.backgroundColor = "blue";
+            }
+            else if(player === "e8"){
+                player = "e7";
+                document.getElementById('e8').style.backgroundColor = "transparent";
+                document.getElementById('e7').style.backgroundColor = "blue";
+            }
+            else if(player === "e7"){
+                player = "e6";
+                document.getElementById('e7').style.backgroundColor = "transparent";
+                document.getElementById('e6').style.backgroundColor = "blue";
+            }
+            else if(player === "e6"){
+                player = "e5";
+                document.getElementById('e6').style.backgroundColor = "transparent";
+                document.getElementById('e5').style.backgroundColor = "blue";
+            }
+            else if(player === "e5"){
+                player = "e4";
+                document.getElementById('e5').style.backgroundColor = "transparent";
+                document.getElementById('e4').style.backgroundColor = "blue";
+            }
+            else if(player === "e4"){
+                player = "e3";
+                document.getElementById('e4').style.backgroundColor = "transparent";
+                document.getElementById('e3').style.backgroundColor = "blue";
+            }
+            else if(player === "e3"){
+                player = "e2";
+                document.getElementById('e3').style.backgroundColor = "transparent";
+                document.getElementById('e2').style.backgroundColor = "blue";
+            }
+            else if(player === "e2"){
+                player = "e1";
+                document.getElementById('e2').style.backgroundColor = "transparent";
+                document.getElementById('e1').style.backgroundColor = "blue";
+            }
+            else if(player === "f8"){
+                player = "f7";
+                document.getElementById('f8').style.backgroundColor = "transparent";
+                document.getElementById('f7').style.backgroundColor = "blue";
+            }
+            else if(player === "f7"){
+                player = "f6";
+                document.getElementById('f7').style.backgroundColor = "transparent";
+                document.getElementById('f6').style.backgroundColor = "blue";
+            }
+            else if(player === "f6"){
+                player = "f5";
+                document.getElementById('f6').style.backgroundColor = "transparent";
+                document.getElementById('f5').style.backgroundColor = "blue";
+            }
+            else if(player === "f5"){
+                player = "f4";
+                document.getElementById('f5').style.backgroundColor = "transparent";
+                document.getElementById('f4').style.backgroundColor = "blue";
+            }
+            else if(player === "f4"){
+                player = "f3";
+                document.getElementById('f4').style.backgroundColor = "transparent";
+                document.getElementById('f3').style.backgroundColor = "blue";
+            }
+            else if(player === "f3"){
+                player = "f2";
+                document.getElementById('f3').style.backgroundColor = "transparent";
+                document.getElementById('f2').style.backgroundColor = "blue";
+            }
+            else if(player === "f2"){
+                player = "f1";
+                document.getElementById('f2').style.backgroundColor = "transparent";
+                document.getElementById('f1').style.backgroundColor = "blue";
+            }
+            else if(player === "g8"){
+                player = "g7";
+                document.getElementById('g8').style.backgroundColor = "transparent";
+                document.getElementById('g7').style.backgroundColor = "blue";
+            }
+            else if(player === "g7"){
+                player = "g6";
+                document.getElementById('g7').style.backgroundColor = "transparent";
+                document.getElementById('g6').style.backgroundColor = "blue";
+            }
+            else if(player === "g6"){
+                player = "g5";
+                document.getElementById('g6').style.backgroundColor = "transparent";
+                document.getElementById('g5').style.backgroundColor = "blue";
+            }
+            else if(player === "g5"){
+                player = "g4";
+                document.getElementById('g5').style.backgroundColor = "transparent";
+                document.getElementById('g4').style.backgroundColor = "blue";
+            }
+            else if(player === "g4"){
+                player = "g3";
+                document.getElementById('g4').style.backgroundColor = "transparent";
+                document.getElementById('g3').style.backgroundColor = "blue";
+            }
+            else if(player === "g3"){
+                player = "g2";
+                document.getElementById('g3').style.backgroundColor = "transparent";
+                document.getElementById('g2').style.backgroundColor = "blue";
+            }
+            else if(player === "g2"){
+                player = "g1";
+                document.getElementById('g2').style.backgroundColor = "transparent";
+                document.getElementById('g1').style.backgroundColor = "blue";
+            }
+            else if(player === "h8"){
+                player = "h7";
+                document.getElementById('h8').style.backgroundColor = "transparent";
+                document.getElementById('h7').style.backgroundColor = "blue";
+            }
+            else if(player === "h7"){
+                player = "h6";
+                document.getElementById('h7').style.backgroundColor = "transparent";
+                document.getElementById('h6').style.backgroundColor = "blue";
+            }
+            else if(player === "h6"){
+                player = "h5";
+                document.getElementById('h6').style.backgroundColor = "transparent";
+                document.getElementById('h5').style.backgroundColor = "blue";
+            }
+            else if(player === "h5"){
+                player = "h4";
+                document.getElementById('h5').style.backgroundColor = "transparent";
+                document.getElementById('h4').style.backgroundColor = "blue";
+            }
+            else if(player === "h4"){
+                player = "h3";
+                document.getElementById('h4').style.backgroundColor = "transparent";
+                document.getElementById('h3').style.backgroundColor = "blue";
+            }
+            else if(player === "h3"){
+                player = "h2";
+                document.getElementById('h3').style.backgroundColor = "transparent";
+                document.getElementById('h2').style.backgroundColor = "blue";
+            }
+            else if(player === "h2"){
+                player = "h1";
+                document.getElementById('h2').style.backgroundColor = "transparent";
+                document.getElementById('h1').style.backgroundColor = "blue";
+            }
+            else{}
+        }
+        function cima(){
+            if(player === "a1"){
+                player = "b1";
+                document.getElementById('a1').style.backgroundColor = "transparent";
+                document.getElementById('b1').style.backgroundColor = "blue";
+            }
+            else if(player === "a2"){
+                player = "b2";
+                document.getElementById('a2').style.backgroundColor = "transparent";
+                document.getElementById('b2').style.backgroundColor = "blue";
+            }
+            else if(player === "a3"){
+                player = "b3";
+                document.getElementById('a3').style.backgroundColor = "transparent";
+                document.getElementById('b3').style.backgroundColor = "blue";
+            }
+            else if(player === "a4"){
+                player = "b4";
+                document.getElementById('a4').style.backgroundColor = "transparent";
+                document.getElementById('b4').style.backgroundColor = "blue";
+            }
+            else if(player === "a5"){
+                player = "b5";
+                document.getElementById('a5').style.backgroundColor = "transparent";
+                document.getElementById('b5').style.backgroundColor = "blue";
+            }
+            else if(player === "a6"){
+                player = "b6";
+                document.getElementById('a6').style.backgroundColor = "transparent";
+                document.getElementById('b6').style.backgroundColor = "blue";
+            }
+            else if(player === "a7"){
+                player = "b7";
+                document.getElementById('a7').style.backgroundColor = "transparent";
+                document.getElementById('b7').style.backgroundColor = "blue";
+            }
+            else if(player === "a8"){
+                player = "b8";
+                document.getElementById('a8').style.backgroundColor = "transparent";
+                document.getElementById('b8').style.backgroundColor = "blue";
+            }
+        }
+
+document.onkeydown = function(e) {
+    switch(e.which) {
+        case 37:// left
+        esquerda();
+        break;
+
+        case 38: // up
+        cima();
+        break;
+
+        case 39: // right
+        direita();
+        break;
+
+//        case 40: // down
+//        arrowRight();
+//        break;
+
+        default: return; // exit this handler for other keys
+    }
+   // closeGalery(); // prevent the default action (scroll / move caret)
+};
+          
+          
+
+      </script>
+  </body>
+</html>
