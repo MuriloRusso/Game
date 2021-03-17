@@ -88,7 +88,10 @@
         var dificuldade = 11;
         var isGameOn = false;
         function aumentarDificuldade(){
-            if(pont > 500 && pont < 1000){
+            if(pont < 500){
+                dificuldade = 11;
+            }
+            else if(pont > 500 && pont < 1000){
                 dificuldade = 8;
             }
             else if(pont > 1000 && pont < 1500){
