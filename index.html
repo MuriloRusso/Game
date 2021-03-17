@@ -85,16 +85,31 @@
         var frutaLoca;
         var a1, a2, a3, a4, a5, a6, a7, a8, b1, b2, b3, b4, b5, b6, b7, b8, c1, c2, c3, c4, c5, c6, c7, c8, d1, d2, d3, d4, d5, d6, d7, d8, e1, e2, e3, e4, e5, e6, e7, e8, f1, f2, f3, f4, f5, f6, f7, f8, g1, g2, g3, g4, g5, g6, g7, g8, g9, h1, h2, h3, h4, h5, h6, h7, h8;
         var frutasAtivas = 0;
+        var dificuldade = 11;
+        var isGameOn = false;
+        function aumentarDificuldade(){
+            if(pont > 500 && pont < 1000){
+                dificuldade = 8;
+            }
+            else if(pont > 1000 && pont < 1500){
+                dificuldade = 7;
+            }
+            else if(pont > 1500){
+                dificuldade = 6;
+            }
+        }
         function iniciar(){
+            var isGameOn = true;
             document.getElementById('tela-inicial').style.display = "none";
             gerarFruta();
             frutasAtivas++;
             for(var x = 1; x < 9999; x++){
-                setTimeout(function(){ 
-                    if(frutasAtivas < 11){
+                setTimeout(function(){
+                    if(frutasAtivas < dificuldade){
                         gerarFruta();
                         frutasAtivas++;
                         console.log(frutasAtivas);
+                        aumentarDificuldade();
                     }
                     else{
                         document.getElementById('tela-inicial').style.display = "flex";
@@ -102,7 +117,7 @@
                         document.getElementById('btn-tela-inicial').style.display = "none";
                         document.getElementById('btn-reiniciar').style.display = "block";
                     }
-                }, 2000*x);
+                }, 700*x);
             }
         }
             
