@@ -36,6 +36,9 @@
               align-items: center;
               background-color: rgba(0,0,0,0.7);
               position: absolute;   
+              color: white;
+              flex-direction: column;
+              font-size: 20px;
           }
           .container #tela-inicial a{
               width: 200px;
@@ -49,6 +52,7 @@
               width: 50px;
               height: 50px;
               border: 1px solid black;
+              font-size: 0;
               text-align: center;
               line-height: 50px;
           }
@@ -62,7 +66,9 @@
     <h2 id="pont">Pontuação: 0</h2>
     <div class="container">
         <div id="tela-inicial">
-            <a href="#" onclick="iniciar()">Iniciar</a>
+            <h2 id="txt-tela-inicial"></h2>
+            <a href="#" id="btn-tela-inicial" onclick="iniciar()">Iniciar</a>
+            <a href="#" id="btn-reiniciar" onclick="reiniciar()" style="display: none">Reiniciar</a>
         </div>
         <div id="h1">H1</div><div id="h2">H2</div><div id="h3">H3</div><div id="h4">H4</div><div id="h5">H5</div><div id="h6">H6</div><div id="h7">H7</div><div id="h8">H8</div>
         <div id="g1">G1</div><div id="g2">G2</div><div id="g3">G3</div><div id="g4">G4</div><div id="g5">G5</div><div id="g6">G6</div><div id="g7">G7</div><div id="g8">G8</div>
@@ -86,10 +92,16 @@
             for(var x = 1; x < 9999; x++){
                 setTimeout(function(){ 
                     if(frutasAtivas < 11){
-                    gerarFruta();
-                    frutasAtivas++;
+                        gerarFruta();
+                        frutasAtivas++;
+                        console.log(frutasAtivas);
                     }
-                    else{}
+                    else{
+                        document.getElementById('tela-inicial').style.display = "flex";
+                        document.getElementById('txt-tela-inicial').innerHTML = "Sua pontuação final foi: " + pont;
+                        document.getElementById('btn-tela-inicial').style.display = "none";
+                        document.getElementById('btn-reiniciar').style.display = "block";
+                    }
                 }, 2000*x);
             }
         }
@@ -2835,7 +2847,78 @@
                 }
             }
         }
-
+        function reiniciar(){
+            document.getElementById('tela-inicial').style.display = "none";
+            player = "a1";
+            pont = 0;
+            document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+            a1= false; a2= false; a3= false; a4= false; a5= false; a6= false; a7= false; a8= false; b1= false; b2= false; b3= false; b4= false; b5= false; b6= false; b7= false; b8= false; c1= false; c2= false; c3= false; c4= false; c5= false; c6= false; c7= false; c8= false; d1= false; d2= false; d3= false; d4= false; d5= false; d6= false; d7= false; d8= false; e1= false; e2= false; e3= false; e4= false; e5= false; e6= false; e7= false; e8= false; f1= false; f2= false; f3= false; f4= false; f5= false; f6= false; f7= false; f8= false; g1= false; g2= false; g3= false; g4= false; g5= false; g6= false; g7= false; g8= false; h1= false; h2= false; h3= false; h4= false; h5= false; h6= false; h7= false; h8 = false;
+            frutasAtivas = 0;
+            document.getElementById('a1').style.backgroundColor = "blue";
+            document.getElementById('a2').style.backgroundColor = "transparent";
+            document.getElementById('a3').style.backgroundColor = "transparent";
+            document.getElementById('a4').style.backgroundColor = "transparent";
+            document.getElementById('a5').style.backgroundColor = "transparent";
+            document.getElementById('a6').style.backgroundColor = "transparent";
+            document.getElementById('a7').style.backgroundColor = "transparent";
+            document.getElementById('a8').style.backgroundColor = "transparent";
+            document.getElementById('b1').style.backgroundColor = "transparent";
+            document.getElementById('b2').style.backgroundColor = "transparent";
+            document.getElementById('b3').style.backgroundColor = "transparent";
+            document.getElementById('b4').style.backgroundColor = "transparent";
+            document.getElementById('b5').style.backgroundColor = "transparent";
+            document.getElementById('b6').style.backgroundColor = "transparent";
+            document.getElementById('b7').style.backgroundColor = "transparent";
+            document.getElementById('b8').style.backgroundColor = "transparent";
+            document.getElementById('c1').style.backgroundColor = "transparent";
+            document.getElementById('c2').style.backgroundColor = "transparent";
+            document.getElementById('c3').style.backgroundColor = "transparent";
+            document.getElementById('c4').style.backgroundColor = "transparent";
+            document.getElementById('c5').style.backgroundColor = "transparent";
+            document.getElementById('c6').style.backgroundColor = "transparent";
+            document.getElementById('c7').style.backgroundColor = "transparent";
+            document.getElementById('c8').style.backgroundColor = "transparent";
+            document.getElementById('d1').style.backgroundColor = "transparent";
+            document.getElementById('d2').style.backgroundColor = "transparent";
+            document.getElementById('d3').style.backgroundColor = "transparent";
+            document.getElementById('d4').style.backgroundColor = "transparent";
+            document.getElementById('d5').style.backgroundColor = "transparent";
+            document.getElementById('d6').style.backgroundColor = "transparent";
+            document.getElementById('d7').style.backgroundColor = "transparent";
+            document.getElementById('d8').style.backgroundColor = "transparent";
+            document.getElementById('e1').style.backgroundColor = "transparent";
+            document.getElementById('e2').style.backgroundColor = "transparent";
+            document.getElementById('e3').style.backgroundColor = "transparent";
+            document.getElementById('e4').style.backgroundColor = "transparent";
+            document.getElementById('e5').style.backgroundColor = "transparent";
+            document.getElementById('e6').style.backgroundColor = "transparent";
+            document.getElementById('e7').style.backgroundColor = "transparent";
+            document.getElementById('e8').style.backgroundColor = "transparent";
+            document.getElementById('f1').style.backgroundColor = "transparent";
+            document.getElementById('f2').style.backgroundColor = "transparent";
+            document.getElementById('f3').style.backgroundColor = "transparent";
+            document.getElementById('f4').style.backgroundColor = "transparent";
+            document.getElementById('f5').style.backgroundColor = "transparent";
+            document.getElementById('f6').style.backgroundColor = "transparent";
+            document.getElementById('f7').style.backgroundColor = "transparent";
+            document.getElementById('f8').style.backgroundColor = "transparent";
+            document.getElementById('g1').style.backgroundColor = "transparent";
+            document.getElementById('g2').style.backgroundColor = "transparent";
+            document.getElementById('g3').style.backgroundColor = "transparent";
+            document.getElementById('g4').style.backgroundColor = "transparent";
+            document.getElementById('g5').style.backgroundColor = "transparent";
+            document.getElementById('g6').style.backgroundColor = "transparent";
+            document.getElementById('g7').style.backgroundColor = "transparent";
+            document.getElementById('g8').style.backgroundColor = "transparent";
+            document.getElementById('h1').style.backgroundColor = "transparent";
+            document.getElementById('h2').style.backgroundColor = "transparent";
+            document.getElementById('h3').style.backgroundColor = "transparent";
+            document.getElementById('h4').style.backgroundColor = "transparent";
+            document.getElementById('h5').style.backgroundColor = "transparent";
+            document.getElementById('h6').style.backgroundColor = "transparent";
+            document.getElementById('h7').style.backgroundColor = "transparent";
+            document.getElementById('h8').style.backgroundColor = "transparent";
+        }
 document.onkeydown = function(e) {
     switch(e.which) {
         case 37:// left
