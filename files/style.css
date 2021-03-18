@@ -70,7 +70,20 @@
               background-color: firebrick;
               width: 80px;
               height: 60px;
+              background-size: cover;
           }
+#top{
+    background-image: url(img/arrow/top.png);
+}
+#left{
+    background-image: url(img/arrow/left.png);
+}
+#right{
+    background-image: url(img/arrow/right.png);
+}
+#down{
+    background-image: url(img/arrow/bottom.png);
+}
           @media (max-width: 1000px) and (min-width: 0px){
               h2{
                   font-size: 30px;
@@ -118,14 +131,21 @@
         text-align: center;
     }
     .container{
-        width: 55%;
-        height: 90vh;
+        width: 50%;
+        height: 70vh;
     }
     .container div{
-        width: 11.93%;
+        width: 11.7%;
+        height: 11.5%;
     }
     .container #tela-inicial{
         width: 139%;
+        font-size: 20px;
+        height: 89vh;
+    }
+    .container #tela-inicial h2{
+        width: 100%;
+        margin-left: 250px;
     }
     .container #tela-inicial a{
         margin-left: 30%;
@@ -133,6 +153,6 @@
     }
     .control{
         width: 40%;
-        height: 55vh;
+        height: 50vh;
     }
 }
