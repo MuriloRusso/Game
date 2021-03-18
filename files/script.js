@@ -21,6 +21,7 @@
             }
         }
         function iniciar(){
+            a1= 0; a2= 0; a3= 0; a4= 0; a5= 0; a6= 0; a7= 0; a8= 0; b1= 0; b2= 0; b3= 0; b4= 0; b5= 0; b6= 0; b7= 0; b8= 0; c1= 0; c2= 0; c3= 0; c4= 0; c5= 0; c6= 0; c7= 0; c8= 0; d1= 0; d2= 0; d3= 0; d4= 0; d5= 0; d6= 0; d7= 0; d8= 0; e1= 0; e2= 0; e3= 0; e4=0; e5= 0; e6= 0; e7= 0; e8= 0; f1= 0; f2= 0; f3= 0; f4= 0; f5= 0; f6= 0; f7= 0; f8= 0; g1= 0; g2= 0; g3= 0; g4= 0; g5= 0; g6= 0; g7= 0; g8= 0; h1= 0; h2= 0; h3= 0; h4= 0; h5= 0; h6= 0; h7= 0; h8= 0;
             isGameOn = true;
             document.getElementById('tela-inicial').style.display = "none";
             gerarFruta();
@@ -49,79 +50,111 @@ for(var y = 1; y < 11; y++){
     var timeRed = Math.floor(Math.random() * 30000);
     setTimeout(function(){
         gerarFrutaVermelha();
-        frutasAtivas++;
     }, timeRed*y);
 }
         function gerarFrutaVermelha(){
+            var timeActived = 5000;
             if(isGameOn === true){
                 frutaVermelhaLoca = Math.floor(Math.random() * 64);
                 if(frutaVermelhaLoca === 0){
-                    if(player != "a1" && a1 > 0){
+                    if(player != "a1" && a1 === 0){
                         document.getElementById('a1').style.backgroundColor = "firebrick";
                         a1 = 2;
+                        setTimeout(function(){
+                            a1 = 0;
+                            document.getElementById('a1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 1){
-                    if(player != "a2" && a2 > 0> 0){
+                    if(player != "a2" && a2 === 0){
                         document.getElementById('a2').style.backgroundColor = "firebrick";
                         a2 = 2;
+                        setTimeout(function(){
+                            a2 = 0;
+                            document.getElementById('a2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 2){
-                    if(player != "a3" && a3 > 0> 0){
+                    if(player != "a3" && a3 === 0){
                         document.getElementById('a3').style.backgroundColor = "firebrick";
                         a3 = 2;
+                        setTimeout(function(){
+                            a3 = 0;
+                            document.getElementById('a3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 3){
-                    if(player != "a4" && a4 > 0> 0){
+                    if(player != "a4" && a4 === 0){
                         document.getElementById('a4').style.backgroundColor = "firebrick";
                         a4 = 2;
+                        setTimeout(function(){
+                            a4 = 0;
+                            document.getElementById('a4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 4){
-                    if(player != "a5" && a5 > 0> 0){
+                    if(player != "a5" && a5 === 0){
                         document.getElementById('a5').style.backgroundColor = "firebrick";
                         a5 = 2;
+                        setTimeout(function(){
+                            a5 = 0;
+                            document.getElementById('a5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 5){
-                    if(player != "a6" && a6 > 0> 0){
+                    if(player != "a6" && a6 === 0){
                         document.getElementById('a6').style.backgroundColor = "firebrick";
                         a6 = 2;
+                        setTimeout(function(){
+                            a6 = 0;
+                            document.getElementById('a6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 6){
-                    if(player != "a7" && a7 > 0> 0){
+                    if(player != "a7" && a7 === 0){
                         document.getElementById('a7').style.backgroundColor = "firebrick";
                         a7 = 2;
+                        setTimeout(function(){
+                            a7 = 0;
+                            document.getElementById('a7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 7){
-                    if(player != "a8" && a8 > 0> 0){
+                    if(player != "a8" && a8 === 0){
                         document.getElementById('a8').style.backgroundColor = "firebrick";
                         a8 = 2;
+                        setTimeout(function(){
+                            a8 = 0;
+                            document.getElementById('a8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -129,72 +162,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna B
                 else if(frutaVermelhaLoca === 8){
-                    if(player != "b1" && b1 > 0){
+                    if(player != "b1" && b1 === 0){
                         document.getElementById('b1').style.backgroundColor = "firebrick";
                         b1 = 2;
+                        setTimeout(function(){
+                            b1 = 0;
+                            document.getElementById('b1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 9){
-                    if(player != "b2" && b2 > 0){
+                    if(player != "b2" && b2 === 0){
                         document.getElementById('b2').style.backgroundColor = "firebrick";
                         b2 = 2;
+                        setTimeout(function(){
+                            b2 = 0;
+                            document.getElementById('b2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 10){
-                    if(player != "b3" && b3 > 0){
+                    if(player != "b3" && b3 === 0){
                         document.getElementById('b3').style.backgroundColor = "firebrick";
                         b3 = 2;
+                        setTimeout(function(){
+                            b3 = 0;
+                            document.getElementById('b3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 11){
-                    if(player != "b4" && b4 > 0){
+                    if(player != "b4" && b4 === 0){
                         document.getElementById('b4').style.backgroundColor = "firebrick";
                         b4 = 2;
+                        setTimeout(function(){
+                            b4 = 0;
+                            document.getElementById('b4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 12){
-                    if(player != "b5" && b5 > 0){
+                    if(player != "b5" && b5 === 0){
                         document.getElementById('b5').style.backgroundColor = "firebrick";
                         b5 = 2;
+                        setTimeout(function(){
+                            b5 = 0;
+                            document.getElementById('b5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 13){
-                    if(player != "b6" && b6 > 0){
+                    if(player != "b6" && b6 === 0){
                         document.getElementById('b6').style.backgroundColor = "firebrick";
                         b6 = 2;
+                        setTimeout(function(){
+                            b6 = 0;
+                            document.getElementById('b6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 14){
-                    if(player != "b7" && b7 > 0){
+                    if(player != "b7" && b7 === 0){
                         document.getElementById('b7').style.backgroundColor = "firebrick";
                         b7 = 2;
+                        setTimeout(function(){
+                            b7 = 0;
+                            document.getElementById('b7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 15){
-                    if(player != "b8" && b8 > 0){
+                    if(player != "b8" && b8 === 0){
                         document.getElementById('b8').style.backgroundColor = "firebrick";
                         b8 = 2;
+                        setTimeout(function(){
+                            b8 = 0;
+                            document.getElementById('b8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -202,72 +267,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna C
                 else if(frutaVermelhaLoca === 16){
-                    if(player != "c1" && c1 > 0){
+                    if(player != "c1" && c1 === 0){
                         document.getElementById('c1').style.backgroundColor = "firebrick";
                         c1 = 2;
+                        setTimeout(function(){
+                            c1 = 0;
+                            document.getElementById('c1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 17){
-                    if(player != "c2" && c2 > 0){
+                    if(player != "c2" && c2 === 0){
                         document.getElementById('c2').style.backgroundColor = "firebrick";
                         c2 = 2;
+                        setTimeout(function(){
+                            c2 = 0;
+                            document.getElementById('c2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 18){
-                    if(player != "c3" && c3 > 0){
+                    if(player != "c3" && c3 === 0){
                         document.getElementById('c3').style.backgroundColor = "firebrick";
                         c3 = 2;
+                        setTimeout(function(){
+                            c3 = 0;
+                            document.getElementById('c3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 19){
-                    if(player != "c4" && c4 > 0){
+                    if(player != "c4" && c4 === 0){
                         document.getElementById('c4').style.backgroundColor = "firebrick";
                         c4 = 2;
+                        setTimeout(function(){
+                            c4 = 0;
+                            document.getElementById('c4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 20){
-                    if(player != "c5" && c5 > 0){
+                    if(player != "c5" && c5 === 0){
                         document.getElementById('c5').style.backgroundColor = "firebrick";
                         c5 = 2;
+                        setTimeout(function(){
+                            c5 = 0;
+                            document.getElementById('c5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 21){
-                    if(player != "c6" && c6 > 0){
+                    if(player != "c6" && c6 === 0){
                         document.getElementById('c6').style.backgroundColor = "firebrick";
                         c6 = 2;
+                        setTimeout(function(){
+                            c6 = 0;
+                            document.getElementById('c6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 22){
-                    if(player != "c7" && c7 > 0){
+                    if(player != "c7" && c7 === 0){
                         document.getElementById('c7').style.backgroundColor = "firebrick";
                         c7 = 2;
+                        setTimeout(function(){
+                            c7 = 0;
+                            document.getElementById('c7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 23){
-                    if(player != "c8" && c8 > 0){
+                    if(player != "c8" && c8 === 0){
                         document.getElementById('c8').style.backgroundColor = "firebrick";
                         c8 = 2;
+                        setTimeout(function(){
+                            c8 = 0;
+                            document.getElementById('c8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -275,72 +372,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna D
                 else if(frutaVermelhaLoca === 24){
-                    if(player != "d1" && d1 > 0){
+                    if(player != "d1" && d1 === 0){
                         document.getElementById('d1').style.backgroundColor = "firebrick";
                         d1 = 2;
+                        setTimeout(function(){
+                            d1 = 0;
+                            document.getElementById('d1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 25){
-                    if(player != "d2" && d2 > 0){
+                    if(player != "d2" && d2 === 0){
                         document.getElementById('d2').style.backgroundColor = "firebrick";
                         d2 = 2;
+                        setTimeout(function(){
+                            d2 = 0;
+                            document.getElementById('d2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 26){
-                    if(player != "d3" && d3 > 0){
+                    if(player != "d3" && d3 === 0){
                         document.getElementById('d3').style.backgroundColor = "firebrick";
                         d3 = 2;
+                        setTimeout(function(){
+                            d3 = 0;
+                            document.getElementById('d3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 27){
-                    if(player != "d4" && d4 > 0){
+                    if(player != "d4" && d4 === 0){
                         document.getElementById('d4').style.backgroundColor = "firebrick";
                         d4 = 2;
+                        setTimeout(function(){
+                            d4 = 0;
+                            document.getElementById('d4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 28){
-                    if(player != "d5" && d5 > 0){
+                    if(player != "d5" && d5 === 0){
                         document.getElementById('d5').style.backgroundColor = "firebrick";
                         d5 = 2;
+                        setTimeout(function(){
+                            d5 = 0;
+                            document.getElementById('d5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 29){
-                    if(player != "d6" && d6 > 0){
+                    if(player != "d6" && d6 === 0){
                         document.getElementById('d6').style.backgroundColor = "firebrick";
                         d6 = 2;
+                        setTimeout(function(){
+                            d6 = 0;
+                            document.getElementById('d6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 30){
-                    if(player != "d7" && d7 > 0){
+                    if(player != "d7" && d7 === 0){
                         document.getElementById('d7').style.backgroundColor = "firebrick";
                         d7 = 2;
+                        setTimeout(function(){
+                            d7 = 0;
+                            document.getElementById('d7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 31){
-                    if(player != "d8" && d8 > 0){
+                    if(player != "d8" && d8 === 0){
                         document.getElementById('d8').style.backgroundColor = "firebrick";
                         d8 = 2;
+                        setTimeout(function(){
+                            d8 = 0;
+                            document.getElementById('d8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -348,72 +477,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna E
                 else if(frutaVermelhaLoca === 32){
-                    if(player != "e1" && e1 > 0){
+                    if(player != "e1" && e1 === 0){
                         document.getElementById('e1').style.backgroundColor = "firebrick";
                         e1 = 2;
+                        setTimeout(function(){
+                            e1 = 0;
+                            document.getElementById('e1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 33){
-                    if(player != "e2" && e2 > 0){
+                    if(player != "e2" && e2 === 0){
                         document.getElementById('e2').style.backgroundColor = "firebrick";
                         e2 = 2;
+                        setTimeout(function(){
+                            e2 = 0;
+                            document.getElementById('e2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 34){
-                    if(player != "e3" && e3 > 0){
+                    if(player != "e3" && e3 === 0){
                         document.getElementById('e3').style.backgroundColor = "firebrick";
                         e3 = 2;
+                        setTimeout(function(){
+                            e3 = 0;
+                            document.getElementById('e3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 35){
-                    if(player != "e4" && e4 > 0){
+                    if(player != "e4" && e4 === 0){
                         document.getElementById('e4').style.backgroundColor = "firebrick";
                         e4 = 2;
+                        setTimeout(function(){
+                            e4 = 0;
+                            document.getElementById('e4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 36){
-                    if(player != "e5" && e5 > 0){
+                    if(player != "e5" && e5 === 0){
                         document.getElementById('e5').style.backgroundColor = "firebrick";
                         e5 = 2;
+                        setTimeout(function(){
+                            e5 = 0;
+                            document.getElementById('e5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 37){
-                    if(player != "e6" && e6 > 0){
+                    if(player != "e6" && e6 === 0){
                         document.getElementById('e6').style.backgroundColor = "firebrick";
                         e6 = 2;
+                        setTimeout(function(){
+                            e6 = 0;
+                            document.getElementById('e6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 38){
-                    if(player != "e7" && e7 > 0){
+                    if(player != "e7" && e7 === 0){
                         document.getElementById('e7').style.backgroundColor = "firebrick";
                         e7 = 2;
+                        setTimeout(function(){
+                            e7 = 0;
+                            document.getElementById('e7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 39){
-                    if(player != "e8" && e8 > 0){
+                    if(player != "e8" && e8 === 0){
                         document.getElementById('e8').style.backgroundColor = "firebrick";
                         e8 = 2;
+                        setTimeout(function(){
+                            e8 = 0;
+                            document.getElementById('e8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -421,72 +582,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna F
                 else if(frutaVermelhaLoca === 40){
-                    if(player != "f1" && f1 > 0){
+                    if(player != "f1" && f1 === 0){
                         document.getElementById('f1').style.backgroundColor = "firebrick";
                         f1 = 2;
+                        setTimeout(function(){
+                            f1 = 0;
+                            document.getElementById('f1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 41){
-                    if(player != "f2" && f2 > 0){
+                    if(player != "f2" && f2 === 0){
                         document.getElementById('f2').style.backgroundColor = "firebrick";
                         f2 = 2;
+                        setTimeout(function(){
+                            f2 = 0;
+                            document.getElementById('f2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 42){
-                    if(player != "f3" && f3 > 0){
+                    if(player != "f3" && f3 === 0){
                         document.getElementById('f3').style.backgroundColor = "firebrick";
                         f3 = 2;
+                        setTimeout(function(){
+                            f3 = 0;
+                            document.getElementById('f3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 43){
-                    if(player != "f4" && f4 > 0){
+                    if(player != "f4" && f4 === 0){
                         document.getElementById('f4').style.backgroundColor = "firebrick";
                         f4 = 2;
+                        setTimeout(function(){
+                            f4 = 0;
+                            document.getElementById('f4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 44){
-                    if(player != "f5" && f5 > 0){
+                    if(player != "f5" && f5 === 0){
                         document.getElementById('f5').style.backgroundColor = "firebrick";
                         f5 = 2;
+                        setTimeout(function(){
+                            f5 = 0;
+                            document.getElementById('f5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 45){
-                    if(player != "f6" && f6 > 0){
+                    if(player != "f6" && f6 === 0){
                         document.getElementById('f6').style.backgroundColor = "firebrick";
                         f6 = 2;
+                        setTimeout(function(){
+                            f6 = 0;
+                            document.getElementById('f6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 46){
-                    if(player != "f7" && f7 > 0){
+                    if(player != "f7" && f7 === 0){
                         document.getElementById('f7').style.backgroundColor = "firebrick";
                         f7 = 2;
+                        setTimeout(function(){
+                            f7 = 0;
+                            document.getElementById('f7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 47){
-                    if(player != "f8" && f8 > 0){
+                    if(player != "f8" && f8 === 0){
                         document.getElementById('f8').style.backgroundColor = "firebrick";
                         f8 = 2;
+                        setTimeout(function(){
+                            f8 = 0;
+                            document.getElementById('f8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -494,72 +687,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna G
                 else if(frutaVermelhaLoca === 48){
-                    if(player != "g1" && g1 > 0){
+                    if(player != "g1" && g1 === 0){
                         document.getElementById('g1').style.backgroundColor = "firebrick";
                         g1 = 2;
+                        setTimeout(function(){
+                            g1 = 0;
+                            document.getElementById('g1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 49){
-                    if(player != "g2" && g2 > 0){
+                    if(player != "g2" && g2 === 0){
                         document.getElementById('g2').style.backgroundColor = "firebrick";
                         g2 = 2;
+                        setTimeout(function(){
+                            g2 = 0;
+                            document.getElementById('g2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 50){
-                    if(player != "g3" && g3 > 0){
+                    if(player != "g3" && g3 === 0){
                         document.getElementById('g3').style.backgroundColor = "firebrick";
                         g3 = 2;
+                        setTimeout(function(){
+                            g3 = 0;
+                            document.getElementById('g3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 51){
-                    if(player != "g4" && g4 > 0){
+                    if(player != "g4" && g4 === 0){
                         document.getElementById('g4').style.backgroundColor = "firebrick";
                         g4 = 2;
+                        setTimeout(function(){
+                            g4 = 0;
+                            document.getElementById('g4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 52){
-                    if(player != "g5" && g5 > 0){
+                    if(player != "g5" && g5 === 0){
                         document.getElementById('g5').style.backgroundColor = "firebrick";
                         g5 = 2;
+                        setTimeout(function(){
+                            g5 = 0;
+                            document.getElementById('g5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 53){
-                    if(player != "g6" && g6 > 0){
+                    if(player != "g6" && g6 === 0){
                         document.getElementById('g6').style.backgroundColor = "firebrick";
                         g6 = 2;
+                        setTimeout(function(){
+                            g6 = 0;
+                            document.getElementById('g6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 54){
-                    if(player != "g7" && g7 > 0){
+                    if(player != "g7" && g7 === 0){
                         document.getElementById('g7').style.backgroundColor = "firebrick";
                         g7 = 2;
+                        setTimeout(function(){
+                            g7 = 0;
+                            document.getElementById('g7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 55){
-                    if(player != "g8" && g8 > 0){
+                    if(player != "g8" && g8 === 0){
                         document.getElementById('g8').style.backgroundColor = "firebrick";
                         g8 = 2;
+                        setTimeout(function(){
+                            g8 = 0;
+                            document.getElementById('g8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -567,72 +792,104 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna H
                 else if(frutaVermelhaLoca === 56){
-                    if(player != "h1" && h1 > 0){
+                    if(player != "h1" && h1 ===  0){
                         document.getElementById('h1').style.backgroundColor = "firebrick";
                         h1 = 2;
+                        setTimeout(function(){
+                            h1 = 0;
+                            document.getElementById('h1').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 57){
-                    if(player != "h2" && h2 > 0){
+                    if(player != "h2" && h2 ===  0){
                         document.getElementById('h2').style.backgroundColor = "firebrick";
                         h2 = 2;
+                        setTimeout(function(){
+                            h2 = 0;
+                            document.getElementById('h2').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 58){
-                    if(player != "h3" && h3 > 0){
+                    if(player != "h3" && h3 ===  0){
                         document.getElementById('h3').style.backgroundColor = "firebrick";
                         h3 = 2;
+                        setTimeout(function(){
+                            h3 = 0;
+                            document.getElementById('h3').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 59){
-                    if(player != "h4" && h4 > 0){
+                    if(player != "h4" && h4 === 0){
                         document.getElementById('h4').style.backgroundColor = "firebrick";
                         h4 = 2;
+                        setTimeout(function(){
+                            h4 = 0;
+                            document.getElementById('h4').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 60){
-                    if(player != "h5" && h5 > 0){
+                    if(player != "h5" && h5 === 0){
                         document.getElementById('h5').style.backgroundColor = "firebrick";
                         h5 = 2;
+                        setTimeout(function(){
+                            h5 = 0;
+                            document.getElementById('h5').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 61){
-                    if(player != "h6" && h6 > 0){
+                    if(player != "h6" && h6 === 0){
                         document.getElementById('h6').style.backgroundColor = "firebrick";
                         h6 = 2;
+                        setTimeout(function(){
+                            h6 = 0;
+                            document.getElementById('h6').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 62){
-                    if(player != "h7" && h7 > 0){
+                    if(player != "h7" && h7 === 0){
                         document.getElementById('h7').style.backgroundColor = "firebrick";
                         h7 = 2;
+                        setTimeout(function(){
+                            h7 = 0;
+                            document.getElementById('h7').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
                     }
                 }
                 else if(frutaVermelhaLoca === 63){
-                    if(player != "h8" && h8 > 0){
+                    if(player != "h8" && h8 === 0){
                         document.getElementById('h8').style.backgroundColor = "firebrick";
                         h8 = 2;
+                        setTimeout(function(){
+                            h8 = 0;
+                            document.getElementById('h8').style.backgroundColor = "transparent";
+                        }, timeActived);
                     }
                     else{
                         gerarFrutaVermelha();
@@ -649,9 +906,10 @@ for(var y = 1; y < 11; y++){
 
         function gerarFruta(){
             if(isGameOn === true){
+                //frutaLoca = 5;
                 frutaLoca = Math.floor(Math.random() * 64);
                 if(frutaLoca === 0){
-                    if(player != "a1" && a1 > 0){
+                    if(player != "a1" && a1 === 0){
                         document.getElementById('a1').style.backgroundColor = "darkgreen";
                         a1 = 1;
                     }
@@ -660,7 +918,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 1){
-                    if(player != "a2" && a2 > 0){
+                    if(player != "a2" && a2 === 0){
                         document.getElementById('a2').style.backgroundColor = "darkgreen";
                         a2 = 1;
                     }
@@ -669,7 +927,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 2){
-                    if(player != "a3" && a3 > 0){
+                    if(player != "a3" && a3 === 0){
                         document.getElementById('a3').style.backgroundColor = "darkgreen";
                         a3 = 1;
                     }
@@ -678,7 +936,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 3){
-                    if(player != "a4" && a4 > 0){
+                    if(player != "a4" && a4 === 0){
                         document.getElementById('a4').style.backgroundColor = "darkgreen";
                         a4 = 1;
                     }
@@ -687,7 +945,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 4){
-                    if(player != "a5" && a5 > 0){
+                    if(player != "a5" && a5 === 0){
                         document.getElementById('a5').style.backgroundColor = "darkgreen";
                         a5 = 1;
                     }
@@ -696,7 +954,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 5){
-                    if(player != "a6" && a6 > 0){
+                    if(player != "a6" && a6 === 0){
                         document.getElementById('a6').style.backgroundColor = "darkgreen";
                         a6 = 1;
                     }
@@ -705,7 +963,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 6){
-                    if(player != "a7" && a7 > 0){
+                    if(player != "a7" && a7 === 0){
                         document.getElementById('a7').style.backgroundColor = "darkgreen";
                         a7 = 1;
                     }
@@ -714,7 +972,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 7){
-                    if(player != "a8" && a8 > 0){
+                    if(player != "a8" && a8 === 0){
                         document.getElementById('a8').style.backgroundColor = "darkgreen";
                         a8 = 1;
                     }
@@ -724,7 +982,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna B
                 else if(frutaLoca === 8){
-                    if(player != "b1" && b1 > 0){
+                    if(player != "b1" && b1 === 0){
                         document.getElementById('b1').style.backgroundColor = "darkgreen";
                         b1 = 1;
                     }
@@ -733,7 +991,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 9){
-                    if(player != "b2" && b2 > 0){
+                    if(player != "b2" && b2 === 0){
                         document.getElementById('b2').style.backgroundColor = "darkgreen";
                         b2 = 1;
                     }
@@ -742,7 +1000,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 10){
-                    if(player != "b3" && b3 > 0){
+                    if(player != "b3" && b3 === 0){
                         document.getElementById('b3').style.backgroundColor = "darkgreen";
                         b3 = 1;
                     }
@@ -751,7 +1009,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 11){
-                    if(player != "b4" && b4 > 0){
+                    if(player != "b4" && b4 === 0){
                         document.getElementById('b4').style.backgroundColor = "darkgreen";
                         b4 = 1;
                     }
@@ -760,7 +1018,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 12){
-                    if(player != "b5" && b5 > 0){
+                    if(player != "b5" && b5 === 0){
                         document.getElementById('b5').style.backgroundColor = "darkgreen";
                         b5 = 1;
                     }
@@ -769,7 +1027,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 13){
-                    if(player != "b6" && b6 > 0){
+                    if(player != "b6" && b6 === 0){
                         document.getElementById('b6').style.backgroundColor = "darkgreen";
                         b6 = 1;
                     }
@@ -778,7 +1036,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 14){
-                    if(player != "b7" && b7 > 0){
+                    if(player != "b7" && b7 === 0){
                         document.getElementById('b7').style.backgroundColor = "darkgreen";
                         b7 = 1;
                     }
@@ -787,7 +1045,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 15){
-                    if(player != "b8" && b8 > 0){
+                    if(player != "b8" && b8 === 0){
                         document.getElementById('b8').style.backgroundColor = "darkgreen";
                         b8 = 1;
                     }
@@ -797,7 +1055,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna C
                 else if(frutaLoca === 16){
-                    if(player != "c1" && c1 > 0){
+                    if(player != "c1" && c1 === 0){
                         document.getElementById('c1').style.backgroundColor = "darkgreen";
                         c1 = 1;
                     }
@@ -806,7 +1064,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 17){
-                    if(player != "c2" && c2 > 0){
+                    if(player != "c2" && c2 === 0){
                         document.getElementById('c2').style.backgroundColor = "darkgreen";
                         c2 = 1;
                     }
@@ -815,7 +1073,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 18){
-                    if(player != "c3" && c3 > 0){
+                    if(player != "c3" && c3 === 0){
                         document.getElementById('c3').style.backgroundColor = "darkgreen";
                         c3 = 1;
                     }
@@ -824,7 +1082,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 19){
-                    if(player != "c4" && c4 > 0){
+                    if(player != "c4" && c4 === 0){
                         document.getElementById('c4').style.backgroundColor = "darkgreen";
                         c4 = 1;
                     }
@@ -833,7 +1091,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 20){
-                    if(player != "c5" && c5 > 0){
+                    if(player != "c5" && c5 === 0){
                         document.getElementById('c5').style.backgroundColor = "darkgreen";
                         c5 = 1;
                     }
@@ -842,7 +1100,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 21){
-                    if(player != "c6" && c6 > 0){
+                    if(player != "c6" && c6 === 0){
                         document.getElementById('c6').style.backgroundColor = "darkgreen";
                         c6 = 1;
                     }
@@ -851,7 +1109,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 22){
-                    if(player != "c7" && c7 > 0){
+                    if(player != "c7" && c7 === 0){
                         document.getElementById('c7').style.backgroundColor = "darkgreen";
                         c7 = 1;
                     }
@@ -860,7 +1118,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 23){
-                    if(player != "c8" && c8 > 0){
+                    if(player != "c8" && c8 === 0){
                         document.getElementById('c8').style.backgroundColor = "darkgreen";
                         c8 = 1;
                     }
@@ -870,7 +1128,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna D
                 else if(frutaLoca === 24){
-                    if(player != "d1" && d1 > 0){
+                    if(player != "d1" && d1 === 0){
                         document.getElementById('d1').style.backgroundColor = "darkgreen";
                         d1 = 1;
                     }
@@ -879,7 +1137,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 25){
-                    if(player != "d2" && d2 > 0){
+                    if(player != "d2" && d2 === 0){
                         document.getElementById('d2').style.backgroundColor = "darkgreen";
                         d2 = 1;
                     }
@@ -888,7 +1146,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 26){
-                    if(player != "d3" && d3 > 0){
+                    if(player != "d3" && d3 === 0){
                         document.getElementById('d3').style.backgroundColor = "darkgreen";
                         d3 = 1;
                     }
@@ -897,7 +1155,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 27){
-                    if(player != "d4" && d4 > 0){
+                    if(player != "d4" && d4 === 0){
                         document.getElementById('d4').style.backgroundColor = "darkgreen";
                         d4 = 1;
                     }
@@ -906,7 +1164,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 28){
-                    if(player != "d5" && d5 > 0){
+                    if(player != "d5" && d5 === 0){
                         document.getElementById('d5').style.backgroundColor = "darkgreen";
                         d5 = 1;
                     }
@@ -915,7 +1173,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 29){
-                    if(player != "d6" && d6 > 0){
+                    if(player != "d6" && d6 === 0){
                         document.getElementById('d6').style.backgroundColor = "darkgreen";
                         d6 = 1;
                     }
@@ -924,7 +1182,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 30){
-                    if(player != "d7" && d7 > 0){
+                    if(player != "d7" && d7 === 0){
                         document.getElementById('d7').style.backgroundColor = "darkgreen";
                         d7 = 1;
                     }
@@ -933,7 +1191,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 31){
-                    if(player != "d8" && d8 > 0){
+                    if(player != "d8" && d8 === 0){
                         document.getElementById('d8').style.backgroundColor = "darkgreen";
                         d8 = 1;
                     }
@@ -943,7 +1201,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna E
                 else if(frutaLoca === 32){
-                    if(player != "e1" && e1 > 0){
+                    if(player != "e1" && e1 === 0){
                         document.getElementById('e1').style.backgroundColor = "darkgreen";
                         e1 = 1;
                     }
@@ -952,7 +1210,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 33){
-                    if(player != "e2" && e2 > 0){
+                    if(player != "e2" && e2 === 0){
                         document.getElementById('e2').style.backgroundColor = "darkgreen";
                         e2 = 1;
                     }
@@ -961,7 +1219,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 34){
-                    if(player != "e3" && e3 > 0){
+                    if(player != "e3" && e3 === 0){
                         document.getElementById('e3').style.backgroundColor = "darkgreen";
                         e3 = 1;
                     }
@@ -970,7 +1228,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 35){
-                    if(player != "e4" && e4 > 0){
+                    if(player != "e4" && e4 === 0){
                         document.getElementById('e4').style.backgroundColor = "darkgreen";
                         e4 = 1;
                     }
@@ -979,7 +1237,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 36){
-                    if(player != "e5" && e5 > 0){
+                    if(player != "e5" && e5 === 0){
                         document.getElementById('e5').style.backgroundColor = "darkgreen";
                         e5 = 1;
                     }
@@ -988,7 +1246,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 37){
-                    if(player != "e6" && e6 > 0){
+                    if(player != "e6" && e6 === 0){
                         document.getElementById('e6').style.backgroundColor = "darkgreen";
                         e6 = 1;
                     }
@@ -997,7 +1255,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 38){
-                    if(player != "e7" && e7 > 0){
+                    if(player != "e7" && e7 === 0){
                         document.getElementById('e7').style.backgroundColor = "darkgreen";
                         e7 = 1;
                     }
@@ -1006,7 +1264,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 39){
-                    if(player != "e8" && e8 > 0){
+                    if(player != "e8" && e8 === 0){
                         document.getElementById('e8').style.backgroundColor = "darkgreen";
                         e8 = 1;
                     }
@@ -1016,7 +1274,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna F
                 else if(frutaLoca === 40){
-                    if(player != "f1" && f1 > 0){
+                    if(player != "f1" && f1 === 0){
                         document.getElementById('f1').style.backgroundColor = "darkgreen";
                         f1 = 1;
                     }
@@ -1025,7 +1283,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 41){
-                    if(player != "f2" && f2 > 0){
+                    if(player != "f2" && f2 === 0){
                         document.getElementById('f2').style.backgroundColor = "darkgreen";
                         f2 = 1;
                     }
@@ -1034,7 +1292,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 42){
-                    if(player != "f3" && f3 > 0){
+                    if(player != "f3" && f3 === 0){
                         document.getElementById('f3').style.backgroundColor = "darkgreen";
                         f3 = 1;
                     }
@@ -1043,7 +1301,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 43){
-                    if(player != "f4" && f4 > 0){
+                    if(player != "f4" && f4 === 0){
                         document.getElementById('f4').style.backgroundColor = "darkgreen";
                         f4 = 1;
                     }
@@ -1052,7 +1310,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 44){
-                    if(player != "f5" && f5 > 0){
+                    if(player != "f5" && f5 === 0){
                         document.getElementById('f5').style.backgroundColor = "darkgreen";
                         f5 = 1;
                     }
@@ -1061,7 +1319,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 45){
-                    if(player != "f6" && f6 > 0){
+                    if(player != "f6" && f6 === 0){
                         document.getElementById('f6').style.backgroundColor = "darkgreen";
                         f6 = 1;
                     }
@@ -1070,7 +1328,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 46){
-                    if(player != "f7" && f7 > 0){
+                    if(player != "f7" && f7 === 0){
                         document.getElementById('f7').style.backgroundColor = "darkgreen";
                         f7 = 1;
                     }
@@ -1079,7 +1337,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 47){
-                    if(player != "f8" && f8 > 0){
+                    if(player != "f8" && f8 === 0){
                         document.getElementById('f8').style.backgroundColor = "darkgreen";
                         f8 = 1;
                     }
@@ -1089,7 +1347,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna G
                 else if(frutaLoca === 48){
-                    if(player != "g1" && g1 > 0){
+                    if(player != "g1" && g1 === 0){
                         document.getElementById('g1').style.backgroundColor = "darkgreen";
                         g1 = 1;
                     }
@@ -1098,7 +1356,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 49){
-                    if(player != "g2" && g2 > 0){
+                    if(player != "g2" && g2 === 0){
                         document.getElementById('g2').style.backgroundColor = "darkgreen";
                         g2 = 1;
                     }
@@ -1107,7 +1365,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 50){
-                    if(player != "g3" && g3 > 0){
+                    if(player != "g3" && g3 === 0){
                         document.getElementById('g3').style.backgroundColor = "darkgreen";
                         g3 = 1;
                     }
@@ -1116,7 +1374,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 51){
-                    if(player != "g4" && g4 > 0){
+                    if(player != "g4" && g4 === 0){
                         document.getElementById('g4').style.backgroundColor = "darkgreen";
                         g4 = 1;
                     }
@@ -1125,7 +1383,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 52){
-                    if(player != "g5" && g5 > 0){
+                    if(player != "g5" && g5 === 0){
                         document.getElementById('g5').style.backgroundColor = "darkgreen";
                         g5 = 1;
                     }
@@ -1134,7 +1392,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 53){
-                    if(player != "g6" && g6 > 0){
+                    if(player != "g6" && g6 === 0){
                         document.getElementById('g6').style.backgroundColor = "darkgreen";
                         g6 = 1;
                     }
@@ -1143,7 +1401,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 54){
-                    if(player != "g7" && g7 > 0){
+                    if(player != "g7" && g7 === 0){
                         document.getElementById('g7').style.backgroundColor = "darkgreen";
                         g7 = 1;
                     }
@@ -1152,7 +1410,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 55){
-                    if(player != "g8" && g8 > 0){
+                    if(player != "g8" && g8 === 0){
                         document.getElementById('g8').style.backgroundColor = "darkgreen";
                         g8 = 1;
                     }
@@ -1162,7 +1420,7 @@ for(var y = 1; y < 11; y++){
                 }
                 //Coluna H
                 else if(frutaLoca === 56){
-                    if(player != "h1" && h1 > 0){
+                    if(player != "h1" && h1 === 0){
                         document.getElementById('h1').style.backgroundColor = "darkgreen";
                         h1 = 1;
                     }
@@ -1171,7 +1429,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 57){
-                    if(player != "h2" && h2 > 0){
+                    if(player != "h2" && h2 === 0){
                         document.getElementById('h2').style.backgroundColor = "darkgreen";
                         h2 = 1;
                     }
@@ -1180,7 +1438,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 58){
-                    if(player != "h3" && h3 > 0){
+                    if(player != "h3" && h3 === 0){
                         document.getElementById('h3').style.backgroundColor = "darkgreen";
                         h3 = 1;
                     }
@@ -1189,7 +1447,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 59){
-                    if(player != "h4" && h4 > 0){
+                    if(player != "h4" && h4 === 0){
                         document.getElementById('h4').style.backgroundColor = "darkgreen";
                         h4 = 1;
                     }
@@ -1198,7 +1456,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 60){
-                    if(player != "h5" && h5 > 0){
+                    if(player != "h5" && h5 === 0){
                         document.getElementById('h5').style.backgroundColor = "darkgreen";
                         h5 = 1;
                     }
@@ -1207,7 +1465,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 61){
-                    if(player != "h6" && h6 > 0){
+                    if(player != "h6" && h6 === 0){
                         document.getElementById('h6').style.backgroundColor = "darkgreen";
                         h6 = 1;
                     }
@@ -1216,7 +1474,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 62){
-                    if(player != "h7" && h7 > 0e){
+                    if(player != "h7" && h7 === 0){
                         document.getElementById('h7').style.backgroundColor = "darkgreen";
                         h7 = 1;
                     }
@@ -1225,7 +1483,7 @@ for(var y = 1; y < 11; y++){
                     }
                 }
                 else if(frutaLoca === 63){
-                    if(player != "h8" && h8 > 0){
+                    if(player != "h8" && h8 === 0){
                         document.getElementById('h8').style.backgroundColor = "darkgreen";
                         h8 = 1;
                     }
@@ -1241,10 +1499,15 @@ for(var y = 1; y < 11; y++){
                     player = "a2";
                     document.getElementById('a1').style.backgroundColor = "transparent";
                     document.getElementById('a2').style.backgroundColor = "#555";
-                    if(a2 === true){
-                        a2 = false;
+                    if(a2 === 1){
+                        a2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(a2 === 2){
+                        a2 = 0;
+                        pont = pont + 500;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -1252,10 +1515,15 @@ for(var y = 1; y < 11; y++){
                     player = "a3";
                     document.getElementById('a2').style.backgroundColor = "transparent";
                     document.getElementById('a3').style.backgroundColor = "#555";
-                    if(a3 === true){
-                        a3 = false;
+                    if(a3 === 1){
+                        a3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(a3 === 2){
+                        a2 = 0;
+                        pont = pont + 500;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -1263,8 +1531,8 @@ for(var y = 1; y < 11; y++){
                     player = "a4";
                     document.getElementById('a3').style.backgroundColor = "transparent";
                     document.getElementById('a4').style.backgroundColor = "#555";
-                    if(a4 === true){
-                        a4 = false;
+                    if(a4 === 1){
+                        a4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1274,8 +1542,8 @@ for(var y = 1; y < 11; y++){
                     player = "a5";
                     document.getElementById('a4').style.backgroundColor = "transparent";
                     document.getElementById('a5').style.backgroundColor = "#555";
-                    if(a5 === true){
-                        a5 = false;
+                    if(a5 === 1){
+                        a5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1285,8 +1553,8 @@ for(var y = 1; y < 11; y++){
                     player = "a6";
                     document.getElementById('a5').style.backgroundColor = "transparent";
                     document.getElementById('a6').style.backgroundColor = "#555";
-                    if(a6 === true){
-                        a6 = false;
+                    if(a6 === 1){
+                        a6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1296,8 +1564,8 @@ for(var y = 1; y < 11; y++){
                     player = "a7";
                     document.getElementById('a6').style.backgroundColor = "transparent";
                     document.getElementById('a7').style.backgroundColor = "#555";
-                    if(a7 === true){
-                        a7 = false;
+                    if(a7 === 1){
+                        a7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1307,8 +1575,8 @@ for(var y = 1; y < 11; y++){
                     player = "a8";
                     document.getElementById('a7').style.backgroundColor = "transparent";
                     document.getElementById('a8').style.backgroundColor = "#555";
-                    if(a8 === true){
-                        a8 = false;
+                    if(a8 === 1){
+                        a8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1318,8 +1586,8 @@ for(var y = 1; y < 11; y++){
                     player = "b2";
                     document.getElementById('b1').style.backgroundColor = "transparent";
                     document.getElementById('b2').style.backgroundColor = "#555";
-                    if(b2 === true){
-                        b2 = false;
+                    if(b2 === 1){
+                        b2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1329,8 +1597,8 @@ for(var y = 1; y < 11; y++){
                     player = "b3";
                     document.getElementById('b2').style.backgroundColor = "transparent";
                     document.getElementById('b3').style.backgroundColor = "#555";
-                    if(b3 === true){
-                        b3 = false;
+                    if(b3 === 1){
+                        b3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1340,8 +1608,8 @@ for(var y = 1; y < 11; y++){
                     player = "b4";
                     document.getElementById('b3').style.backgroundColor = "transparent";
                     document.getElementById('b4').style.backgroundColor = "#555";
-                    if(b4 === true){
-                        b4 = false;
+                    if(b4 === 1){
+                        b4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1351,8 +1619,8 @@ for(var y = 1; y < 11; y++){
                     player = "b5";
                     document.getElementById('b4').style.backgroundColor = "transparent";
                     document.getElementById('b5').style.backgroundColor = "#555";
-                    if(b5 === true){
-                        b5 = false;
+                    if(b5 === 1){
+                        b5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1362,8 +1630,8 @@ for(var y = 1; y < 11; y++){
                     player = "b6";
                     document.getElementById('b5').style.backgroundColor = "transparent";
                     document.getElementById('b6').style.backgroundColor = "#555";
-                    if(b6 === true){
-                        b6 = false;
+                    if(b6 === 1){
+                        b6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1373,8 +1641,8 @@ for(var y = 1; y < 11; y++){
                     player = "b7";
                     document.getElementById('b6').style.backgroundColor = "transparent";
                     document.getElementById('b7').style.backgroundColor = "#555";
-                    if(b7 === true){
-                        b7 = false;
+                    if(b7 === 1){
+                        b7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1384,8 +1652,8 @@ for(var y = 1; y < 11; y++){
                     player = "b8";
                     document.getElementById('b7').style.backgroundColor = "transparent";
                     document.getElementById('b8').style.backgroundColor = "#555";
-                    if(b8 === true){
-                        b8 = false;
+                    if(b8 === 1){
+                        b8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1395,8 +1663,8 @@ for(var y = 1; y < 11; y++){
                     player = "c2";
                     document.getElementById('c1').style.backgroundColor = "transparent";
                     document.getElementById('c2').style.backgroundColor = "#555";
-                    if(c2 === true){
-                        c2 = false;
+                    if(c2 === 1){
+                        c2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1406,8 +1674,8 @@ for(var y = 1; y < 11; y++){
                     player = "c3";
                     document.getElementById('c2').style.backgroundColor = "transparent";
                     document.getElementById('c3').style.backgroundColor = "#555";
-                    if(c3 === true){
-                        c3 = false;
+                    if(c3 === 1){
+                        c3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1417,8 +1685,8 @@ for(var y = 1; y < 11; y++){
                     player = "c4";
                     document.getElementById('c3').style.backgroundColor = "transparent";
                     document.getElementById('c4').style.backgroundColor = "#555";
-                    if(c4 === true){
-                        c4 = false;
+                    if(c4 === 1){
+                        c4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1428,8 +1696,8 @@ for(var y = 1; y < 11; y++){
                     player = "c5";
                     document.getElementById('c4').style.backgroundColor = "transparent";
                     document.getElementById('c5').style.backgroundColor = "#555";
-                    if(c5 === true){
-                        c5 = false;
+                    if(c5 === 1){
+                        c5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1439,8 +1707,8 @@ for(var y = 1; y < 11; y++){
                     player = "c6";
                     document.getElementById('c5').style.backgroundColor = "transparent";
                     document.getElementById('c6').style.backgroundColor = "#555";
-                    if(c6 === true){
-                        c6 = false;
+                    if(c6 === 1){
+                        c6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1450,8 +1718,8 @@ for(var y = 1; y < 11; y++){
                     player = "c7";
                     document.getElementById('c6').style.backgroundColor = "transparent";
                     document.getElementById('c7').style.backgroundColor = "#555";
-                    if(c7 === true){
-                        c7 = false;
+                    if(c7 === 1){
+                        c7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1461,8 +1729,8 @@ for(var y = 1; y < 11; y++){
                     player = "c8";
                     document.getElementById('c7').style.backgroundColor = "transparent";
                     document.getElementById('c8').style.backgroundColor = "#555";
-                    if(c8 === true){
-                        c8 = false;
+                    if(c8 === 1){
+                        c8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1472,8 +1740,8 @@ for(var y = 1; y < 11; y++){
                     player = "d2";
                     document.getElementById('d1').style.backgroundColor = "transparent";
                     document.getElementById('d2').style.backgroundColor = "#555";
-                    if(d2 === true){
-                        d2 = false;
+                    if(d2 === 1){
+                        d2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1483,8 +1751,8 @@ for(var y = 1; y < 11; y++){
                     player = "d3";
                     document.getElementById('d2').style.backgroundColor = "transparent";
                     document.getElementById('d3').style.backgroundColor = "#555";
-                    if(d3 === true){
-                        d3 = false;
+                    if(d3 === 1){
+                        d3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1494,8 +1762,8 @@ for(var y = 1; y < 11; y++){
                     player = "d4";
                     document.getElementById('d3').style.backgroundColor = "transparent";
                     document.getElementById('d4').style.backgroundColor = "#555";
-                    if(d4 === true){
-                        d4 = false;
+                    if(d4 === 1){
+                        d4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1505,8 +1773,8 @@ for(var y = 1; y < 11; y++){
                     player = "d5";
                     document.getElementById('d4').style.backgroundColor = "transparent";
                     document.getElementById('d5').style.backgroundColor = "#555";
-                    if(d5 === true){
-                        d5 = false;
+                    if(d5 === 1){
+                        d5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1516,8 +1784,8 @@ for(var y = 1; y < 11; y++){
                     player = "d6";
                     document.getElementById('d5').style.backgroundColor = "transparent";
                     document.getElementById('d6').style.backgroundColor = "#555";
-                    if(d6 === true){
-                        d6 = false;
+                    if(d6 === 1){
+                        d6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1527,8 +1795,8 @@ for(var y = 1; y < 11; y++){
                     player = "d7";
                     document.getElementById('d6').style.backgroundColor = "transparent";
                     document.getElementById('d7').style.backgroundColor = "#555";
-                    if(d7 === true){
-                        d7 = false;
+                    if(d7 === 1){
+                        d7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1538,8 +1806,8 @@ for(var y = 1; y < 11; y++){
                     player = "d8";
                     document.getElementById('d7').style.backgroundColor = "transparent";
                     document.getElementById('d8').style.backgroundColor = "#555";
-                    if(d8 === true){
-                        d8 = false;
+                    if(d8 === 1){
+                        d8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1549,8 +1817,8 @@ for(var y = 1; y < 11; y++){
                     player = "e2";
                     document.getElementById('e1').style.backgroundColor = "transparent";
                     document.getElementById('e2').style.backgroundColor = "#555";
-                    if(e2 === true){
-                        e2 = false;
+                    if(e2 === 1){
+                        e2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1560,8 +1828,8 @@ for(var y = 1; y < 11; y++){
                     player = "e3";
                     document.getElementById('e2').style.backgroundColor = "transparent";
                     document.getElementById('e3').style.backgroundColor = "#555";
-                    if(e3 === true){
-                        e3 = false;
+                    if(e3 === 1){
+                        e3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1571,8 +1839,8 @@ for(var y = 1; y < 11; y++){
                     player = "e4";
                     document.getElementById('e3').style.backgroundColor = "transparent";
                     document.getElementById('e4').style.backgroundColor = "#555";
-                    if(e4 === true){
-                        e4 = false;
+                    if(e4 === 1){
+                        e4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1582,8 +1850,8 @@ for(var y = 1; y < 11; y++){
                     player = "e5";
                     document.getElementById('e4').style.backgroundColor = "transparent";
                     document.getElementById('e5').style.backgroundColor = "#555";
-                    if(e5 === true){
-                        e5 = false;
+                    if(e5 === 1){
+                        e5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1593,8 +1861,8 @@ for(var y = 1; y < 11; y++){
                     player = "e6";
                     document.getElementById('e5').style.backgroundColor = "transparent";
                     document.getElementById('e6').style.backgroundColor = "#555";
-                    if(e6 === true){
-                        e6 = false;
+                    if(e6 === 1){
+                        e6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1604,8 +1872,8 @@ for(var y = 1; y < 11; y++){
                     player = "e7";
                     document.getElementById('e6').style.backgroundColor = "transparent";
                     document.getElementById('e7').style.backgroundColor = "#555";
-                    if(e7 === true){
-                        e7 = false;
+                    if(e7 === 1){
+                        e7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1615,8 +1883,8 @@ for(var y = 1; y < 11; y++){
                     player = "e8";
                     document.getElementById('e7').style.backgroundColor = "transparent";
                     document.getElementById('e8').style.backgroundColor = "#555";
-                    if(e8 === true){
-                        e8 = false;
+                    if(e8 === 1){
+                        e8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1626,8 +1894,8 @@ for(var y = 1; y < 11; y++){
                     player = "f2";
                     document.getElementById('f1').style.backgroundColor = "transparent";
                     document.getElementById('f2').style.backgroundColor = "#555";
-                    if(f2 === true){
-                        f2 = false;
+                    if(f2 === 1){
+                        f2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1637,8 +1905,8 @@ for(var y = 1; y < 11; y++){
                     player = "f3";
                     document.getElementById('f2').style.backgroundColor = "transparent";
                     document.getElementById('f3').style.backgroundColor = "#555";
-                    if(f3 === true){
-                        f3 = false;
+                    if(f3 === 1){
+                        f3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1648,8 +1916,8 @@ for(var y = 1; y < 11; y++){
                     player = "f4";
                     document.getElementById('f3').style.backgroundColor = "transparent";
                     document.getElementById('f4').style.backgroundColor = "#555";
-                    if(f4 === true){
-                        f4 = false;
+                    if(f4 === 1){
+                        f4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1659,8 +1927,8 @@ for(var y = 1; y < 11; y++){
                     player = "f5";
                     document.getElementById('f4').style.backgroundColor = "transparent";
                     document.getElementById('f5').style.backgroundColor = "#555";
-                    if(f5 === true){
-                        f5 = false;
+                    if(f5 === 1){
+                        f5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1670,8 +1938,8 @@ for(var y = 1; y < 11; y++){
                     player = "f6";
                     document.getElementById('f5').style.backgroundColor = "transparent";
                     document.getElementById('f6').style.backgroundColor = "#555";
-                    if(f6 === true){
-                        f6 = false;
+                    if(f6 === 1){
+                        f6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1681,8 +1949,8 @@ for(var y = 1; y < 11; y++){
                     player = "f7";
                     document.getElementById('f6').style.backgroundColor = "transparent";
                     document.getElementById('f7').style.backgroundColor = "#555";
-                    if(f7 === true){
-                        f7 = false;
+                    if(f7 === 1){
+                        f7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1692,8 +1960,8 @@ for(var y = 1; y < 11; y++){
                     player = "f8";
                     document.getElementById('f7').style.backgroundColor = "transparent";
                     document.getElementById('f8').style.backgroundColor = "#555";
-                    if(f8 === true){
-                        f8 = false;
+                    if(f8 === 1){
+                        f8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1703,8 +1971,8 @@ for(var y = 1; y < 11; y++){
                     player = "g2";
                     document.getElementById('g1').style.backgroundColor = "transparent";
                     document.getElementById('g2').style.backgroundColor = "#555";
-                    if(g2 === true){
-                        g2 = false;
+                    if(g2 === 1){
+                        g2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1714,8 +1982,8 @@ for(var y = 1; y < 11; y++){
                     player = "g3";
                     document.getElementById('g2').style.backgroundColor = "transparent";
                     document.getElementById('g3').style.backgroundColor = "#555";
-                    if(g3 === true){
-                        g3 = false;
+                    if(g3 === 1){
+                        g3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1725,8 +1993,8 @@ for(var y = 1; y < 11; y++){
                     player = "g4";
                     document.getElementById('g3').style.backgroundColor = "transparent";
                     document.getElementById('g4').style.backgroundColor = "#555";
-                    if(g4 === true){
-                        g4 = false;
+                    if(g4 === 1){
+                        g4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1736,8 +2004,8 @@ for(var y = 1; y < 11; y++){
                     player = "g5";
                     document.getElementById('g4').style.backgroundColor = "transparent";
                     document.getElementById('g5').style.backgroundColor = "#555";
-                    if(g5 === true){
-                        g5 = false;
+                    if(g5 === 1){
+                        g5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1747,8 +2015,8 @@ for(var y = 1; y < 11; y++){
                     player = "g6";
                     document.getElementById('g5').style.backgroundColor = "transparent";
                     document.getElementById('g6').style.backgroundColor = "#555";
-                    if(g6 === true){
-                        g6 = false;
+                    if(g6 === 1){
+                        g6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1758,8 +2026,8 @@ for(var y = 1; y < 11; y++){
                     player = "g7";
                     document.getElementById('g6').style.backgroundColor = "transparent";
                     document.getElementById('g7').style.backgroundColor = "#555";
-                    if(g7 === true){
-                        g7 = false;
+                    if(g7 === 1){
+                        g7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1769,8 +2037,8 @@ for(var y = 1; y < 11; y++){
                     player = "g8";
                     document.getElementById('g7').style.backgroundColor = "transparent";
                     document.getElementById('g8').style.backgroundColor = "#555";
-                    if(g8 === true){
-                        g8 = false;
+                    if(g8 === 1){
+                        g8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1780,8 +2048,8 @@ for(var y = 1; y < 11; y++){
                     player = "h2";
                     document.getElementById('h1').style.backgroundColor = "transparent";
                     document.getElementById('h2').style.backgroundColor = "#555";
-                    if(h2 === true){
-                        h2 = false;
+                    if(h2 === 1){
+                        h2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1791,8 +2059,8 @@ for(var y = 1; y < 11; y++){
                     player = "h3";
                     document.getElementById('h2').style.backgroundColor = "transparent";
                     document.getElementById('h3').style.backgroundColor = "#555";
-                    if(h3 === true){
-                        h3 = false;
+                    if(h3 === 1){
+                        h3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1802,8 +2070,8 @@ for(var y = 1; y < 11; y++){
                     player = "h4";
                     document.getElementById('h3').style.backgroundColor = "transparent";
                     document.getElementById('h4').style.backgroundColor = "#555";
-                    if(h4 === true){
-                        h4 = false;
+                    if(h4 === 1){
+                        h4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1813,8 +2081,8 @@ for(var y = 1; y < 11; y++){
                     player = "h5";
                     document.getElementById('h4').style.backgroundColor = "transparent";
                     document.getElementById('h5').style.backgroundColor = "#555";
-                    if(h5 === true){
-                        h5 = false;
+                    if(h5 === 1){
+                        h5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1824,8 +2092,8 @@ for(var y = 1; y < 11; y++){
                     player = "h6";
                     document.getElementById('h5').style.backgroundColor = "transparent";
                     document.getElementById('h6').style.backgroundColor = "#555";
-                    if(h6 === true){
-                        h6 = false;
+                    if(h6 === 1){
+                        h6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1835,8 +2103,8 @@ for(var y = 1; y < 11; y++){
                     player = "h7";
                     document.getElementById('h6').style.backgroundColor = "transparent";
                     document.getElementById('h7').style.backgroundColor = "#555";
-                    if(h7 === true){
-                        h7 = false;
+                    if(h7 === 1){
+                        h7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1846,8 +2114,8 @@ for(var y = 1; y < 11; y++){
                     player = "h8";
                     document.getElementById('h7').style.backgroundColor = "transparent";
                     document.getElementById('h8').style.backgroundColor = "#555";
-                    if(h8 === true){
-                        h8 = false;
+                    if(h8 === 1){
+                        h8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1862,8 +2130,8 @@ for(var y = 1; y < 11; y++){
                     player = "a7";
                     document.getElementById('a8').style.backgroundColor = "transparent";
                     document.getElementById('a7').style.backgroundColor = "#555";
-                    if(a7 === true){
-                        a7 = false;
+                    if(a7 === 1){
+                        a7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1873,8 +2141,8 @@ for(var y = 1; y < 11; y++){
                     player = "a6";
                     document.getElementById('a7').style.backgroundColor = "transparent";
                     document.getElementById('a6').style.backgroundColor = "#555";
-                    if(a6 === true){
-                        a6 = false;
+                    if(a6 === 1){
+                        a6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1884,8 +2152,8 @@ for(var y = 1; y < 11; y++){
                     player = "a5";
                     document.getElementById('a6').style.backgroundColor = "transparent";
                     document.getElementById('a5').style.backgroundColor = "#555";
-                    if(a5 === true){
-                        a5 = false;
+                    if(a5 === 1){
+                        a5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1895,8 +2163,8 @@ for(var y = 1; y < 11; y++){
                     player = "a4";
                     document.getElementById('a5').style.backgroundColor = "transparent";
                     document.getElementById('a4').style.backgroundColor = "#555";
-                    if(a4 === true){
-                        a4 = false;
+                    if(a4 === 1){
+                        a4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1906,8 +2174,8 @@ for(var y = 1; y < 11; y++){
                     player = "a3";
                     document.getElementById('a4').style.backgroundColor = "transparent";
                     document.getElementById('a3').style.backgroundColor = "#555";
-                    if(a3 === true){
-                        a3 = false;
+                    if(a3 === 1){
+                        a3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1917,8 +2185,8 @@ for(var y = 1; y < 11; y++){
                     player = "a2";
                     document.getElementById('a3').style.backgroundColor = "transparent";
                     document.getElementById('a2').style.backgroundColor = "#555";
-                    if(a2 === true){
-                        a2 = false;
+                    if(a2 === 1){
+                        a2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1928,8 +2196,8 @@ for(var y = 1; y < 11; y++){
                     player = "a1";
                     document.getElementById('a2').style.backgroundColor = "transparent";
                     document.getElementById('a1').style.backgroundColor = "#555";
-                    if(a1 === true){
-                        a1 = false;
+                    if(a1 === 1){
+                        a1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1939,8 +2207,8 @@ for(var y = 1; y < 11; y++){
                     player = "b7";
                     document.getElementById('b8').style.backgroundColor = "transparent";
                     document.getElementById('b7').style.backgroundColor = "#555";
-                    if(b7 === true){
-                        b7 = false;
+                    if(b7 === 1){
+                        b7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1950,8 +2218,8 @@ for(var y = 1; y < 11; y++){
                     player = "b6";
                     document.getElementById('b7').style.backgroundColor = "transparent";
                     document.getElementById('b6').style.backgroundColor = "#555";
-                    if(b6 === true){
-                        b6 = false;
+                    if(b6 === 1){
+                        b6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1961,8 +2229,8 @@ for(var y = 1; y < 11; y++){
                     player = "b5";
                     document.getElementById('b6').style.backgroundColor = "transparent";
                     document.getElementById('b5').style.backgroundColor = "#555";
-                    if(b5 === true){
-                        b5 = false;
+                    if(b5 === 1){
+                        b5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1972,8 +2240,8 @@ for(var y = 1; y < 11; y++){
                     player = "b4";
                     document.getElementById('b5').style.backgroundColor = "transparent";
                     document.getElementById('b4').style.backgroundColor = "#555";
-                    if(b4 === true){
-                        b4 = false;
+                    if(b4 === 1){
+                        b4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1983,8 +2251,8 @@ for(var y = 1; y < 11; y++){
                     player = "b3";
                     document.getElementById('b4').style.backgroundColor = "transparent";
                     document.getElementById('b3').style.backgroundColor = "#555";
-                    if(b3 === true){
-                        b3 = false;
+                    if(b3 === 1){
+                        b3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -1994,8 +2262,8 @@ for(var y = 1; y < 11; y++){
                     player = "b2";
                     document.getElementById('b3').style.backgroundColor = "transparent";
                     document.getElementById('b2').style.backgroundColor = "#555";
-                    if(b2 === true){
-                        b2 = false;
+                    if(b2 === 1){
+                        b2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2005,8 +2273,8 @@ for(var y = 1; y < 11; y++){
                     player = "b1";
                     document.getElementById('b2').style.backgroundColor = "transparent";
                     document.getElementById('b1').style.backgroundColor = "#555";
-                    if(b1 === true){
-                        b1 = false;
+                    if(b1 === 1){
+                        b1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2016,8 +2284,8 @@ for(var y = 1; y < 11; y++){
                     player = "c7";
                     document.getElementById('c8').style.backgroundColor = "transparent";
                     document.getElementById('c7').style.backgroundColor = "#555";
-                    if(c7 === true){
-                        c7 = false;
+                    if(c7 === 1){
+                        c7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2027,8 +2295,8 @@ for(var y = 1; y < 11; y++){
                     player = "c6";
                     document.getElementById('c7').style.backgroundColor = "transparent";
                     document.getElementById('c6').style.backgroundColor = "#555";
-                    if(c6 === true){
-                        c6 = false;
+                    if(c6 === 1){
+                        c6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2038,8 +2306,8 @@ for(var y = 1; y < 11; y++){
                     player = "c5";
                     document.getElementById('c6').style.backgroundColor = "transparent";
                     document.getElementById('c5').style.backgroundColor = "#555";
-                    if(c5 === true){
-                        c5 = false;
+                    if(c5 === 1){
+                        c5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2049,8 +2317,8 @@ for(var y = 1; y < 11; y++){
                     player = "c4";
                     document.getElementById('c5').style.backgroundColor = "transparent";
                     document.getElementById('c4').style.backgroundColor = "#555";
-                    if(c4 === true){
-                        c4 = false;
+                    if(c4 === 1){
+                        c4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2060,8 +2328,8 @@ for(var y = 1; y < 11; y++){
                     player = "c3";
                     document.getElementById('c4').style.backgroundColor = "transparent";
                     document.getElementById('c3').style.backgroundColor = "#555";
-                    if(c3 === true){
-                        c3 = false;
+                    if(c3 === 1){
+                        c3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2071,8 +2339,8 @@ for(var y = 1; y < 11; y++){
                     player = "c2";
                     document.getElementById('c3').style.backgroundColor = "transparent";
                     document.getElementById('c2').style.backgroundColor = "#555";
-                    if(c2 === true){
-                        c2 = false;
+                    if(c2 === 1){
+                        c2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2082,8 +2350,8 @@ for(var y = 1; y < 11; y++){
                     player = "c1";
                     document.getElementById('c2').style.backgroundColor = "transparent";
                     document.getElementById('c1').style.backgroundColor = "#555";
-                    if(c1 === true){
-                        c1 = false;
+                    if(c1 === 1){
+                        c1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2093,8 +2361,8 @@ for(var y = 1; y < 11; y++){
                     player = "d7";
                     document.getElementById('d8').style.backgroundColor = "transparent";
                     document.getElementById('d7').style.backgroundColor = "#555";
-                    if(d7 === true){
-                        d7 = false;
+                    if(d7 === 1){
+                        d7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2104,8 +2372,8 @@ for(var y = 1; y < 11; y++){
                     player = "d6";
                     document.getElementById('d7').style.backgroundColor = "transparent";
                     document.getElementById('d6').style.backgroundColor = "#555";
-                    if(d6 === true){
-                        d6 = false;
+                    if(d6 === 1){
+                        d6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2115,8 +2383,8 @@ for(var y = 1; y < 11; y++){
                     player = "d5";
                     document.getElementById('d6').style.backgroundColor = "transparent";
                     document.getElementById('d5').style.backgroundColor = "#555";
-                    if(d5 === true){
-                        d5 = false;
+                    if(d5 === 1){
+                        d5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2126,8 +2394,8 @@ for(var y = 1; y < 11; y++){
                     player = "d4";
                     document.getElementById('d5').style.backgroundColor = "transparent";
                     document.getElementById('d4').style.backgroundColor = "#555";
-                    if(d4 === true){
-                        d4 = false;
+                    if(d4 === 1){
+                        d4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2137,8 +2405,8 @@ for(var y = 1; y < 11; y++){
                     player = "d3";
                     document.getElementById('d4').style.backgroundColor = "transparent";
                     document.getElementById('d3').style.backgroundColor = "#555";
-                    if(d3 === true){
-                        d3 = false;
+                    if(d3 === 1){
+                        d3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2148,8 +2416,8 @@ for(var y = 1; y < 11; y++){
                     player = "d2";
                     document.getElementById('d3').style.backgroundColor = "transparent";
                     document.getElementById('d2').style.backgroundColor = "#555";
-                    if(d2 === true){
-                        d2 = false;
+                    if(d2 === 1){
+                        d2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2159,8 +2427,8 @@ for(var y = 1; y < 11; y++){
                     player = "d1";
                     document.getElementById('d2').style.backgroundColor = "transparent";
                     document.getElementById('d1').style.backgroundColor = "#555";
-                    if(d1 === true){
-                        d1 = false;
+                    if(d1 === 1){
+                        d1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2170,8 +2438,8 @@ for(var y = 1; y < 11; y++){
                     player = "e7";
                     document.getElementById('e8').style.backgroundColor = "transparent";
                     document.getElementById('e7').style.backgroundColor = "#555";
-                    if(e7 === true){
-                        e7 = false;
+                    if(e7 === 1){
+                        e7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2181,8 +2449,8 @@ for(var y = 1; y < 11; y++){
                     player = "e6";
                     document.getElementById('e7').style.backgroundColor = "transparent";
                     document.getElementById('e6').style.backgroundColor = "#555";
-                    if(e6 === true){
-                        e6 = false;
+                    if(e6 === 1){
+                        e6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2192,8 +2460,8 @@ for(var y = 1; y < 11; y++){
                     player = "e5";
                     document.getElementById('e6').style.backgroundColor = "transparent";
                     document.getElementById('e5').style.backgroundColor = "#555";
-                    if(e5 === true){
-                        e5 = false;
+                    if(e5 === 1){
+                        e5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2203,8 +2471,8 @@ for(var y = 1; y < 11; y++){
                     player = "e4";
                     document.getElementById('e5').style.backgroundColor = "transparent";
                     document.getElementById('e4').style.backgroundColor = "#555";
-                    if(e4 === true){
-                        e4 = false;
+                    if(e4 === 1){
+                        e4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2214,8 +2482,8 @@ for(var y = 1; y < 11; y++){
                     player = "e3";
                     document.getElementById('e4').style.backgroundColor = "transparent";
                     document.getElementById('e3').style.backgroundColor = "#555";
-                    if(e3 === true){
-                        e3 = false;
+                    if(e3 === 1){
+                        e3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2225,8 +2493,8 @@ for(var y = 1; y < 11; y++){
                     player = "e2";
                     document.getElementById('e3').style.backgroundColor = "transparent";
                     document.getElementById('e2').style.backgroundColor = "#555";
-                    if(e2 === true){
-                        e2 = false;
+                    if(e2 === 1){
+                        e2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2236,8 +2504,8 @@ for(var y = 1; y < 11; y++){
                     player = "e1";
                     document.getElementById('e2').style.backgroundColor = "transparent";
                     document.getElementById('e1').style.backgroundColor = "#555";
-                    if(e1 === true){
-                        e1 = false;
+                    if(e1 === 1){
+                        e1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2247,8 +2515,8 @@ for(var y = 1; y < 11; y++){
                     player = "f7";
                     document.getElementById('f8').style.backgroundColor = "transparent";
                     document.getElementById('f7').style.backgroundColor = "#555";
-                    if(f7 === true){
-                        f7 = false;
+                    if(f7 === 1){
+                        f7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2258,8 +2526,8 @@ for(var y = 1; y < 11; y++){
                     player = "f6";
                     document.getElementById('f7').style.backgroundColor = "transparent";
                     document.getElementById('f6').style.backgroundColor = "#555";
-                    if(f6 === true){
-                        f6 = false;
+                    if(f6 === 1){
+                        f6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2269,8 +2537,8 @@ for(var y = 1; y < 11; y++){
                     player = "f5";
                     document.getElementById('f6').style.backgroundColor = "transparent";
                     document.getElementById('f5').style.backgroundColor = "#555";
-                    if(f5 === true){
-                        f5 = false;
+                    if(f5 === 1){
+                        f5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2280,8 +2548,8 @@ for(var y = 1; y < 11; y++){
                     player = "f4";
                     document.getElementById('f5').style.backgroundColor = "transparent";
                     document.getElementById('f4').style.backgroundColor = "#555";
-                    if(f4 === true){
-                        f4 = false;
+                    if(f4 === 1){
+                        f4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2291,8 +2559,8 @@ for(var y = 1; y < 11; y++){
                     player = "f3";
                     document.getElementById('f4').style.backgroundColor = "transparent";
                     document.getElementById('f3').style.backgroundColor = "#555";
-                    if(f3 === true){
-                        f3 = false;
+                    if(f3 === 1){
+                        f3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2302,8 +2570,8 @@ for(var y = 1; y < 11; y++){
                     player = "f2";
                     document.getElementById('f3').style.backgroundColor = "transparent";
                     document.getElementById('f2').style.backgroundColor = "#555";
-                    if(f2 === true){
-                        f2 = false;
+                    if(f2 === 1){
+                        f2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2313,8 +2581,8 @@ for(var y = 1; y < 11; y++){
                     player = "f1";
                     document.getElementById('f2').style.backgroundColor = "transparent";
                     document.getElementById('f1').style.backgroundColor = "#555";
-                    if(f1 === true){
-                        f1 = false;
+                    if(f1 === 1){
+                        f1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2324,8 +2592,8 @@ for(var y = 1; y < 11; y++){
                     player = "g7";
                     document.getElementById('g8').style.backgroundColor = "transparent";
                     document.getElementById('g7').style.backgroundColor = "#555";
-                    if(g7 === true){
-                        g7 = false;
+                    if(g7 === 1){
+                        g7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2335,8 +2603,8 @@ for(var y = 1; y < 11; y++){
                     player = "g6";
                     document.getElementById('g7').style.backgroundColor = "transparent";
                     document.getElementById('g6').style.backgroundColor = "#555";
-                    if(g6 === true){
-                        g6 = false;
+                    if(g6 === 1){
+                        g6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2346,8 +2614,8 @@ for(var y = 1; y < 11; y++){
                     player = "g5";
                     document.getElementById('g6').style.backgroundColor = "transparent";
                     document.getElementById('g5').style.backgroundColor = "#555";
-                    if(g5 === true){
-                        g5 = false;
+                    if(g5 === 1){
+                        g5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2357,8 +2625,8 @@ for(var y = 1; y < 11; y++){
                     player = "g4";
                     document.getElementById('g5').style.backgroundColor = "transparent";
                     document.getElementById('g4').style.backgroundColor = "#555";
-                    if(g4 === true){
-                        g4 = false;
+                    if(g4 === 1){
+                        g4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2368,8 +2636,8 @@ for(var y = 1; y < 11; y++){
                     player = "g3";
                     document.getElementById('g4').style.backgroundColor = "transparent";
                     document.getElementById('g3').style.backgroundColor = "#555";
-                    if(g3 === true){
-                        g3 = false;
+                    if(g3 === 1){
+                        g3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2379,8 +2647,8 @@ for(var y = 1; y < 11; y++){
                     player = "g2";
                     document.getElementById('g3').style.backgroundColor = "transparent";
                     document.getElementById('g2').style.backgroundColor = "#555";
-                    if(g2 === true){
-                        g2 = false;
+                    if(g2 === 1){
+                        g2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2390,8 +2658,8 @@ for(var y = 1; y < 11; y++){
                     player = "g1";
                     document.getElementById('g2').style.backgroundColor = "transparent";
                     document.getElementById('g1').style.backgroundColor = "#555";
-                    if(g1 === true){
-                        g1 = false;
+                    if(g1 === 1){
+                        g1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2401,8 +2669,8 @@ for(var y = 1; y < 11; y++){
                     player = "h7";
                     document.getElementById('h8').style.backgroundColor = "transparent";
                     document.getElementById('h7').style.backgroundColor = "#555";
-                    if(h7 === true){
-                        h7 = false;
+                    if(h7 === 1){
+                        h7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2412,8 +2680,8 @@ for(var y = 1; y < 11; y++){
                     player = "h6";
                     document.getElementById('h7').style.backgroundColor = "transparent";
                     document.getElementById('h6').style.backgroundColor = "#555";
-                    if(h6 === true){
-                        h6 = false;
+                    if(h6 === 1){
+                        h6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2423,8 +2691,8 @@ for(var y = 1; y < 11; y++){
                     player = "h5";
                     document.getElementById('h6').style.backgroundColor = "transparent";
                     document.getElementById('h5').style.backgroundColor = "#555";
-                    if(h5 === true){
-                        h5 = false;
+                    if(h5 === 1){
+                        h5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2434,8 +2702,8 @@ for(var y = 1; y < 11; y++){
                     player = "h4";
                     document.getElementById('h5').style.backgroundColor = "transparent";
                     document.getElementById('h4').style.backgroundColor = "#555";
-                    if(h4 === true){
-                        h4 = false;
+                    if(h4 === 1){
+                        h4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2445,8 +2713,8 @@ for(var y = 1; y < 11; y++){
                     player = "h3";
                     document.getElementById('h4').style.backgroundColor = "transparent";
                     document.getElementById('h3').style.backgroundColor = "#555";
-                    if(h3 === true){
-                        h3 = false;
+                    if(h3 === 1){
+                        h3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2456,8 +2724,8 @@ for(var y = 1; y < 11; y++){
                     player = "h2";
                     document.getElementById('h3').style.backgroundColor = "transparent";
                     document.getElementById('h2').style.backgroundColor = "#555";
-                    if(h2 === true){
-                        h2 = false;
+                    if(h2 === 1){
+                        h2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2467,8 +2735,8 @@ for(var y = 1; y < 11; y++){
                     player = "h1";
                     document.getElementById('h2').style.backgroundColor = "transparent";
                     document.getElementById('h1').style.backgroundColor = "#555";
-                    if(h1 === true){
-                        h1 = false;
+                    if(h1 === 1){
+                        h1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2483,8 +2751,8 @@ for(var y = 1; y < 11; y++){
                     player = "b1";
                     document.getElementById('a1').style.backgroundColor = "transparent";
                     document.getElementById('b1').style.backgroundColor = "#555";
-                    if(b1 === true){
-                        b1 = false;
+                    if(b1 === 1){
+                        b1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2494,8 +2762,8 @@ for(var y = 1; y < 11; y++){
                     player = "b2";
                     document.getElementById('a2').style.backgroundColor = "transparent";
                     document.getElementById('b2').style.backgroundColor = "#555";
-                    if(b2 === true){
-                        b2 = false;
+                    if(b2 === 1){
+                        b2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2505,8 +2773,8 @@ for(var y = 1; y < 11; y++){
                     player = "b3";
                     document.getElementById('a3').style.backgroundColor = "transparent";
                     document.getElementById('b3').style.backgroundColor = "#555";
-                    if(b3 === true){
-                        b3 = false;
+                    if(b3 === 1){
+                        b3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2516,8 +2784,8 @@ for(var y = 1; y < 11; y++){
                     player = "b4";
                     document.getElementById('a4').style.backgroundColor = "transparent";
                     document.getElementById('b4').style.backgroundColor = "#555";
-                    if(b4 === true){
-                        b4 = false;
+                    if(b4 === 1){
+                        b4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2527,8 +2795,8 @@ for(var y = 1; y < 11; y++){
                     player = "b5";
                     document.getElementById('a5').style.backgroundColor = "transparent";
                     document.getElementById('b5').style.backgroundColor = "#555";
-                    if(b5 === true){
-                        b5 = false;
+                    if(b5 === 1){
+                        b5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2538,8 +2806,8 @@ for(var y = 1; y < 11; y++){
                     player = "b6";
                     document.getElementById('a6').style.backgroundColor = "transparent";
                     document.getElementById('b6').style.backgroundColor = "#555";
-                    if(b6 === true){
-                        b6 = false;
+                    if(b6 === 1){
+                        b6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2549,8 +2817,8 @@ for(var y = 1; y < 11; y++){
                     player = "b7";
                     document.getElementById('a7').style.backgroundColor = "transparent";
                     document.getElementById('b7').style.backgroundColor = "#555";
-                    if(b7 === true){
-                        b7 = false;
+                    if(b7 === 1){
+                        b7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2560,8 +2828,8 @@ for(var y = 1; y < 11; y++){
                     player = "b8";
                     document.getElementById('a8').style.backgroundColor = "transparent";
                     document.getElementById('b8').style.backgroundColor = "#555";
-                    if(b8 === true){
-                        b8 = false;
+                    if(b8 === 1){
+                        b8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2571,8 +2839,8 @@ for(var y = 1; y < 11; y++){
                     player = "c1";
                     document.getElementById('b1').style.backgroundColor = "transparent";
                     document.getElementById('c1').style.backgroundColor = "#555";
-                    if(c1 === true){
-                        c1 = false;
+                    if(c1 === 1){
+                        c1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2582,8 +2850,8 @@ for(var y = 1; y < 11; y++){
                     player = "c2";
                     document.getElementById('b2').style.backgroundColor = "transparent";
                     document.getElementById('c2').style.backgroundColor = "#555";
-                    if(c2 === true){
-                        c2 = false;
+                    if(c2 === 1){
+                        c2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2593,8 +2861,8 @@ for(var y = 1; y < 11; y++){
                     player = "c3";
                     document.getElementById('b3').style.backgroundColor = "transparent";
                     document.getElementById('c3').style.backgroundColor = "#555";
-                    if(c3 === true){
-                        c3 = false;
+                    if(c3 === 1){
+                        c3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2604,8 +2872,8 @@ for(var y = 1; y < 11; y++){
                     player = "c4";
                     document.getElementById('b4').style.backgroundColor = "transparent";
                     document.getElementById('c4').style.backgroundColor = "#555";
-                    if(c4 === true){
-                        c4 = false;
+                    if(c4 === 1){
+                        c4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2615,8 +2883,8 @@ for(var y = 1; y < 11; y++){
                     player = "c5";
                     document.getElementById('b5').style.backgroundColor = "transparent";
                     document.getElementById('c5').style.backgroundColor = "#555";
-                    if(c5 === true){
-                        c5 = false;
+                    if(c5 === 1){
+                        c5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2626,8 +2894,8 @@ for(var y = 1; y < 11; y++){
                     player = "c6";
                     document.getElementById('b6').style.backgroundColor = "transparent";
                     document.getElementById('c6').style.backgroundColor = "#555";
-                    if(c6 === true){
-                        c6 = false;
+                    if(c6 === 1){
+                        c6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2637,8 +2905,8 @@ for(var y = 1; y < 11; y++){
                     player = "c7";
                     document.getElementById('b7').style.backgroundColor = "transparent";
                     document.getElementById('c7').style.backgroundColor = "#555";
-                    if(c7 === true){
-                        c7 = false;
+                    if(c7 === 1){
+                        c7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2648,8 +2916,8 @@ for(var y = 1; y < 11; y++){
                     player = "c8";
                     document.getElementById('b8').style.backgroundColor = "transparent";
                     document.getElementById('c8').style.backgroundColor = "#555";
-                    if(c8 === true){
-                        c8 = false;
+                    if(c8 === 1){
+                        c8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2659,8 +2927,8 @@ for(var y = 1; y < 11; y++){
                     player = "d1";
                     document.getElementById('c1').style.backgroundColor = "transparent";
                     document.getElementById('d1').style.backgroundColor = "#555";
-                    if(d1 === true){
-                        d1 = false;
+                    if(d1 === 1){
+                        d1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2670,8 +2938,8 @@ for(var y = 1; y < 11; y++){
                     player = "d2";
                     document.getElementById('c2').style.backgroundColor = "transparent";
                     document.getElementById('d2').style.backgroundColor = "#555";
-                    if(d2 === true){
-                        d2 = false;
+                    if(d2 === 1){
+                        d2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2681,8 +2949,8 @@ for(var y = 1; y < 11; y++){
                     player = "d3";
                     document.getElementById('c3').style.backgroundColor = "transparent";
                     document.getElementById('d3').style.backgroundColor = "#555";
-                    if(d3 === true){
-                        d3 = false;
+                    if(d3 === 1){
+                        d3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2692,8 +2960,8 @@ for(var y = 1; y < 11; y++){
                     player = "d4";
                     document.getElementById('c4').style.backgroundColor = "transparent";
                     document.getElementById('d4').style.backgroundColor = "#555";
-                    if(d4 === true){
-                        d4 = false;
+                    if(d4 === 1){
+                        d4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2703,8 +2971,8 @@ for(var y = 1; y < 11; y++){
                     player = "d5";
                     document.getElementById('c5').style.backgroundColor = "transparent";
                     document.getElementById('d5').style.backgroundColor = "#555";
-                    if(d5 === true){
-                        d5 = false;
+                    if(d5 === 1){
+                        d5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2714,8 +2982,8 @@ for(var y = 1; y < 11; y++){
                     player = "d6";
                     document.getElementById('c6').style.backgroundColor = "transparent";
                     document.getElementById('d6').style.backgroundColor = "#555";
-                    if(d6 === true){
-                        d6 = false;
+                    if(d6 === 1){
+                        d6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2725,8 +2993,8 @@ for(var y = 1; y < 11; y++){
                     player = "d7";
                     document.getElementById('c7').style.backgroundColor = "transparent";
                     document.getElementById('d7').style.backgroundColor = "#555";
-                    if(d7 === true){
-                        d7 = false;
+                    if(d7 === 1){
+                        d7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2736,8 +3004,8 @@ for(var y = 1; y < 11; y++){
                     player = "d8";
                     document.getElementById('c8').style.backgroundColor = "transparent";
                     document.getElementById('d8').style.backgroundColor = "#555";
-                    if(d8 === true){
-                        d8 = false;
+                    if(d8 === 1){
+                        d8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2747,8 +3015,8 @@ for(var y = 1; y < 11; y++){
                     player = "e1";
                     document.getElementById('d1').style.backgroundColor = "transparent";
                     document.getElementById('e1').style.backgroundColor = "#555";
-                    if(e1 === true){
-                        e1 = false;
+                    if(e1 === 1){
+                        e1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2758,8 +3026,8 @@ for(var y = 1; y < 11; y++){
                     player = "e2";
                     document.getElementById('d2').style.backgroundColor = "transparent";
                     document.getElementById('e2').style.backgroundColor = "#555";
-                    if(e2 === true){
-                        e2 = false;
+                    if(e2 === 1){
+                        e2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2769,8 +3037,8 @@ for(var y = 1; y < 11; y++){
                     player = "e3";
                     document.getElementById('d3').style.backgroundColor = "transparent";
                     document.getElementById('e3').style.backgroundColor = "#555";
-                    if(e3 === true){
-                        e3 = false;
+                    if(e3 === 1){
+                        e3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2780,8 +3048,8 @@ for(var y = 1; y < 11; y++){
                     player = "e4";
                     document.getElementById('d4').style.backgroundColor = "transparent";
                     document.getElementById('e4').style.backgroundColor = "#555";
-                    if(e4 === true){
-                        e4 = false;
+                    if(e4 === 1){
+                        e4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2791,8 +3059,8 @@ for(var y = 1; y < 11; y++){
                     player = "e5";
                     document.getElementById('d5').style.backgroundColor = "transparent";
                     document.getElementById('e5').style.backgroundColor = "#555";
-                    if(e5 === true){
-                        e5 = false;
+                    if(e5 === 1){
+                        e5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2802,8 +3070,8 @@ for(var y = 1; y < 11; y++){
                     player = "e6";
                     document.getElementById('d6').style.backgroundColor = "transparent";
                     document.getElementById('e6').style.backgroundColor = "#555";
-                    if(e6 === true){
-                        e6 = false;
+                    if(e6 === 1){
+                        e6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2813,8 +3081,8 @@ for(var y = 1; y < 11; y++){
                     player = "e7";
                     document.getElementById('d7').style.backgroundColor = "transparent";
                     document.getElementById('e7').style.backgroundColor = "#555";
-                    if(e7 === true){
-                        e7 = false;
+                    if(e7 === 1){
+                        e7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2824,8 +3092,8 @@ for(var y = 1; y < 11; y++){
                     player = "e8";
                     document.getElementById('d8').style.backgroundColor = "transparent";
                     document.getElementById('e8').style.backgroundColor = "#555";
-                    if(e8 === true){
-                        e8 = false;
+                    if(e8 === 1){
+                        e8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2835,8 +3103,8 @@ for(var y = 1; y < 11; y++){
                     player = "f1";
                     document.getElementById('e1').style.backgroundColor = "transparent";
                     document.getElementById('f1').style.backgroundColor = "#555";
-                    if(f1 === true){
-                        f1 = false;
+                    if(f1 === 1){
+                        f1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2846,8 +3114,8 @@ for(var y = 1; y < 11; y++){
                     player = "f2";
                     document.getElementById('e2').style.backgroundColor = "transparent";
                     document.getElementById('f2').style.backgroundColor = "#555";
-                    if(f2 === true){
-                        f2 = false;
+                    if(f2 === 1){
+                        f2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2857,8 +3125,8 @@ for(var y = 1; y < 11; y++){
                     player = "f3";
                     document.getElementById('e3').style.backgroundColor = "transparent";
                     document.getElementById('f3').style.backgroundColor = "#555";
-                    if(f3 === true){
-                        f3 = false;
+                    if(f3 === 1){
+                        f3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2868,8 +3136,8 @@ for(var y = 1; y < 11; y++){
                     player = "f4";
                     document.getElementById('e4').style.backgroundColor = "transparent";
                     document.getElementById('f4').style.backgroundColor = "#555";
-                    if(f4 === true){
-                        f4 = false;
+                    if(f4 === 1){
+                        f4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2879,8 +3147,8 @@ for(var y = 1; y < 11; y++){
                     player = "f5";
                     document.getElementById('e5').style.backgroundColor = "transparent";
                     document.getElementById('f5').style.backgroundColor = "#555";
-                    if(f5 === true){
-                        f5 = false;
+                    if(f5 === 1){
+                        f5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2890,8 +3158,8 @@ for(var y = 1; y < 11; y++){
                     player = "f6";
                     document.getElementById('e6').style.backgroundColor = "transparent";
                     document.getElementById('f6').style.backgroundColor = "#555";
-                    if(f6 === true){
-                        f6 = false;
+                    if(f6 === 1){
+                        f6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2901,8 +3169,8 @@ for(var y = 1; y < 11; y++){
                     player = "f7";
                     document.getElementById('e7').style.backgroundColor = "transparent";
                     document.getElementById('f7').style.backgroundColor = "#555";
-                    if(f7 === true){
-                        f7 = false;
+                    if(f7 === 1){
+                        f7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2912,8 +3180,8 @@ for(var y = 1; y < 11; y++){
                     player = "f8";
                     document.getElementById('e8').style.backgroundColor = "transparent";
                     document.getElementById('f8').style.backgroundColor = "#555";
-                    if(f8 === true){
-                        f8 = false;
+                    if(f8 === 1){
+                        f8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2923,8 +3191,8 @@ for(var y = 1; y < 11; y++){
                     player = "g1";
                     document.getElementById('f1').style.backgroundColor = "transparent";
                     document.getElementById('g1').style.backgroundColor = "#555";
-                    if(g1 === true){
-                        g1 = false;
+                    if(g1 === 1){
+                        g1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2934,8 +3202,8 @@ for(var y = 1; y < 11; y++){
                     player = "g2";
                     document.getElementById('f2').style.backgroundColor = "transparent";
                     document.getElementById('g2').style.backgroundColor = "#555";
-                    if(g2 === true){
-                        g2 = false;
+                    if(g2 === 1){
+                        g2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2945,8 +3213,8 @@ for(var y = 1; y < 11; y++){
                     player = "g3";
                     document.getElementById('f3').style.backgroundColor = "transparent";
                     document.getElementById('g3').style.backgroundColor = "#555";
-                    if(g3 === true){
-                        g3 = false;
+                    if(g3 === 1){
+                        g3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2956,8 +3224,8 @@ for(var y = 1; y < 11; y++){
                     player = "g4";
                     document.getElementById('f4').style.backgroundColor = "transparent";
                     document.getElementById('g4').style.backgroundColor = "#555";
-                    if(g4 === true){
-                        g4 = false;
+                    if(g4 === 1){
+                        g4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2967,8 +3235,8 @@ for(var y = 1; y < 11; y++){
                     player = "g5";
                     document.getElementById('f5').style.backgroundColor = "transparent";
                     document.getElementById('g5').style.backgroundColor = "#555";
-                    if(g5 === true){
-                        g5 = false;
+                    if(g5 === 1){
+                        g5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2978,8 +3246,8 @@ for(var y = 1; y < 11; y++){
                     player = "g6";
                     document.getElementById('f6').style.backgroundColor = "transparent";
                     document.getElementById('g6').style.backgroundColor = "#555";
-                    if(g6 === true){
-                        g6 = false;
+                    if(g6 === 1){
+                        g6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -2989,8 +3257,8 @@ for(var y = 1; y < 11; y++){
                     player = "g7";
                     document.getElementById('f7').style.backgroundColor = "transparent";
                     document.getElementById('g7').style.backgroundColor = "#555";
-                    if(g7 === true){
-                        g7 = false;
+                    if(g7 === 1){
+                        g7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3000,8 +3268,8 @@ for(var y = 1; y < 11; y++){
                     player = "g8";
                     document.getElementById('f8').style.backgroundColor = "transparent";
                     document.getElementById('g8').style.backgroundColor = "#555";
-                    if(g8 === true){
-                        g8 = false;
+                    if(g8 === 1){
+                        g8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3011,8 +3279,8 @@ for(var y = 1; y < 11; y++){
                     player = "h1";
                     document.getElementById('g1').style.backgroundColor = "transparent";
                     document.getElementById('h1').style.backgroundColor = "#555";
-                    if(h1 === true){
-                        h1 = false;
+                    if(h1 === 1){
+                        h1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3022,8 +3290,8 @@ for(var y = 1; y < 11; y++){
                     player = "h2";
                     document.getElementById('g2').style.backgroundColor = "transparent";
                     document.getElementById('h2').style.backgroundColor = "#555";
-                    if(h2 === true){
-                        h2 = false;
+                    if(h2 === 1){
+                        h2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3033,8 +3301,8 @@ for(var y = 1; y < 11; y++){
                     player = "h3";
                     document.getElementById('g3').style.backgroundColor = "transparent";
                     document.getElementById('h3').style.backgroundColor = "#555";
-                    if(h3 === true){
-                        h3 = false;
+                    if(h3 === 1){
+                        h3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3044,8 +3312,8 @@ for(var y = 1; y < 11; y++){
                     player = "h4";
                     document.getElementById('g4').style.backgroundColor = "transparent";
                     document.getElementById('h4').style.backgroundColor = "#555";
-                    if(h4 === true){
-                        h4 = false;
+                    if(h4 === 1){
+                        h4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3055,8 +3323,8 @@ for(var y = 1; y < 11; y++){
                     player = "h5";
                     document.getElementById('g5').style.backgroundColor = "transparent";
                     document.getElementById('h5').style.backgroundColor = "#555";
-                    if(h5 === true){
-                        h5 = false;
+                    if(h5 === 1){
+                        h5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3066,8 +3334,8 @@ for(var y = 1; y < 11; y++){
                     player = "h6";
                     document.getElementById('g6').style.backgroundColor = "transparent";
                     document.getElementById('h6').style.backgroundColor = "#555";
-                    if(h6 === true){
-                        h6 = false;
+                    if(h6 === 1){
+                        h6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3077,8 +3345,8 @@ for(var y = 1; y < 11; y++){
                     player = "h7";
                     document.getElementById('g7').style.backgroundColor = "transparent";
                     document.getElementById('h7').style.backgroundColor = "#555";
-                    if(h7 === true){
-                        h7 = false;
+                    if(h7 === 1){
+                        h7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3088,8 +3356,8 @@ for(var y = 1; y < 11; y++){
                     player = "h8";
                     document.getElementById('g8').style.backgroundColor = "transparent";
                     document.getElementById('h8').style.backgroundColor = "#555";
-                    if(h8 === true){
-                        h8 = false;
+                    if(h8 === 1){
+                        h8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3103,8 +3371,8 @@ for(var y = 1; y < 11; y++){
                     player = "a1";
                     document.getElementById('b1').style.backgroundColor = "transparent";
                     document.getElementById('a1').style.backgroundColor = "#555";
-                    if(a1 === true){
-                        a1 = false;
+                    if(a1 === 1){
+                        a1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3114,8 +3382,8 @@ for(var y = 1; y < 11; y++){
                     player = "a2";
                     document.getElementById('b2').style.backgroundColor = "transparent";
                     document.getElementById('a2').style.backgroundColor = "#555";
-                    if(a2 === true){
-                        a2 = false;
+                    if(a2 === 1){
+                        a2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3125,8 +3393,8 @@ for(var y = 1; y < 11; y++){
                     player = "a3";
                     document.getElementById('b3').style.backgroundColor = "transparent";
                     document.getElementById('a3').style.backgroundColor = "#555";
-                    if(a3 === true){
-                        a3 = false;
+                    if(a3 === 1){
+                        a3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3136,8 +3404,8 @@ for(var y = 1; y < 11; y++){
                     player = "a4";
                     document.getElementById('b4').style.backgroundColor = "transparent";
                     document.getElementById('a4').style.backgroundColor = "#555";
-                    if(a4 === true){
-                        a4 = false;
+                    if(a4 === 1){
+                        a4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3147,8 +3415,8 @@ for(var y = 1; y < 11; y++){
                     player = "a5";
                     document.getElementById('b5').style.backgroundColor = "transparent";
                     document.getElementById('a5').style.backgroundColor = "#555";
-                    if(a5 === true){
-                        a5 = false;
+                    if(a5 === 1){
+                        a5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3158,8 +3426,8 @@ for(var y = 1; y < 11; y++){
                     player = "a6";
                     document.getElementById('b6').style.backgroundColor = "transparent";
                     document.getElementById('a6').style.backgroundColor = "#555";
-                    if(a6 === true){
-                        a6 = false;
+                    if(a6 === 1){
+                        a6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3169,8 +3437,8 @@ for(var y = 1; y < 11; y++){
                     player = "a7";
                     document.getElementById('b7').style.backgroundColor = "transparent";
                     document.getElementById('a7').style.backgroundColor = "#555";
-                    if(a7 === true){
-                        a7 = false;
+                    if(a7 === 1){
+                        a7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3180,8 +3448,8 @@ for(var y = 1; y < 11; y++){
                     player = "a8";
                     document.getElementById('b8').style.backgroundColor = "transparent";
                     document.getElementById('a8').style.backgroundColor = "#555";
-                    if(a8 === true){
-                        a8 = false;
+                    if(a8 === 1){
+                        a8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3191,8 +3459,8 @@ for(var y = 1; y < 11; y++){
                     player = "b1";
                     document.getElementById('c1').style.backgroundColor = "transparent";
                     document.getElementById('b1').style.backgroundColor = "#555";
-                    if(b1 === true){
-                        b1 = false;
+                    if(b1 === 1){
+                        b1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3202,8 +3470,8 @@ for(var y = 1; y < 11; y++){
                     player = "b2";
                     document.getElementById('c2').style.backgroundColor = "transparent";
                     document.getElementById('b2').style.backgroundColor = "#555";
-                    if(b2 === true){
-                        b2 = false;
+                    if(b2 === 1){
+                        b2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3213,8 +3481,8 @@ for(var y = 1; y < 11; y++){
                     player = "b3";
                     document.getElementById('c3').style.backgroundColor = "transparent";
                     document.getElementById('b3').style.backgroundColor = "#555";
-                    if(b3 === true){
-                        b3 = false;
+                    if(b3 === 1){
+                        b3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3224,8 +3492,8 @@ for(var y = 1; y < 11; y++){
                     player = "b4";
                     document.getElementById('c4').style.backgroundColor = "transparent";
                     document.getElementById('b4').style.backgroundColor = "#555";
-                    if(b4 === true){
-                        b4 = false;
+                    if(b4 === 1){
+                        b4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3235,8 +3503,8 @@ for(var y = 1; y < 11; y++){
                     player = "b5";
                     document.getElementById('c5').style.backgroundColor = "transparent";
                     document.getElementById('b5').style.backgroundColor = "#555";
-                    if(b5 === true){
-                        b5 = false;
+                    if(b5 === 1){
+                        b5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3246,8 +3514,8 @@ for(var y = 1; y < 11; y++){
                     player = "b6";
                     document.getElementById('c6').style.backgroundColor = "transparent";
                     document.getElementById('b6').style.backgroundColor = "#555";
-                    if(b6 === true){
-                        b6 = false;
+                    if(b6 === 1){
+                        b6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3257,8 +3525,8 @@ for(var y = 1; y < 11; y++){
                     player = "b7";
                     document.getElementById('c7').style.backgroundColor = "transparent";
                     document.getElementById('b7').style.backgroundColor = "#555";
-                    if(b7 === true){
-                        b7 = false;
+                    if(b7 === 1){
+                        b7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3268,8 +3536,8 @@ for(var y = 1; y < 11; y++){
                     player = "b8";
                     document.getElementById('c8').style.backgroundColor = "transparent";
                     document.getElementById('b8').style.backgroundColor = "#555";
-                    if(b8 === true){
-                        b8 = false;
+                    if(b8 === 1){
+                        b8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3279,8 +3547,8 @@ for(var y = 1; y < 11; y++){
                     player = "c1";
                     document.getElementById('d1').style.backgroundColor = "transparent";
                     document.getElementById('c1').style.backgroundColor = "#555";
-                    if(c1 === true){
-                        c1 = false;
+                    if(c1 === 1){
+                        c1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3290,8 +3558,8 @@ for(var y = 1; y < 11; y++){
                     player = "c2";
                     document.getElementById('d2').style.backgroundColor = "transparent";
                     document.getElementById('c2').style.backgroundColor = "#555";
-                    if(c2 === true){
-                        c2 = false;
+                    if(c2 === 1){
+                        c2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3301,8 +3569,8 @@ for(var y = 1; y < 11; y++){
                     player = "c3";
                     document.getElementById('d3').style.backgroundColor = "transparent";
                     document.getElementById('c3').style.backgroundColor = "#555";
-                    if(c3 === true){
-                        c3 = false;
+                    if(c3 === 1){
+                        c3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3312,8 +3580,8 @@ for(var y = 1; y < 11; y++){
                     player = "c4";
                     document.getElementById('d4').style.backgroundColor = "transparent";
                     document.getElementById('c4').style.backgroundColor = "#555";
-                    if(c4 === true){
-                        c4 = false;
+                    if(c4 === 1){
+                        c4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3323,8 +3591,8 @@ for(var y = 1; y < 11; y++){
                     player = "c5";
                     document.getElementById('d5').style.backgroundColor = "transparent";
                     document.getElementById('c5').style.backgroundColor = "#555";
-                    if(c5 === true){
-                        c5 = false;
+                    if(c5 === 1){
+                        c5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3334,8 +3602,8 @@ for(var y = 1; y < 11; y++){
                     player = "c6";
                     document.getElementById('d6').style.backgroundColor = "transparent";
                     document.getElementById('c6').style.backgroundColor = "#555";
-                    if(c6 === true){
-                        c6 = false;
+                    if(c6 === 1){
+                        c6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3345,8 +3613,8 @@ for(var y = 1; y < 11; y++){
                     player = "c7";
                     document.getElementById('d7').style.backgroundColor = "transparent";
                     document.getElementById('c7').style.backgroundColor = "#555";
-                    if(c7 === true){
-                        c7 = false;
+                    if(c7 === 1){
+                        c7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3356,8 +3624,8 @@ for(var y = 1; y < 11; y++){
                     player = "c8";
                     document.getElementById('d8').style.backgroundColor = "transparent";
                     document.getElementById('c8').style.backgroundColor = "#555";
-                    if(c8 === true){
-                        c8 = false;
+                    if(c8 === 1){
+                        c8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3367,8 +3635,8 @@ for(var y = 1; y < 11; y++){
                     player = "d1";
                     document.getElementById('e1').style.backgroundColor = "transparent";
                     document.getElementById('d1').style.backgroundColor = "#555";
-                    if(d1 === true){
-                        d1 = false;
+                    if(d1 === 1){
+                        d1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3378,8 +3646,8 @@ for(var y = 1; y < 11; y++){
                     player = "d2";
                     document.getElementById('e2').style.backgroundColor = "transparent";
                     document.getElementById('d2').style.backgroundColor = "#555";
-                    if(d2 === true){
-                        d2 = false;
+                    if(d2 === 1){
+                        d2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3389,8 +3657,8 @@ for(var y = 1; y < 11; y++){
                     player = "d3";
                     document.getElementById('e3').style.backgroundColor = "transparent";
                     document.getElementById('d3').style.backgroundColor = "#555";
-                    if(d3 === true){
-                        d3 = false;
+                    if(d3 === 1){
+                        d3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3400,8 +3668,8 @@ for(var y = 1; y < 11; y++){
                     player = "d4";
                     document.getElementById('e4').style.backgroundColor = "transparent";
                     document.getElementById('d4').style.backgroundColor = "#555";
-                    if(d4 === true){
-                        d4 = false;
+                    if(d4 === 1){
+                        d4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3411,8 +3679,8 @@ for(var y = 1; y < 11; y++){
                     player = "d5";
                     document.getElementById('e5').style.backgroundColor = "transparent";
                     document.getElementById('d5').style.backgroundColor = "#555";
-                    if(d5 === true){
-                        d5 = false;
+                    if(d5 === 1){
+                        d5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3422,8 +3690,8 @@ for(var y = 1; y < 11; y++){
                     player = "d6";
                     document.getElementById('e6').style.backgroundColor = "transparent";
                     document.getElementById('d6').style.backgroundColor = "#555";
-                    if(d6 === true){
-                        d6 = false;
+                    if(d6 === 1){
+                        d6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3433,8 +3701,8 @@ for(var y = 1; y < 11; y++){
                     player = "d7";
                     document.getElementById('e7').style.backgroundColor = "transparent";
                     document.getElementById('d7').style.backgroundColor = "#555";
-                    if(d7 === true){
-                        d7 = false;
+                    if(d7 === 1){
+                        d7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3444,8 +3712,8 @@ for(var y = 1; y < 11; y++){
                     player = "d8";
                     document.getElementById('e8').style.backgroundColor = "transparent";
                     document.getElementById('d8').style.backgroundColor = "#555";
-                    if(d8 === true){
-                        d8 = false;
+                    if(d8 === 1){
+                        d8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3455,8 +3723,8 @@ for(var y = 1; y < 11; y++){
                     player = "e1";
                     document.getElementById('f1').style.backgroundColor = "transparent";
                     document.getElementById('e1').style.backgroundColor = "#555";
-                    if(e1 === true){
-                        e1 = false;
+                    if(e1 === 1){
+                        e1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3466,8 +3734,8 @@ for(var y = 1; y < 11; y++){
                     player = "e2";
                     document.getElementById('f2').style.backgroundColor = "transparent";
                     document.getElementById('e2').style.backgroundColor = "#555";
-                    if(e2 === true){
-                        e2 = false;
+                    if(e2 === 1){
+                        e2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3477,8 +3745,8 @@ for(var y = 1; y < 11; y++){
                     player = "e3";
                     document.getElementById('f3').style.backgroundColor = "transparent";
                     document.getElementById('e3').style.backgroundColor = "#555";
-                    if(e3 === true){
-                        e3 = false;
+                    if(e3 === 1){
+                        e3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3488,8 +3756,8 @@ for(var y = 1; y < 11; y++){
                     player = "e4";
                     document.getElementById('f4').style.backgroundColor = "transparent";
                     document.getElementById('e4').style.backgroundColor = "#555";
-                    if(e4 === true){
-                        e4 = false;
+                    if(e4 === 1){
+                        e4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3499,8 +3767,8 @@ for(var y = 1; y < 11; y++){
                     player = "e5";
                     document.getElementById('f5').style.backgroundColor = "transparent";
                     document.getElementById('e5').style.backgroundColor = "#555";
-                    if(e5 === true){
-                        e5 = false;
+                    if(e5 === 1){
+                        e5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3510,8 +3778,8 @@ for(var y = 1; y < 11; y++){
                     player = "e6";
                     document.getElementById('f6').style.backgroundColor = "transparent";
                     document.getElementById('e6').style.backgroundColor = "#555";
-                    if(e6 === true){
-                        e6 = false;
+                    if(e6 === 1){
+                        e6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3521,8 +3789,8 @@ for(var y = 1; y < 11; y++){
                     player = "e7";
                     document.getElementById('f7').style.backgroundColor = "transparent";
                     document.getElementById('e7').style.backgroundColor = "#555";
-                    if(e7 === true){
-                        e7 = false;
+                    if(e7 === 1){
+                        e7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3532,8 +3800,8 @@ for(var y = 1; y < 11; y++){
                     player = "e8";
                     document.getElementById('f8').style.backgroundColor = "transparent";
                     document.getElementById('e8').style.backgroundColor = "#555";
-                    if(e8 === true){
-                        e8 = false;
+                    if(e8 === 1){
+                        e8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3543,8 +3811,8 @@ for(var y = 1; y < 11; y++){
                     player = "f1";
                     document.getElementById('g1').style.backgroundColor = "transparent";
                     document.getElementById('f1').style.backgroundColor = "#555";
-                    if(f1 === true){
-                        f1 = false;
+                    if(f1 === 1){
+                        f1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3554,8 +3822,8 @@ for(var y = 1; y < 11; y++){
                     player = "f2";
                     document.getElementById('g2').style.backgroundColor = "transparent";
                     document.getElementById('f2').style.backgroundColor = "#555";
-                    if(f2 === true){
-                        f2 = false;
+                    if(f2 === 1){
+                        f2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3565,8 +3833,8 @@ for(var y = 1; y < 11; y++){
                     player = "f3";
                     document.getElementById('g3').style.backgroundColor = "transparent";
                     document.getElementById('f3').style.backgroundColor = "#555";
-                    if(f3 === true){
-                        f3 = false;
+                    if(f3 === 1){
+                        f3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3576,8 +3844,8 @@ for(var y = 1; y < 11; y++){
                     player = "f4";
                     document.getElementById('g4').style.backgroundColor = "transparent";
                     document.getElementById('f4').style.backgroundColor = "#555";
-                    if(f4 === true){
-                        f4 = false;
+                    if(f4 === 1){
+                        f4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3587,8 +3855,8 @@ for(var y = 1; y < 11; y++){
                     player = "f5";
                     document.getElementById('g5').style.backgroundColor = "transparent";
                     document.getElementById('f5').style.backgroundColor = "#555";
-                    if(f5 === true){
-                        f5 = false;
+                    if(f5 === 1){
+                        f5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3598,8 +3866,8 @@ for(var y = 1; y < 11; y++){
                     player = "f6";
                     document.getElementById('g6').style.backgroundColor = "transparent";
                     document.getElementById('f6').style.backgroundColor = "#555";
-                    if(f6 === true){
-                        f6 = false;
+                    if(f6 === 1){
+                        f6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3609,8 +3877,8 @@ for(var y = 1; y < 11; y++){
                     player = "f7";
                     document.getElementById('g7').style.backgroundColor = "transparent";
                     document.getElementById('f7').style.backgroundColor = "#555";
-                    if(f7 === true){
-                        f7 = false;
+                    if(f7 === 1){
+                        f7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3620,8 +3888,8 @@ for(var y = 1; y < 11; y++){
                     player = "f8";
                     document.getElementById('g8').style.backgroundColor = "transparent";
                     document.getElementById('f8').style.backgroundColor = "#555";
-                    if(f8 === true){
-                        f8 = false;
+                    if(f8 === 1){
+                        f8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3631,8 +3899,8 @@ for(var y = 1; y < 11; y++){
                     player = "g1";
                     document.getElementById('h1').style.backgroundColor = "transparent";
                     document.getElementById('g1').style.backgroundColor = "#555";
-                    if(g1 === true){
-                        g1 = false;
+                    if(g1 === 1){
+                        g1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3642,8 +3910,8 @@ for(var y = 1; y < 11; y++){
                     player = "g2";
                     document.getElementById('h2').style.backgroundColor = "transparent";
                     document.getElementById('g2').style.backgroundColor = "#555";
-                    if(g2 === true){
-                        g2 = false;
+                    if(g2 === 1){
+                        g2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3653,8 +3921,8 @@ for(var y = 1; y < 11; y++){
                     player = "g3";
                     document.getElementById('h3').style.backgroundColor = "transparent";
                     document.getElementById('g3').style.backgroundColor = "#555";
-                    if(g3 === true){
-                        g3 = false;
+                    if(g3 === 1){
+                        g3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3664,8 +3932,8 @@ for(var y = 1; y < 11; y++){
                     player = "g4";
                     document.getElementById('h4').style.backgroundColor = "transparent";
                     document.getElementById('g4').style.backgroundColor = "#555";
-                    if(g4 === true){
-                        g4 = false;
+                    if(g4 === 1){
+                        g4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3675,8 +3943,8 @@ for(var y = 1; y < 11; y++){
                     player = "g5";
                     document.getElementById('h5').style.backgroundColor = "transparent";
                     document.getElementById('g5').style.backgroundColor = "#555";
-                    if(g5 === true){
-                        g5 = false;
+                    if(g5 === 1){
+                        g5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3686,8 +3954,8 @@ for(var y = 1; y < 11; y++){
                     player = "g6";
                     document.getElementById('h6').style.backgroundColor = "transparent";
                     document.getElementById('g6').style.backgroundColor = "#555";
-                    if(g6 === true){
-                        g6 = false;
+                    if(g6 === 1){
+                        g6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3697,8 +3965,8 @@ for(var y = 1; y < 11; y++){
                     player = "g7";
                     document.getElementById('h7').style.backgroundColor = "transparent";
                     document.getElementById('g7').style.backgroundColor = "#555";
-                    if(g7 === true){
-                        g7 = false;
+                    if(g7 === 1){
+                        g7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3708,8 +3976,8 @@ for(var y = 1; y < 11; y++){
                     player = "g8";
                     document.getElementById('h8').style.backgroundColor = "transparent";
                     document.getElementById('g8').style.backgroundColor = "#555";
-                    if(g8 === true){
-                        g8 = false;
+                    if(g8 === 1){
+                        g8 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
@@ -3723,7 +3991,7 @@ for(var y = 1; y < 11; y++){
             player = "a1";
             pont = 0;
             document.getElementById('pont').innerHTML = "Pontuação: " + pont;
-            a1= false; a2= false; a3= false; a4= false; a5= false; a6= false; a7= false; a8= false; b1= false; b2= false; b3= false; b4= false; b5= false; b6= false; b7= false; b8= false; c1= false; c2= false; c3= false; c4= false; c5= false; c6= false; c7= false; c8= false; d1= false; d2= false; d3= false; d4= false; d5= false; d6= false; d7= false; d8= false; e1= false; e2= false; e3= false; e4= false; e5= false; e6= false; e7= false; e8= false; f1= false; f2= false; f3= false; f4= false; f5= false; f6= false; f7= false; f8= false; g1= false; g2= false; g3= false; g4= false; g5= false; g6= false; g7= false; g8= false; h1= false; h2= false; h3= false; h4= false; h5= false; h6= false; h7= false; h8 = false;
+            a1= 0; a2= 0; a3= 0; a4= 0; a5= 0; a6= 0; a7= 0; a8= 0; b1= 0; b2= 0; b3= 0; b4= 0; b5= 0; b6= 0; b7= 0; b8= 0; c1= 0; c2= 0; c3= 0; c4= 0; c5= 0; c6= 0; c7= 0; c8= 0; d1= 0; d2= 0; d3= 0; d4= 0; d5= 0; d6= 0; d7= 0; d8= 0; e1= 0; e2= 0; e3= 0; e4=0; e5= 0; e6= 0; e7= 0; e8= 0; f1= 0; f2= 0; f3= 0; f4= 0; f5= 0; f6= 0; f7= 0; f8= 0; g1= 0; g2= 0; g3= 0; g4= 0; g5= 0; g6= 0; g7= 0; g8= 0; h1= 0; h2= 0; h3= 0; h4= 0; h5= 0; h6= 0; h7= 0; h8 = 0;
             frutasAtivas = 0;
             document.getElementById('a1').style.backgroundColor = "#555";
             document.getElementById('a2').style.backgroundColor = "transparent";
@@ -3790,15 +4058,15 @@ for(var y = 1; y < 11; y++){
             document.getElementById('h7').style.backgroundColor = "transparent";
             document.getElementById('h8').style.backgroundColor = "transparent";
         }
-        /*function pausar(){
-            isGameOn = false;
-            document.getElementById('tela-inicial').style.display = "flex";
-            document.getElementById('txt-tela-inicial').innerHTML = "Jogo Pausado";
-        }
-        function voltar(){
-            isGameOn = true;
-            document.getElementById('tela-inicial').style.display = "none";
-        }*/
+/*function pausar(){
+    isGameOn = false;
+    document.getElementById('tela-inicial').style.display = "flex";
+    document.getElementById('txt-tela-inicial').innerHTML = "Jogo Pausado";
+}
+function voltar(){
+    isGameOn = true;
+    document.getElementById('tela-inicial').style.display = "none";
+}*/
 document.onkeydown = function(e) {
     switch(e.which) {
         case 37:// left
