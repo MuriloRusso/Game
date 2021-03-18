@@ -107,4 +107,32 @@
                   height: 100%;
                   border-radius: 100%;
               }
-          }
+}
+@media (orientation: landscape) and (max-width:1000px){
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+    .container{
+        width: 55%;
+        height: 90vh;
+    }
+    .container div{
+        width: 11.93%;
+    }
+    .container #tela-inicial{
+        width: 139%;
+    }
+    .container #tela-inicial a{
+        margin-left: 30%;
+        width: 30%;
+    }
+    .control{
+        width: 40%;
+        height: 55vh;
+    }
+}
