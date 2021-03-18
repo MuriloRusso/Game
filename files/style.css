@@ -73,39 +73,37 @@
           }
           @media (max-width: 1000px) and (min-width: 0px){
               h2{
-                  font-size: 50px;
+                  font-size: 30px;
               }
               .container{
                   width: 100%;
-                  height: 50vh;
+                  height: 45vh;
                   justify-content: center;
               }
               .container #tela-inicial{
                   width: 100%;
                   height: 100vh;
+                  font-size: 15px;
               }
               .container #tela-inicial a{
-                  width: 600px;
-                  height: 150px;
-                  font-size: 50px;
-                  line-height: 150px;
+                  width: 200px;
+                  height: 70px;
+                  font-size: 30px;
+                  line-height: 70px;
               }
               .container div {
-                  width: 12.2%;
-                  height: 12.2%;
+                  width: 11.9%;
+                  height: 11.9%;
               }
               .control{
                   margin-top: 2vh;
                   width: 100%;
-                  height: 40vh;
+                  height: 30vh;
                   display: flex;
                   flex-direction: column;
               }
-              .container-arrow:nth-child(2){
-                  justify-content: space-between;
-              }
               .arrow{
-                  width: 33%;
+                  width: 25%;
                   height: 100%;
                   border-radius: 100%;
               }
