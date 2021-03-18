@@ -4,7 +4,7 @@
         <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="iso-8859-1">
-        <title>Game</title>
+        <title>Maze Fruit</title>
 <!--        <link href="style/animation.css" rel="stylesheet" type="text/css">-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <style>
@@ -61,7 +61,65 @@
           #a1{
               background-color: #555;
           }
-          
+          .control{
+              width: 416px;
+              height: auto;
+              display: none;
+              flex-direction: column;
+          }
+          .container-arrow{
+              height: 100%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+          }
+          .container-arrow:nth-child(2){
+              justify-content: space-around;
+          }
+          .arrow{
+              background-color: firebrick;
+              width: 80px;
+              height: 60px;
+          }
+          @media (max-width: 1000px) and (min-width: 0px){
+              h2{
+                  font-size: 50px;
+              }
+              .container{
+                  width: 100%;
+                  height: 50vh;
+                  justify-content: center;
+              }
+              .container #tela-inicial{
+                  width: 100%;
+                  height: 100vh;
+              }
+              .container #tela-inicial a{
+                  width: 600px;
+                  height: 150px;
+                  font-size: 50px;
+                  line-height: 150px;
+              }
+              .container div {
+                  width: 12.2%;
+                  height: 12.2%;
+              }
+              .control{
+                  margin-top: 2vh;
+                  width: 100%;
+                  height: 40vh;
+                  display: flex;
+                  flex-direction: column;
+              }
+              .container-arrow:nth-child(2){
+                  justify-content: space-between;
+              }
+              .arrow{
+                  width: 33%;
+                  height: 100%;
+                  border-radius: 100%;
+              }
+          }
       </style>
   </head>
   <body>
@@ -70,6 +128,7 @@
         <div id="tela-inicial">
             <h2 id="txt-tela-inicial"></h2>
             <a href="#" id="btn-tela-inicial" onclick="iniciar()">Iniciar</a>
+<!--            <a href="#" id="btn-voltar-pause" onclick="voltar()" style="display: none">Voltar</a>-->
             <a href="#" id="btn-reiniciar" onclick="reiniciar()" style="display: none">Reiniciar</a>
         </div>
         <div id="h1">H1</div><div id="h2">H2</div><div id="h3">H3</div><div id="h4">H4</div><div id="h5">H5</div><div id="h6">H6</div><div id="h7">H7</div><div id="h8">H8</div>
@@ -80,6 +139,18 @@
         <div id="c1">C1</div><div id="c2">C2</div><div id="c3">C3</div><div id="c4">C4</div><div id="c5">C5</div><div id="c6">C6</div><div id="c7">C7</div><div id="c8">C8</div>
         <div id="b1">B1</div><div id="b2">B2</div><div id="b3">B3</div><div id="b4">B4</div><div id="b5">B5</div><div id="b6">B6</div><div id="b7">B7</div><div id="b8">B8</div>
         <div id="a1">A1</div><div id="a2">A2</div><div id="a3">A3</div><div id="a4">A4</div><div id="a5">A5</div><div id="a6">A6</div><div id="a7">A7</div><div id="a8">A8</div>
+    </div>
+    <div class="control">
+        <div class="container-arrow">
+            <div class="arrow" id="top" onclick="cima()"></div>
+        </div>
+        <div class="container-arrow">
+            <div class="arrow" id="left" onclick="esquerda()"></div>
+            <div class="arrow" id="right" onclick="direita()"></div>
+        </div>
+        <div class="container-arrow">
+            <div class="arrow" id="down" onclick="baixo()"></div>
+        </div>
     </div>
       <script>
         var player = "a1";
@@ -129,588 +200,590 @@
             
 //        gerarFruta();
         function gerarFruta(){
-            frutaLoca = Math.floor(Math.random() * 64);
-            if(frutaLoca === 0){
-                if(player != "a1" && a1 != true){
-                    document.getElementById('a1').style.backgroundColor = "darkgreen";
-                    a1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 1){
-                if(player != "a2" && a2 != true){
-                    document.getElementById('a2').style.backgroundColor = "darkgreen";
-                    a2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 2){
-                if(player != "a3" && a3 != true){
-                    document.getElementById('a3').style.backgroundColor = "darkgreen";
-                    a3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 3){
-                if(player != "a4" && a4 != true){
-                    document.getElementById('a4').style.backgroundColor = "darkgreen";
-                    a4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 4){
-                if(player != "a5" && a5 != true){
-                    document.getElementById('a5').style.backgroundColor = "darkgreen";
-                    a5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 5){
-                if(player != "a6" && a6 != true){
-                    document.getElementById('a6').style.backgroundColor = "darkgreen";
-                    a6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 6){
-                if(player != "a7" && a7 != true){
-                    document.getElementById('a7').style.backgroundColor = "darkgreen";
-                    a7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 7){
-                if(player != "a8" && a8 != true){
-                    document.getElementById('a8').style.backgroundColor = "darkgreen";
-                    a8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna B
-            else if(frutaLoca === 8){
-                if(player != "b1" && b1 != true){
-                    document.getElementById('b1').style.backgroundColor = "darkgreen";
-                    b1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 9){
-                if(player != "b2" && b2 != true){
-                    document.getElementById('b2').style.backgroundColor = "darkgreen";
-                    b2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 10){
-                if(player != "b3" && b3 != true){
-                    document.getElementById('b3').style.backgroundColor = "darkgreen";
-                    b3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 11){
-                if(player != "b4" && b4 != true){
-                    document.getElementById('b4').style.backgroundColor = "darkgreen";
-                    b4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 12){
-                if(player != "b5" && b5 != true){
-                    document.getElementById('b5').style.backgroundColor = "darkgreen";
-                    b5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 13){
-                if(player != "b6" && b6 != true){
-                    document.getElementById('b6').style.backgroundColor = "darkgreen";
-                    b6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 14){
-                if(player != "b7" && b7 != true){
-                    document.getElementById('b7').style.backgroundColor = "darkgreen";
-                    b7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 15){
-                if(player != "b8" && b8 != true){
-                    document.getElementById('b8').style.backgroundColor = "darkgreen";
-                    b8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna C
-            else if(frutaLoca === 16){
-                if(player != "c1" && c1 != true){
-                    document.getElementById('c1').style.backgroundColor = "darkgreen";
-                    c1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 17){
-                if(player != "c2" && c2 != true){
-                    document.getElementById('c2').style.backgroundColor = "darkgreen";
-                    c2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 18){
-                if(player != "c3" && c3 != true){
-                    document.getElementById('c3').style.backgroundColor = "darkgreen";
-                    c3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 19){
-                if(player != "c4" && c4 != true){
-                    document.getElementById('c4').style.backgroundColor = "darkgreen";
-                    c4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 20){
-                if(player != "c5" && c5 != true){
-                    document.getElementById('c5').style.backgroundColor = "darkgreen";
-                    c5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 21){
-                if(player != "c6" && c6 != true){
-                    document.getElementById('c6').style.backgroundColor = "darkgreen";
-                    c6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 22){
-                if(player != "c7" && c7 != true){
-                    document.getElementById('c7').style.backgroundColor = "darkgreen";
-                    c7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 23){
-                if(player != "c8" && c8 != true){
-                    document.getElementById('c8').style.backgroundColor = "darkgreen";
-                    c8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna D
-            else if(frutaLoca === 24){
-                if(player != "d1" && d1 != true){
-                    document.getElementById('d1').style.backgroundColor = "darkgreen";
-                    d1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 25){
-                if(player != "d2" && d2 != true){
-                    document.getElementById('d2').style.backgroundColor = "darkgreen";
-                    d2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 26){
-                if(player != "d3" && d3!= true){
-                    document.getElementById('d3').style.backgroundColor = "darkgreen";
-                    d3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 27){
-                if(player != "d4" && d4 != true){
-                    document.getElementById('d4').style.backgroundColor = "darkgreen";
-                    d4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 28){
-                if(player != "d5" && d5 != true){
-                    document.getElementById('d5').style.backgroundColor = "darkgreen";
-                    d5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 29){
-                if(player != "d6" && d6 != true){
-                    document.getElementById('d6').style.backgroundColor = "darkgreen";
-                    d6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 30){
-                if(player != "d7" && d7 != true){
-                    document.getElementById('d7').style.backgroundColor = "darkgreen";
-                    d7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 31){
-                if(player != "d8" && d8 != true){
-                    document.getElementById('d8').style.backgroundColor = "darkgreen";
-                    d8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna E
-            else if(frutaLoca === 32){
-                if(player != "e1" && e1 != true){
-                    document.getElementById('e1').style.backgroundColor = "darkgreen";
-                    e1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 33){
-                if(player != "e2" && e2 != true){
-                    document.getElementById('e2').style.backgroundColor = "darkgreen";
-                    e2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 34){
-                if(player != "e3" && e3 != true){
-                    document.getElementById('e3').style.backgroundColor = "darkgreen";
-                    e3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 35){
-                if(player != "e4" && e4 != true){
-                    document.getElementById('e4').style.backgroundColor = "darkgreen";
-                    e4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 36){
-                if(player != "e5" && e5 != true){
-                    document.getElementById('e5').style.backgroundColor = "darkgreen";
-                    e5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 37){
-                if(player != "e6" && e6 != true){
-                    document.getElementById('e6').style.backgroundColor = "darkgreen";
-                    e6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 38){
-                if(player != "e7" && e7 != true){
-                    document.getElementById('e7').style.backgroundColor = "darkgreen";
-                    e7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 39){
-                if(player != "e8" && e8 != true){
-                    document.getElementById('e8').style.backgroundColor = "darkgreen";
-                    e8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna F
-            else if(frutaLoca === 40){
-                if(player != "f1" && f1 != true){
-                    document.getElementById('f1').style.backgroundColor = "darkgreen";
-                    f1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 41){
-                if(player != "f2" && f2 != true){
-                    document.getElementById('f2').style.backgroundColor = "darkgreen";
-                    f2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 42){
-                if(player != "f3" && f3 != true){
-                    document.getElementById('f3').style.backgroundColor = "darkgreen";
-                    f3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 43){
-                if(player != "f4" && f4 != true){
-                    document.getElementById('f4').style.backgroundColor = "darkgreen";
-                    f4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 44){
-                if(player != "f5" && f5 != true){
-                    document.getElementById('f5').style.backgroundColor = "darkgreen";
-                    f5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 45){
-                if(player != "f6" && f6 != true){
-                    document.getElementById('f6').style.backgroundColor = "darkgreen";
-                    f6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 46){
-                if(player != "f7" && f7 != true){
-                    document.getElementById('f7').style.backgroundColor = "darkgreen";
-                    f7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 47){
-                if(player != "f8" && f8 != true){
-                    document.getElementById('f8').style.backgroundColor = "darkgreen";
-                    f8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna G
-            else if(frutaLoca === 48){
-                if(player != "g1" && g1 != true){
-                    document.getElementById('g1').style.backgroundColor = "darkgreen";
-                    g1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 49){
-                if(player != "g2" && g2 != true){
-                    document.getElementById('g2').style.backgroundColor = "darkgreen";
-                    g2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 50){
-                if(player != "g3" && g3 != true){
-                    document.getElementById('g3').style.backgroundColor = "darkgreen";
-                    g3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 51){
-                if(player != "g4" && g4 != true){
-                    document.getElementById('g4').style.backgroundColor = "darkgreen";
-                    g4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 52){
-                if(player != "g5" && g5 != true){
-                    document.getElementById('g5').style.backgroundColor = "darkgreen";
-                    g5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 53){
-                if(player != "g6" && g6 != true){
-                    document.getElementById('g6').style.backgroundColor = "darkgreen";
-                    g6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 54){
-                if(player != "g7" && g7 != true){
-                    document.getElementById('g7').style.backgroundColor = "darkgreen";
-                    g7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 55){
-                if(player != "g8" && g8 != true){
-                    document.getElementById('g8').style.backgroundColor = "darkgreen";
-                    g8 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            //Coluna H
-            else if(frutaLoca === 56){
-                if(player != "h1" && h1 != true){
-                    document.getElementById('h1').style.backgroundColor = "darkgreen";
-                    h1 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 57){
-                if(player != "h2" && h2 != true){
-                    document.getElementById('h2').style.backgroundColor = "darkgreen";
-                    h2 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 58){
-                if(player != "h3" && h3 != true){
-                    document.getElementById('h3').style.backgroundColor = "darkgreen";
-                    h3 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 59){
-                if(player != "h4" && h4 != true){
-                    document.getElementById('h4').style.backgroundColor = "darkgreen";
-                    h4 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 60){
-                if(player != "h5" && h5 != true){
-                    document.getElementById('h5').style.backgroundColor = "darkgreen";
-                    h5 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 61){
-                if(player != "h6" && h6 != true){
-                    document.getElementById('h6').style.backgroundColor = "darkgreen";
-                    h6 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 62){
-                if(player != "h7" && h7 != true){
-                    document.getElementById('h7').style.backgroundColor = "darkgreen";
-                    h7 = true;
-                }
-                else{
-                    gerarFruta();
-                }
-            }
-            else if(frutaLoca === 63){
-                if(player != "h8" && h8 != true){
-                    document.getElementById('h8').style.backgroundColor = "darkgreen";
-                    h8 = true;
-                }
-                else{
-                    gerarFruta();
+            if(isGameOn === true){
+                frutaLoca = Math.floor(Math.random() * 64);
+                if(frutaLoca === 0){
+                    if(player != "a1" && a1 != true){
+                        document.getElementById('a1').style.backgroundColor = "darkgreen";
+                        a1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 1){
+                    if(player != "a2" && a2 != true){
+                        document.getElementById('a2').style.backgroundColor = "darkgreen";
+                        a2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 2){
+                    if(player != "a3" && a3 != true){
+                        document.getElementById('a3').style.backgroundColor = "darkgreen";
+                        a3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 3){
+                    if(player != "a4" && a4 != true){
+                        document.getElementById('a4').style.backgroundColor = "darkgreen";
+                        a4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 4){
+                    if(player != "a5" && a5 != true){
+                        document.getElementById('a5').style.backgroundColor = "darkgreen";
+                        a5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 5){
+                    if(player != "a6" && a6 != true){
+                        document.getElementById('a6').style.backgroundColor = "darkgreen";
+                        a6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 6){
+                    if(player != "a7" && a7 != true){
+                        document.getElementById('a7').style.backgroundColor = "darkgreen";
+                        a7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 7){
+                    if(player != "a8" && a8 != true){
+                        document.getElementById('a8').style.backgroundColor = "darkgreen";
+                        a8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna B
+                else if(frutaLoca === 8){
+                    if(player != "b1" && b1 != true){
+                        document.getElementById('b1').style.backgroundColor = "darkgreen";
+                        b1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 9){
+                    if(player != "b2" && b2 != true){
+                        document.getElementById('b2').style.backgroundColor = "darkgreen";
+                        b2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 10){
+                    if(player != "b3" && b3 != true){
+                        document.getElementById('b3').style.backgroundColor = "darkgreen";
+                        b3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 11){
+                    if(player != "b4" && b4 != true){
+                        document.getElementById('b4').style.backgroundColor = "darkgreen";
+                        b4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 12){
+                    if(player != "b5" && b5 != true){
+                        document.getElementById('b5').style.backgroundColor = "darkgreen";
+                        b5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 13){
+                    if(player != "b6" && b6 != true){
+                        document.getElementById('b6').style.backgroundColor = "darkgreen";
+                        b6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 14){
+                    if(player != "b7" && b7 != true){
+                        document.getElementById('b7').style.backgroundColor = "darkgreen";
+                        b7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 15){
+                    if(player != "b8" && b8 != true){
+                        document.getElementById('b8').style.backgroundColor = "darkgreen";
+                        b8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna C
+                else if(frutaLoca === 16){
+                    if(player != "c1" && c1 != true){
+                        document.getElementById('c1').style.backgroundColor = "darkgreen";
+                        c1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 17){
+                    if(player != "c2" && c2 != true){
+                        document.getElementById('c2').style.backgroundColor = "darkgreen";
+                        c2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 18){
+                    if(player != "c3" && c3 != true){
+                        document.getElementById('c3').style.backgroundColor = "darkgreen";
+                        c3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 19){
+                    if(player != "c4" && c4 != true){
+                        document.getElementById('c4').style.backgroundColor = "darkgreen";
+                        c4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 20){
+                    if(player != "c5" && c5 != true){
+                        document.getElementById('c5').style.backgroundColor = "darkgreen";
+                        c5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 21){
+                    if(player != "c6" && c6 != true){
+                        document.getElementById('c6').style.backgroundColor = "darkgreen";
+                        c6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 22){
+                    if(player != "c7" && c7 != true){
+                        document.getElementById('c7').style.backgroundColor = "darkgreen";
+                        c7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 23){
+                    if(player != "c8" && c8 != true){
+                        document.getElementById('c8').style.backgroundColor = "darkgreen";
+                        c8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna D
+                else if(frutaLoca === 24){
+                    if(player != "d1" && d1 != true){
+                        document.getElementById('d1').style.backgroundColor = "darkgreen";
+                        d1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 25){
+                    if(player != "d2" && d2 != true){
+                        document.getElementById('d2').style.backgroundColor = "darkgreen";
+                        d2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 26){
+                    if(player != "d3" && d3!= true){
+                        document.getElementById('d3').style.backgroundColor = "darkgreen";
+                        d3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 27){
+                    if(player != "d4" && d4 != true){
+                        document.getElementById('d4').style.backgroundColor = "darkgreen";
+                        d4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 28){
+                    if(player != "d5" && d5 != true){
+                        document.getElementById('d5').style.backgroundColor = "darkgreen";
+                        d5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 29){
+                    if(player != "d6" && d6 != true){
+                        document.getElementById('d6').style.backgroundColor = "darkgreen";
+                        d6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 30){
+                    if(player != "d7" && d7 != true){
+                        document.getElementById('d7').style.backgroundColor = "darkgreen";
+                        d7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 31){
+                    if(player != "d8" && d8 != true){
+                        document.getElementById('d8').style.backgroundColor = "darkgreen";
+                        d8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna E
+                else if(frutaLoca === 32){
+                    if(player != "e1" && e1 != true){
+                        document.getElementById('e1').style.backgroundColor = "darkgreen";
+                        e1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 33){
+                    if(player != "e2" && e2 != true){
+                        document.getElementById('e2').style.backgroundColor = "darkgreen";
+                        e2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 34){
+                    if(player != "e3" && e3 != true){
+                        document.getElementById('e3').style.backgroundColor = "darkgreen";
+                        e3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 35){
+                    if(player != "e4" && e4 != true){
+                        document.getElementById('e4').style.backgroundColor = "darkgreen";
+                        e4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 36){
+                    if(player != "e5" && e5 != true){
+                        document.getElementById('e5').style.backgroundColor = "darkgreen";
+                        e5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 37){
+                    if(player != "e6" && e6 != true){
+                        document.getElementById('e6').style.backgroundColor = "darkgreen";
+                        e6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 38){
+                    if(player != "e7" && e7 != true){
+                        document.getElementById('e7').style.backgroundColor = "darkgreen";
+                        e7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 39){
+                    if(player != "e8" && e8 != true){
+                        document.getElementById('e8').style.backgroundColor = "darkgreen";
+                        e8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna F
+                else if(frutaLoca === 40){
+                    if(player != "f1" && f1 != true){
+                        document.getElementById('f1').style.backgroundColor = "darkgreen";
+                        f1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 41){
+                    if(player != "f2" && f2 != true){
+                        document.getElementById('f2').style.backgroundColor = "darkgreen";
+                        f2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 42){
+                    if(player != "f3" && f3 != true){
+                        document.getElementById('f3').style.backgroundColor = "darkgreen";
+                        f3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 43){
+                    if(player != "f4" && f4 != true){
+                        document.getElementById('f4').style.backgroundColor = "darkgreen";
+                        f4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 44){
+                    if(player != "f5" && f5 != true){
+                        document.getElementById('f5').style.backgroundColor = "darkgreen";
+                        f5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 45){
+                    if(player != "f6" && f6 != true){
+                        document.getElementById('f6').style.backgroundColor = "darkgreen";
+                        f6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 46){
+                    if(player != "f7" && f7 != true){
+                        document.getElementById('f7').style.backgroundColor = "darkgreen";
+                        f7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 47){
+                    if(player != "f8" && f8 != true){
+                        document.getElementById('f8').style.backgroundColor = "darkgreen";
+                        f8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna G
+                else if(frutaLoca === 48){
+                    if(player != "g1" && g1 != true){
+                        document.getElementById('g1').style.backgroundColor = "darkgreen";
+                        g1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 49){
+                    if(player != "g2" && g2 != true){
+                        document.getElementById('g2').style.backgroundColor = "darkgreen";
+                        g2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 50){
+                    if(player != "g3" && g3 != true){
+                        document.getElementById('g3').style.backgroundColor = "darkgreen";
+                        g3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 51){
+                    if(player != "g4" && g4 != true){
+                        document.getElementById('g4').style.backgroundColor = "darkgreen";
+                        g4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 52){
+                    if(player != "g5" && g5 != true){
+                        document.getElementById('g5').style.backgroundColor = "darkgreen";
+                        g5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 53){
+                    if(player != "g6" && g6 != true){
+                        document.getElementById('g6').style.backgroundColor = "darkgreen";
+                        g6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 54){
+                    if(player != "g7" && g7 != true){
+                        document.getElementById('g7').style.backgroundColor = "darkgreen";
+                        g7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 55){
+                    if(player != "g8" && g8 != true){
+                        document.getElementById('g8').style.backgroundColor = "darkgreen";
+                        g8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                //Coluna H
+                else if(frutaLoca === 56){
+                    if(player != "h1" && h1 != true){
+                        document.getElementById('h1').style.backgroundColor = "darkgreen";
+                        h1 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 57){
+                    if(player != "h2" && h2 != true){
+                        document.getElementById('h2').style.backgroundColor = "darkgreen";
+                        h2 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 58){
+                    if(player != "h3" && h3 != true){
+                        document.getElementById('h3').style.backgroundColor = "darkgreen";
+                        h3 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 59){
+                    if(player != "h4" && h4 != true){
+                        document.getElementById('h4').style.backgroundColor = "darkgreen";
+                        h4 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 60){
+                    if(player != "h5" && h5 != true){
+                        document.getElementById('h5').style.backgroundColor = "darkgreen";
+                        h5 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 61){
+                    if(player != "h6" && h6 != true){
+                        document.getElementById('h6').style.backgroundColor = "darkgreen";
+                        h6 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 62){
+                    if(player != "h7" && h7 != true){
+                        document.getElementById('h7').style.backgroundColor = "darkgreen";
+                        h7 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
+                }
+                else if(frutaLoca === 63){
+                    if(player != "h8" && h8 != true){
+                        document.getElementById('h8').style.backgroundColor = "darkgreen";
+                        h8 = true;
+                    }
+                    else{
+                        gerarFruta();
+                    }
                 }
             }
         }  
@@ -3269,6 +3342,15 @@
             document.getElementById('h7').style.backgroundColor = "transparent";
             document.getElementById('h8').style.backgroundColor = "transparent";
         }
+        /*function pausar(){
+            isGameOn = false;
+            document.getElementById('tela-inicial').style.display = "flex";
+            document.getElementById('txt-tela-inicial').innerHTML = "Jogo Pausado";
+        }
+        function voltar(){
+            isGameOn = true;
+            document.getElementById('tela-inicial').style.display = "none";
+        }*/
 document.onkeydown = function(e) {
     switch(e.which) {
         case 37:// left
@@ -3323,6 +3405,14 @@ $(document).ready(function(){
 	}
   })
 })
+          
+/*$(document).ready(function(){
+ 	$(document).keypress(function(e){
+	if(e.wich == 112 || e.keyCode == 112   ){
+		pausar();
+	}
+  })
+})*/
 
       </script>
   </body>
