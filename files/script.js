@@ -2412,6 +2412,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(a7 === 2){
+                        a7 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "a7"){
                     player = "a6";
@@ -2421,6 +2426,11 @@ for(var y = 1; y < 11; y++){
                         a6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(a6 === 2){
+                        a6 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2434,6 +2444,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(a5 === 2){
+                        a5 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "a5"){
                     player = "a4";
@@ -2443,6 +2458,11 @@ for(var y = 1; y < 11; y++){
                         a4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(a4 === 2){
+                        a4 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2456,6 +2476,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(a3 === 2){
+                        a3 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "a3"){
                     player = "a2";
@@ -2465,6 +2490,11 @@ for(var y = 1; y < 11; y++){
                         a2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(a2 === 2){
+                        a2 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2478,6 +2508,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(a1 === 2){
+                        a1 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "b8"){
                     player = "b7";
@@ -2487,6 +2522,11 @@ for(var y = 1; y < 11; y++){
                         b7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(b7 === 2){
+                        b7 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2500,6 +2540,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(b6 === 2){
+                        b6 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "b6"){
                     player = "b5";
@@ -2509,6 +2554,11 @@ for(var y = 1; y < 11; y++){
                         b5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(b5 === 2){
+                        b5 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2522,6 +2572,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(b4 === 2){
+                        b4 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "b4"){
                     player = "b3";
@@ -2531,6 +2586,11 @@ for(var y = 1; y < 11; y++){
                         b3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(b3 === 2){
+                        b3 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2544,6 +2604,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(b2 === 2){
+                        b2 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "b2"){
                     player = "b1";
@@ -2553,6 +2618,11 @@ for(var y = 1; y < 11; y++){
                         b1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(b1 === 2){
+                        b1 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2566,6 +2636,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(c7 === 2){
+                        c7 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "c7"){
                     player = "c6";
@@ -2575,6 +2650,11 @@ for(var y = 1; y < 11; y++){
                         c6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(c6 === 2){
+                        c6 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2588,6 +2668,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(c5 === 2){
+                        c5 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "c5"){
                     player = "c4";
@@ -2597,6 +2682,11 @@ for(var y = 1; y < 11; y++){
                         c4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(c4 === 2){
+                        c4 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2610,6 +2700,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(c3 === 2){
+                        c3 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "c3"){
                     player = "c2";
@@ -2619,6 +2714,11 @@ for(var y = 1; y < 11; y++){
                         c2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(c2 === 2){
+                        c2 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2632,6 +2732,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(c1 === 2){
+                        c1 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "d8"){
                     player = "d7";
@@ -2641,6 +2746,11 @@ for(var y = 1; y < 11; y++){
                         d7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(d7 === 2){
+                        d7 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2654,6 +2764,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(d6 === 2){
+                        d6 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "d6"){
                     player = "d5";
@@ -2663,6 +2778,11 @@ for(var y = 1; y < 11; y++){
                         d5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(d5 === 2){
+                        d5 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2676,6 +2796,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(d4 === 2){
+                        d4 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "d4"){
                     player = "d3";
@@ -2685,6 +2810,11 @@ for(var y = 1; y < 11; y++){
                         d3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(d3 === 2){
+                        d3 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2698,6 +2828,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(d2 === 2){
+                        d2 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "d2"){
                     player = "d1";
@@ -2707,6 +2842,11 @@ for(var y = 1; y < 11; y++){
                         d1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(d1 === 2){
+                        d1 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2720,6 +2860,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(e7 === 2){
+                        e7 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "e7"){
                     player = "e6";
@@ -2729,6 +2874,11 @@ for(var y = 1; y < 11; y++){
                         e6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(e6 === 2){
+                        e6 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2742,6 +2892,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(e5 === 2){
+                        e5 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "e5"){
                     player = "e4";
@@ -2751,6 +2906,11 @@ for(var y = 1; y < 11; y++){
                         e4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(e4 === 2){
+                        e4 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2764,6 +2924,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(e3 === 2){
+                        e3 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "e3"){
                     player = "e2";
@@ -2773,6 +2938,11 @@ for(var y = 1; y < 11; y++){
                         e2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(e2 === 2){
+                        e2 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2786,6 +2956,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(e1 === 2){
+                        e1 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "f8"){
                     player = "f7";
@@ -2795,6 +2970,11 @@ for(var y = 1; y < 11; y++){
                         f7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(f7 === 2){
+                        f7 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2808,6 +2988,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(f6 === 2){
+                        f6 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "f6"){
                     player = "f5";
@@ -2817,6 +3002,11 @@ for(var y = 1; y < 11; y++){
                         f5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(f5 === 2){
+                        f5 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2830,6 +3020,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(f4 === 2){
+                        f4 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "f4"){
                     player = "f3";
@@ -2839,6 +3034,11 @@ for(var y = 1; y < 11; y++){
                         f3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(f3 === 2){
+                        f3 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2852,6 +3052,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(f2 === 2){
+                        f2 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "f2"){
                     player = "f1";
@@ -2861,6 +3066,11 @@ for(var y = 1; y < 11; y++){
                         f1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(f1 === 2){
+                        f1 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2874,6 +3084,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(g7 === 2){
+                        g7 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "g7"){
                     player = "g6";
@@ -2883,6 +3098,11 @@ for(var y = 1; y < 11; y++){
                         g6 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(g6 === 2){
+                        g6 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2896,6 +3116,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(g5 === 2){
+                        g5 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "g5"){
                     player = "g4";
@@ -2905,6 +3130,11 @@ for(var y = 1; y < 11; y++){
                         g4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(g4 === 2){
+                        g4 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2918,6 +3148,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(g3 === 2){
+                        g3 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "g3"){
                     player = "g2";
@@ -2927,6 +3162,11 @@ for(var y = 1; y < 11; y++){
                         g2 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(g2 === 2){
+                        g2 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2940,6 +3180,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(g1 === 2){
+                        g1 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "h8"){
                     player = "h7";
@@ -2949,6 +3194,11 @@ for(var y = 1; y < 11; y++){
                         h7 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(h7 === 2){
+                        h7 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2962,6 +3212,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(h6 === 2){
+                        h6 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "h6"){
                     player = "h5";
@@ -2971,6 +3226,11 @@ for(var y = 1; y < 11; y++){
                         h5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(h5 === 2){
+                        h5 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -2984,6 +3244,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(h4 === 2){
+                        h4 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "h4"){
                     player = "h3";
@@ -2993,6 +3258,11 @@ for(var y = 1; y < 11; y++){
                         h3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(h3 === 2){
+                        h3 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
@@ -3006,6 +3276,11 @@ for(var y = 1; y < 11; y++){
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
+                    else if(h2 === 2){
+                        h2 = 0;
+                        pont = pont + pontFrutaVermelha;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
                 }
                 else if(player === "h2"){
                     player = "h1";
@@ -3015,6 +3290,11 @@ for(var y = 1; y < 11; y++){
                         h1 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
+                        document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                    }
+                    else if(h1 === 2){
+                        h1 = 0;
+                        pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                     }
                 }
