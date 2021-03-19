@@ -6,19 +6,32 @@
         var frutasAtivas = 0;
         var dificuldade = 11;
         var isGameOn = false;
+var frutasVerdes = 0;
 var pontFrutaVermelha = 500;
         function aumentarDificuldade(){
-            if(pont < 500){
+            if(frutasVerdes < 6){
                 dificuldade = 11;
             }
-            else if(pont > 500 && pont < 1000){
+            else if(frutasVerdes > 6 && frutasVerdes < 11){
+                dificuldade = 10;
+            }
+            else if(frutasVerdes > 11 && frutasVerdes < 16){
+                dificuldade = 9;
+            }
+            else if(frutasVerdes > 16 && frutasVerdes < 21){
                 dificuldade = 8;
             }
-            else if(pont > 1000 && pont < 1500){
+            else if(frutasVerdes > 21 && frutasVerdes < 26){
                 dificuldade = 7;
             }
-            else if(pont > 1500){
+            else if(frutasVerdes > 26 && frutasVerdes < 31){
                 dificuldade = 6;
+            }
+            else if(frutasVerdes > 51 && frutasVerdes < 101){
+                dificuldade = 5;
+            }
+            else if(frutasVerdes > 101){
+                dificuldade = 4;
             }
         }
         function iniciar(){
@@ -32,6 +45,7 @@ var pontFrutaVermelha = 500;
                     if(frutasAtivas < dificuldade){
                         gerarFruta();
                         frutasAtivas++;
+                        frutasVerdes++;
                         console.log(frutasAtivas);
                         aumentarDificuldade();
                     }
