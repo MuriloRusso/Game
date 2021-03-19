@@ -73,7 +73,7 @@ for(var y = 1; y < 11; y++){
                 frutaVermelhaLoca = Math.floor(Math.random() * 64);
                 if(frutaVermelhaLoca === 0){
                     if(player != "a1" && a1 === 0){
-                        document.getElementById('a1').style.backgroundColor = "firebrick";
+                        document.getElementById('a1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a1 = 2;
                         setTimeout(function(){
                             a1 = 0;
@@ -86,7 +86,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 1){
                     if(player != "a2" && a2 === 0){
-                        document.getElementById('a2').style.backgroundColor = "firebrick";
+                        document.getElementById('a2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a2 = 2;
                         setTimeout(function(){
                             a2 = 0;
@@ -99,7 +99,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 2){
                     if(player != "a3" && a3 === 0){
-                        document.getElementById('a3').style.backgroundColor = "firebrick";
+                        document.getElementById('a3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a3 = 2;
                         setTimeout(function(){
                             a3 = 0;
@@ -112,7 +112,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 3){
                     if(player != "a4" && a4 === 0){
-                        document.getElementById('a4').style.backgroundColor = "firebrick";
+                        document.getElementById('a4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a4 = 2;
                         setTimeout(function(){
                             a4 = 0;
@@ -125,7 +125,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 4){
                     if(player != "a5" && a5 === 0){
-                        document.getElementById('a5').style.backgroundColor = "firebrick";
+                        document.getElementById('a5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a5 = 2;
                         setTimeout(function(){
                             a5 = 0;
@@ -138,7 +138,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 5){
                     if(player != "a6" && a6 === 0){
-                        document.getElementById('a6').style.backgroundColor = "firebrick";
+                        document.getElementById('a6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a6 = 2;
                         setTimeout(function(){
                             a6 = 0;
@@ -151,7 +151,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 6){
                     if(player != "a7" && a7 === 0){
-                        document.getElementById('a7').style.backgroundColor = "firebrick";
+                        document.getElementById('a7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a7 = 2;
                         setTimeout(function(){
                             a7 = 0;
@@ -164,7 +164,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 7){
                     if(player != "a8" && a8 === 0){
-                        document.getElementById('a8').style.backgroundColor = "firebrick";
+                        document.getElementById('a8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         a8 = 2;
                         setTimeout(function(){
                             a8 = 0;
@@ -178,7 +178,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna B
                 else if(frutaVermelhaLoca === 8){
                     if(player != "b1" && b1 === 0){
-                        document.getElementById('b1').style.backgroundColor = "firebrick";
+                        document.getElementById('b1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b1 = 2;
                         setTimeout(function(){
                             b1 = 0;
@@ -191,7 +191,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 9){
                     if(player != "b2" && b2 === 0){
-                        document.getElementById('b2').style.backgroundColor = "firebrick";
+                        document.getElementById('b2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b2 = 2;
                         setTimeout(function(){
                             b2 = 0;
@@ -204,7 +204,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 10){
                     if(player != "b3" && b3 === 0){
-                        document.getElementById('b3').style.backgroundColor = "firebrick";
+                        document.getElementById('b3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b3 = 2;
                         setTimeout(function(){
                             b3 = 0;
@@ -217,7 +217,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 11){
                     if(player != "b4" && b4 === 0){
-                        document.getElementById('b4').style.backgroundColor = "firebrick";
+                        document.getElementById('b4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b4 = 2;
                         setTimeout(function(){
                             b4 = 0;
@@ -230,7 +230,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 12){
                     if(player != "b5" && b5 === 0){
-                        document.getElementById('b5').style.backgroundColor = "firebrick";
+                        document.getElementById('b5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b5 = 2;
                         setTimeout(function(){
                             b5 = 0;
@@ -243,7 +243,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 13){
                     if(player != "b6" && b6 === 0){
-                        document.getElementById('b6').style.backgroundColor = "firebrick";
+                        document.getElementById('b6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b6 = 2;
                         setTimeout(function(){
                             b6 = 0;
@@ -256,7 +256,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 14){
                     if(player != "b7" && b7 === 0){
-                        document.getElementById('b7').style.backgroundColor = "firebrick";
+                        document.getElementById('b7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b7 = 2;
                         setTimeout(function(){
                             b7 = 0;
@@ -269,7 +269,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 15){
                     if(player != "b8" && b8 === 0){
-                        document.getElementById('b8').style.backgroundColor = "firebrick";
+                        document.getElementById('b8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         b8 = 2;
                         setTimeout(function(){
                             b8 = 0;
@@ -283,7 +283,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna C
                 else if(frutaVermelhaLoca === 16){
                     if(player != "c1" && c1 === 0){
-                        document.getElementById('c1').style.backgroundColor = "firebrick";
+                        document.getElementById('c1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c1 = 2;
                         setTimeout(function(){
                             c1 = 0;
@@ -296,7 +296,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 17){
                     if(player != "c2" && c2 === 0){
-                        document.getElementById('c2').style.backgroundColor = "firebrick";
+                        document.getElementById('c2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c2 = 2;
                         setTimeout(function(){
                             c2 = 0;
@@ -309,7 +309,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 18){
                     if(player != "c3" && c3 === 0){
-                        document.getElementById('c3').style.backgroundColor = "firebrick";
+                        document.getElementById('c3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c3 = 2;
                         setTimeout(function(){
                             c3 = 0;
@@ -322,7 +322,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 19){
                     if(player != "c4" && c4 === 0){
-                        document.getElementById('c4').style.backgroundColor = "firebrick";
+                        document.getElementById('c4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c4 = 2;
                         setTimeout(function(){
                             c4 = 0;
@@ -335,7 +335,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 20){
                     if(player != "c5" && c5 === 0){
-                        document.getElementById('c5').style.backgroundColor = "firebrick";
+                        document.getElementById('c5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c5 = 2;
                         setTimeout(function(){
                             c5 = 0;
@@ -348,7 +348,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 21){
                     if(player != "c6" && c6 === 0){
-                        document.getElementById('c6').style.backgroundColor = "firebrick";
+                        document.getElementById('c6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c6 = 2;
                         setTimeout(function(){
                             c6 = 0;
@@ -361,7 +361,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 22){
                     if(player != "c7" && c7 === 0){
-                        document.getElementById('c7').style.backgroundColor = "firebrick";
+                        document.getElementById('c7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c7 = 2;
                         setTimeout(function(){
                             c7 = 0;
@@ -374,7 +374,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 23){
                     if(player != "c8" && c8 === 0){
-                        document.getElementById('c8').style.backgroundColor = "firebrick";
+                        document.getElementById('c8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         c8 = 2;
                         setTimeout(function(){
                             c8 = 0;
@@ -388,7 +388,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna D
                 else if(frutaVermelhaLoca === 24){
                     if(player != "d1" && d1 === 0){
-                        document.getElementById('d1').style.backgroundColor = "firebrick";
+                        document.getElementById('d1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d1 = 2;
                         setTimeout(function(){
                             d1 = 0;
@@ -401,7 +401,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 25){
                     if(player != "d2" && d2 === 0){
-                        document.getElementById('d2').style.backgroundColor = "firebrick";
+                        document.getElementById('d2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d2 = 2;
                         setTimeout(function(){
                             d2 = 0;
@@ -414,7 +414,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 26){
                     if(player != "d3" && d3 === 0){
-                        document.getElementById('d3').style.backgroundColor = "firebrick";
+                        document.getElementById('d3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d3 = 2;
                         setTimeout(function(){
                             d3 = 0;
@@ -427,7 +427,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 27){
                     if(player != "d4" && d4 === 0){
-                        document.getElementById('d4').style.backgroundColor = "firebrick";
+                        document.getElementById('d4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d4 = 2;
                         setTimeout(function(){
                             d4 = 0;
@@ -440,7 +440,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 28){
                     if(player != "d5" && d5 === 0){
-                        document.getElementById('d5').style.backgroundColor = "firebrick";
+                        document.getElementById('d5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d5 = 2;
                         setTimeout(function(){
                             d5 = 0;
@@ -453,7 +453,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 29){
                     if(player != "d6" && d6 === 0){
-                        document.getElementById('d6').style.backgroundColor = "firebrick";
+                        document.getElementById('d6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d6 = 2;
                         setTimeout(function(){
                             d6 = 0;
@@ -466,7 +466,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 30){
                     if(player != "d7" && d7 === 0){
-                        document.getElementById('d7').style.backgroundColor = "firebrick";
+                        document.getElementById('d7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d7 = 2;
                         setTimeout(function(){
                             d7 = 0;
@@ -479,7 +479,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 31){
                     if(player != "d8" && d8 === 0){
-                        document.getElementById('d8').style.backgroundColor = "firebrick";
+                        document.getElementById('d8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         d8 = 2;
                         setTimeout(function(){
                             d8 = 0;
@@ -493,7 +493,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna E
                 else if(frutaVermelhaLoca === 32){
                     if(player != "e1" && e1 === 0){
-                        document.getElementById('e1').style.backgroundColor = "firebrick";
+                        document.getElementById('e1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e1 = 2;
                         setTimeout(function(){
                             e1 = 0;
@@ -506,7 +506,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 33){
                     if(player != "e2" && e2 === 0){
-                        document.getElementById('e2').style.backgroundColor = "firebrick";
+                        document.getElementById('e2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e2 = 2;
                         setTimeout(function(){
                             e2 = 0;
@@ -519,7 +519,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 34){
                     if(player != "e3" && e3 === 0){
-                        document.getElementById('e3').style.backgroundColor = "firebrick";
+                        document.getElementById('e3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e3 = 2;
                         setTimeout(function(){
                             e3 = 0;
@@ -532,7 +532,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 35){
                     if(player != "e4" && e4 === 0){
-                        document.getElementById('e4').style.backgroundColor = "firebrick";
+                        document.getElementById('e4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e4 = 2;
                         setTimeout(function(){
                             e4 = 0;
@@ -545,7 +545,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 36){
                     if(player != "e5" && e5 === 0){
-                        document.getElementById('e5').style.backgroundColor = "firebrick";
+                        document.getElementById('e5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e5 = 2;
                         setTimeout(function(){
                             e5 = 0;
@@ -558,7 +558,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 37){
                     if(player != "e6" && e6 === 0){
-                        document.getElementById('e6').style.backgroundColor = "firebrick";
+                        document.getElementById('e6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e6 = 2;
                         setTimeout(function(){
                             e6 = 0;
@@ -571,7 +571,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 38){
                     if(player != "e7" && e7 === 0){
-                        document.getElementById('e7').style.backgroundColor = "firebrick";
+                        document.getElementById('e7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e7 = 2;
                         setTimeout(function(){
                             e7 = 0;
@@ -584,7 +584,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 39){
                     if(player != "e8" && e8 === 0){
-                        document.getElementById('e8').style.backgroundColor = "firebrick";
+                        document.getElementById('e8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         e8 = 2;
                         setTimeout(function(){
                             e8 = 0;
@@ -598,7 +598,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna F
                 else if(frutaVermelhaLoca === 40){
                     if(player != "f1" && f1 === 0){
-                        document.getElementById('f1').style.backgroundColor = "firebrick";
+                        document.getElementById('f1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f1 = 2;
                         setTimeout(function(){
                             f1 = 0;
@@ -611,7 +611,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 41){
                     if(player != "f2" && f2 === 0){
-                        document.getElementById('f2').style.backgroundColor = "firebrick";
+                        document.getElementById('f2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f2 = 2;
                         setTimeout(function(){
                             f2 = 0;
@@ -624,7 +624,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 42){
                     if(player != "f3" && f3 === 0){
-                        document.getElementById('f3').style.backgroundColor = "firebrick";
+                        document.getElementById('f3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f3 = 2;
                         setTimeout(function(){
                             f3 = 0;
@@ -637,7 +637,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 43){
                     if(player != "f4" && f4 === 0){
-                        document.getElementById('f4').style.backgroundColor = "firebrick";
+                        document.getElementById('f4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f4 = 2;
                         setTimeout(function(){
                             f4 = 0;
@@ -650,7 +650,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 44){
                     if(player != "f5" && f5 === 0){
-                        document.getElementById('f5').style.backgroundColor = "firebrick";
+                        document.getElementById('f5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f5 = 2;
                         setTimeout(function(){
                             f5 = 0;
@@ -663,7 +663,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 45){
                     if(player != "f6" && f6 === 0){
-                        document.getElementById('f6').style.backgroundColor = "firebrick";
+                        document.getElementById('f6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f6 = 2;
                         setTimeout(function(){
                             f6 = 0;
@@ -676,7 +676,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 46){
                     if(player != "f7" && f7 === 0){
-                        document.getElementById('f7').style.backgroundColor = "firebrick";
+                        document.getElementById('f7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f7 = 2;
                         setTimeout(function(){
                             f7 = 0;
@@ -689,7 +689,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 47){
                     if(player != "f8" && f8 === 0){
-                        document.getElementById('f8').style.backgroundColor = "firebrick";
+                        document.getElementById('f8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         f8 = 2;
                         setTimeout(function(){
                             f8 = 0;
@@ -703,7 +703,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna G
                 else if(frutaVermelhaLoca === 48){
                     if(player != "g1" && g1 === 0){
-                        document.getElementById('g1').style.backgroundColor = "firebrick";
+                        document.getElementById('g1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g1 = 2;
                         setTimeout(function(){
                             g1 = 0;
@@ -716,7 +716,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 49){
                     if(player != "g2" && g2 === 0){
-                        document.getElementById('g2').style.backgroundColor = "firebrick";
+                        document.getElementById('g2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g2 = 2;
                         setTimeout(function(){
                             g2 = 0;
@@ -729,7 +729,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 50){
                     if(player != "g3" && g3 === 0){
-                        document.getElementById('g3').style.backgroundColor = "firebrick";
+                        document.getElementById('g3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g3 = 2;
                         setTimeout(function(){
                             g3 = 0;
@@ -742,7 +742,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 51){
                     if(player != "g4" && g4 === 0){
-                        document.getElementById('g4').style.backgroundColor = "firebrick";
+                        document.getElementById('g4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g4 = 2;
                         setTimeout(function(){
                             g4 = 0;
@@ -755,7 +755,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 52){
                     if(player != "g5" && g5 === 0){
-                        document.getElementById('g5').style.backgroundColor = "firebrick";
+                        document.getElementById('g5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g5 = 2;
                         setTimeout(function(){
                             g5 = 0;
@@ -768,7 +768,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 53){
                     if(player != "g6" && g6 === 0){
-                        document.getElementById('g6').style.backgroundColor = "firebrick";
+                        document.getElementById('g6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g6 = 2;
                         setTimeout(function(){
                             g6 = 0;
@@ -781,7 +781,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 54){
                     if(player != "g7" && g7 === 0){
-                        document.getElementById('g7').style.backgroundColor = "firebrick";
+                        document.getElementById('g7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g7 = 2;
                         setTimeout(function(){
                             g7 = 0;
@@ -794,7 +794,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 55){
                     if(player != "g8" && g8 === 0){
-                        document.getElementById('g8').style.backgroundColor = "firebrick";
+                        document.getElementById('g8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         g8 = 2;
                         setTimeout(function(){
                             g8 = 0;
@@ -808,7 +808,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna H
                 else if(frutaVermelhaLoca === 56){
                     if(player != "h1" && h1 ===  0){
-                        document.getElementById('h1').style.backgroundColor = "firebrick";
+                        document.getElementById('h1').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h1 = 2;
                         setTimeout(function(){
                             h1 = 0;
@@ -821,7 +821,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 57){
                     if(player != "h2" && h2 ===  0){
-                        document.getElementById('h2').style.backgroundColor = "firebrick";
+                        document.getElementById('h2').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h2 = 2;
                         setTimeout(function(){
                             h2 = 0;
@@ -834,7 +834,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 58){
                     if(player != "h3" && h3 ===  0){
-                        document.getElementById('h3').style.backgroundColor = "firebrick";
+                        document.getElementById('h3').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h3 = 2;
                         setTimeout(function(){
                             h3 = 0;
@@ -847,7 +847,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 59){
                     if(player != "h4" && h4 === 0){
-                        document.getElementById('h4').style.backgroundColor = "firebrick";
+                        document.getElementById('h4').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h4 = 2;
                         setTimeout(function(){
                             h4 = 0;
@@ -860,7 +860,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 60){
                     if(player != "h5" && h5 === 0){
-                        document.getElementById('h5').style.backgroundColor = "firebrick";
+                        document.getElementById('h5').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h5 = 2;
                         setTimeout(function(){
                             h5 = 0;
@@ -873,7 +873,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 61){
                     if(player != "h6" && h6 === 0){
-                        document.getElementById('h6').style.backgroundColor = "firebrick";
+                        document.getElementById('h6').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h6 = 2;
                         setTimeout(function(){
                             h6 = 0;
@@ -886,7 +886,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 62){
                     if(player != "h7" && h7 === 0){
-                        document.getElementById('h7').style.backgroundColor = "firebrick";
+                        document.getElementById('h7').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h7 = 2;
                         setTimeout(function(){
                             h7 = 0;
@@ -899,7 +899,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaVermelhaLoca === 63){
                     if(player != "h8" && h8 === 0){
-                        document.getElementById('h8').style.backgroundColor = "firebrick";
+                        document.getElementById('h8').style.backgroundImage = "url('files/img/apples/red-apple.png')";
                         h8 = 2;
                         setTimeout(function(){
                             h8 = 0;
