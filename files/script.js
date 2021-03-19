@@ -42,7 +42,7 @@ var pontFrutaVermelha = 500;
             frutasAtivas++;
             for(var x = 1; x < 9999; x++){
                 setTimeout(function(){
-                    if(frutasAtivas < dificuldade){
+                    if(frutasAtivas < 100){
                         gerarFruta();
                         frutasAtivas++;
                         frutasVerdes++;
@@ -1531,6 +1531,7 @@ for(var y = 1; y < 11; y++){
                 else if(player === "a2"){
                     player = "a3";
                     document.getElementById('a2').style.backgroundColor = "transparent";
+                    document.getElementById('a3').style.backgroundColor = "#555";
                     if(a3 === 1){
                         a3 = 0;
                         pont = pont + 100;
@@ -1548,6 +1549,7 @@ for(var y = 1; y < 11; y++){
                 else if(player === "a3"){
                     player = "a4";
                     document.getElementById('a3').style.backgroundColor = "transparent";
+                    document.getElementById('a4').style.backgroundColor = "#555";
                     if(a4 === 1){
                         a4 = 0;
                         pont = pont + 100;
@@ -1565,6 +1567,7 @@ for(var y = 1; y < 11; y++){
                 else if(player === "a4"){
                     player = "a5";
                     document.getElementById('a4').style.backgroundColor = "transparent";
+                    document.getElementById('a5').style.backgroundColor = "#555";
                     if(a5 === 1){
                         a5 = 0;
                         pont = pont + 100;
@@ -4831,7 +4834,7 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
-                        document.getElementById('a6').style.backgroundImage = "none";
+                        document.getElementById('b8').style.backgroundImage = "none";
                     }
                     else if(b8 === 2){
                         b8 = 0;
@@ -5567,6 +5570,7 @@ for(var y = 1; y < 11; y++){
             document.getElementById('tela-inicial').style.display = "none";
             player = "a1";
             pont = 0;
+            frutasVerdes = 0;
             document.getElementById('pont').innerHTML = "Pontuação: " + pont;
             a1= 0; a2= 0; a3= 0; a4= 0; a5= 0; a6= 0; a7= 0; a8= 0; b1= 0; b2= 0; b3= 0; b4= 0; b5= 0; b6= 0; b7= 0; b8= 0; c1= 0; c2= 0; c3= 0; c4= 0; c5= 0; c6= 0; c7= 0; c8= 0; d1= 0; d2= 0; d3= 0; d4= 0; d5= 0; d6= 0; d7= 0; d8= 0; e1= 0; e2= 0; e3= 0; e4=0; e5= 0; e6= 0; e7= 0; e8= 0; f1= 0; f2= 0; f3= 0; f4= 0; f5= 0; f6= 0; f7= 0; f8= 0; g1= 0; g2= 0; g3= 0; g4= 0; g5= 0; g6= 0; g7= 0; g8= 0; h1= 0; h2= 0; h3= 0; h4= 0; h5= 0; h6= 0; h7= 0; h8 = 0;
             frutasAtivas = 0;
@@ -5634,6 +5638,70 @@ for(var y = 1; y < 11; y++){
             document.getElementById('h6').style.backgroundColor = "transparent";
             document.getElementById('h7').style.backgroundColor = "transparent";
             document.getElementById('h8').style.backgroundColor = "transparent";
+            document.getElementById('a1').style.backgroundImage = "none";
+            document.getElementById('a2').style.backgroundImage = "none";
+            document.getElementById('a3').style.backgroundImage = "none";
+            document.getElementById('a4').style.backgroundImage = "none";
+            document.getElementById('a5').style.backgroundImage = "none";
+            document.getElementById('a6').style.backgroundImage = "none";
+            document.getElementById('a7').style.backgroundImage = "none";
+            document.getElementById('a8').style.backgroundImage = "none";
+            document.getElementById('b1').style.backgroundImage = "none";
+            document.getElementById('b2').style.backgroundImage = "none";
+            document.getElementById('b3').style.backgroundImage = "none";
+            document.getElementById('b4').style.backgroundImage = "none";
+            document.getElementById('b5').style.backgroundImage = "none";
+            document.getElementById('b6').style.backgroundImage = "none";
+            document.getElementById('b7').style.backgroundImage = "none";
+            document.getElementById('b8').style.backgroundImage = "none";
+            document.getElementById('c1').style.backgroundImage = "none";
+            document.getElementById('c2').style.backgroundImage = "none";
+            document.getElementById('c3').style.backgroundImage = "none";
+            document.getElementById('c4').style.backgroundImage = "none";
+            document.getElementById('c5').style.backgroundImage = "none";
+            document.getElementById('c6').style.backgroundImage = "none";
+            document.getElementById('c7').style.backgroundImage = "none";
+            document.getElementById('c8').style.backgroundImage = "none";
+            document.getElementById('d1').style.backgroundImage = "none";
+            document.getElementById('d2').style.backgroundImage = "none";
+            document.getElementById('d3').style.backgroundImage = "none";
+            document.getElementById('d4').style.backgroundImage = "none";
+            document.getElementById('d5').style.backgroundImage = "none";
+            document.getElementById('d6').style.backgroundImage = "none";
+            document.getElementById('d7').style.backgroundImage = "none";
+            document.getElementById('d8').style.backgroundImage = "none";
+            document.getElementById('e1').style.backgroundImage = "none";
+            document.getElementById('e2').style.backgroundImage = "none";
+            document.getElementById('e3').style.backgroundImage = "none";
+            document.getElementById('e4').style.backgroundImage = "none";
+            document.getElementById('e5').style.backgroundImage = "none";
+            document.getElementById('e6').style.backgroundImage = "none";
+            document.getElementById('e7').style.backgroundImage = "none";
+            document.getElementById('e8').style.backgroundImage = "none";
+            document.getElementById('f1').style.backgroundImage = "none";
+            document.getElementById('f2').style.backgroundImage = "none";
+            document.getElementById('f3').style.backgroundImage = "none";
+            document.getElementById('f4').style.backgroundImage = "none";
+            document.getElementById('f5').style.backgroundImage = "none";
+            document.getElementById('f6').style.backgroundImage = "none";
+            document.getElementById('f7').style.backgroundImage = "none";
+            document.getElementById('f8').style.backgroundImage = "none";
+            document.getElementById('g1').style.backgroundImage = "none";
+            document.getElementById('g2').style.backgroundImage = "none";
+            document.getElementById('g3').style.backgroundImage = "none";
+            document.getElementById('g4').style.backgroundImage = "none";
+            document.getElementById('g5').style.backgroundImage = "none";
+            document.getElementById('g6').style.backgroundImage = "none";
+            document.getElementById('g7').style.backgroundImage = "none";
+            document.getElementById('g8').style.backgroundImage = "none";
+            document.getElementById('h1').style.backgroundImage = "none";
+            document.getElementById('h2').style.backgroundImage = "none";
+            document.getElementById('h3').style.backgroundImage = "none";
+            document.getElementById('h4').style.backgroundImage = "none";
+            document.getElementById('h5').style.backgroundImage = "none";
+            document.getElementById('h6').style.backgroundImage = "none";
+            document.getElementById('h7').style.backgroundImage = "none";
+            document.getElementById('h8').style.backgroundImage = "none";
         }
 /*function pausar(){
     isGameOn = false;
