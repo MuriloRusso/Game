@@ -42,7 +42,7 @@ var pontFrutaVermelha = 500;
             frutasAtivas++;
             for(var x = 1; x < 9999; x++){
                 setTimeout(function(){
-                    if(frutasAtivas < 100){
+                    if(frutasAtivas < dificuldade){
                         gerarFruta();
                         frutasAtivas++;
                         frutasVerdes++;
