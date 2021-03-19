@@ -925,7 +925,7 @@ for(var y = 1; y < 11; y++){
                 frutaLoca = Math.floor(Math.random() * 64);
                 if(frutaLoca === 0){
                     if(player != "a1" && a1 === 0){
-                        document.getElementById('a1').style.backgroundColor = "darkgreen";
+                        document.getElementById('a1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a1 = 1;
                     }
                     else{
@@ -934,7 +934,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 1){
                     if(player != "a2" && a2 === 0){
-                        document.getElementById('a2').style.backgroundColor = "darkgreen";
+                        document.getElementById('a2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a2 = 1;
                     }
                     else{
@@ -943,7 +943,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 2){
                     if(player != "a3" && a3 === 0){
-                        document.getElementById('a3').style.backgroundColor = "darkgreen";
+                        document.getElementById('a3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a3 = 1;
                     }
                     else{
@@ -952,7 +952,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 3){
                     if(player != "a4" && a4 === 0){
-                        document.getElementById('a4').style.backgroundColor = "darkgreen";
+                        document.getElementById('a4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a4 = 1;
                     }
                     else{
@@ -961,7 +961,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 4){
                     if(player != "a5" && a5 === 0){
-                        document.getElementById('a5').style.backgroundColor = "darkgreen";
+                        document.getElementById('a5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a5 = 1;
                     }
                     else{
@@ -970,7 +970,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 5){
                     if(player != "a6" && a6 === 0){
-                        document.getElementById('a6').style.backgroundColor = "darkgreen";
+                        document.getElementById('a6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a6 = 1;
                     }
                     else{
@@ -979,7 +979,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 6){
                     if(player != "a7" && a7 === 0){
-                        document.getElementById('a7').style.backgroundColor = "darkgreen";
+                        document.getElementById('a7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a7 = 1;
                     }
                     else{
@@ -988,7 +988,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 7){
                     if(player != "a8" && a8 === 0){
-                        document.getElementById('a8').style.backgroundColor = "darkgreen";
+                        document.getElementById('a8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         a8 = 1;
                     }
                     else{
@@ -998,7 +998,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna B
                 else if(frutaLoca === 8){
                     if(player != "b1" && b1 === 0){
-                        document.getElementById('b1').style.backgroundColor = "darkgreen";
+                        document.getElementById('b1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b1 = 1;
                     }
                     else{
@@ -1007,7 +1007,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 9){
                     if(player != "b2" && b2 === 0){
-                        document.getElementById('b2').style.backgroundColor = "darkgreen";
+                        document.getElementById('b2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b2 = 1;
                     }
                     else{
@@ -1016,7 +1016,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 10){
                     if(player != "b3" && b3 === 0){
-                        document.getElementById('b3').style.backgroundColor = "darkgreen";
+                        document.getElementById('b3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b3 = 1;
                     }
                     else{
@@ -1025,7 +1025,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 11){
                     if(player != "b4" && b4 === 0){
-                        document.getElementById('b4').style.backgroundColor = "darkgreen";
+                        document.getElementById('b4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b4 = 1;
                     }
                     else{
@@ -1034,7 +1034,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 12){
                     if(player != "b5" && b5 === 0){
-                        document.getElementById('b5').style.backgroundColor = "darkgreen";
+                        document.getElementById('b5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b5 = 1;
                     }
                     else{
@@ -1043,7 +1043,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 13){
                     if(player != "b6" && b6 === 0){
-                        document.getElementById('b6').style.backgroundColor = "darkgreen";
+                        document.getElementById('b6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b6 = 1;
                     }
                     else{
@@ -1052,7 +1052,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 14){
                     if(player != "b7" && b7 === 0){
-                        document.getElementById('b7').style.backgroundColor = "darkgreen";
+                        document.getElementById('b7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b7 = 1;
                     }
                     else{
@@ -1061,7 +1061,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 15){
                     if(player != "b8" && b8 === 0){
-                        document.getElementById('b8').style.backgroundColor = "darkgreen";
+                        document.getElementById('b8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         b8 = 1;
                     }
                     else{
@@ -1071,7 +1071,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna C
                 else if(frutaLoca === 16){
                     if(player != "c1" && c1 === 0){
-                        document.getElementById('c1').style.backgroundColor = "darkgreen";
+                        document.getElementById('c1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c1 = 1;
                     }
                     else{
@@ -1080,7 +1080,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 17){
                     if(player != "c2" && c2 === 0){
-                        document.getElementById('c2').style.backgroundColor = "darkgreen";
+                        document.getElementById('c2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c2 = 1;
                     }
                     else{
@@ -1089,7 +1089,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 18){
                     if(player != "c3" && c3 === 0){
-                        document.getElementById('c3').style.backgroundColor = "darkgreen";
+                        document.getElementById('c3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c3 = 1;
                     }
                     else{
@@ -1098,7 +1098,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 19){
                     if(player != "c4" && c4 === 0){
-                        document.getElementById('c4').style.backgroundColor = "darkgreen";
+                        document.getElementById('c4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c4 = 1;
                     }
                     else{
@@ -1107,7 +1107,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 20){
                     if(player != "c5" && c5 === 0){
-                        document.getElementById('c5').style.backgroundColor = "darkgreen";
+                        document.getElementById('c5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c5 = 1;
                     }
                     else{
@@ -1116,7 +1116,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 21){
                     if(player != "c6" && c6 === 0){
-                        document.getElementById('c6').style.backgroundColor = "darkgreen";
+                        document.getElementById('c6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c6 = 1;
                     }
                     else{
@@ -1125,7 +1125,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 22){
                     if(player != "c7" && c7 === 0){
-                        document.getElementById('c7').style.backgroundColor = "darkgreen";
+                        document.getElementById('c7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c7 = 1;
                     }
                     else{
@@ -1134,7 +1134,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 23){
                     if(player != "c8" && c8 === 0){
-                        document.getElementById('c8').style.backgroundColor = "darkgreen";
+                        document.getElementById('c8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         c8 = 1;
                     }
                     else{
@@ -1144,7 +1144,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna D
                 else if(frutaLoca === 24){
                     if(player != "d1" && d1 === 0){
-                        document.getElementById('d1').style.backgroundColor = "darkgreen";
+                        document.getElementById('d1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d1 = 1;
                     }
                     else{
@@ -1153,7 +1153,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 25){
                     if(player != "d2" && d2 === 0){
-                        document.getElementById('d2').style.backgroundColor = "darkgreen";
+                        document.getElementById('d2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d2 = 1;
                     }
                     else{
@@ -1162,7 +1162,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 26){
                     if(player != "d3" && d3 === 0){
-                        document.getElementById('d3').style.backgroundColor = "darkgreen";
+                        document.getElementById('d3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d3 = 1;
                     }
                     else{
@@ -1171,7 +1171,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 27){
                     if(player != "d4" && d4 === 0){
-                        document.getElementById('d4').style.backgroundColor = "darkgreen";
+                        document.getElementById('d4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d4 = 1;
                     }
                     else{
@@ -1180,7 +1180,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 28){
                     if(player != "d5" && d5 === 0){
-                        document.getElementById('d5').style.backgroundColor = "darkgreen";
+                        document.getElementById('d5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d5 = 1;
                     }
                     else{
@@ -1189,7 +1189,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 29){
                     if(player != "d6" && d6 === 0){
-                        document.getElementById('d6').style.backgroundColor = "darkgreen";
+                        document.getElementById('d6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d6 = 1;
                     }
                     else{
@@ -1198,7 +1198,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 30){
                     if(player != "d7" && d7 === 0){
-                        document.getElementById('d7').style.backgroundColor = "darkgreen";
+                        document.getElementById('d7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d7 = 1;
                     }
                     else{
@@ -1207,7 +1207,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 31){
                     if(player != "d8" && d8 === 0){
-                        document.getElementById('d8').style.backgroundColor = "darkgreen";
+                        document.getElementById('d8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         d8 = 1;
                     }
                     else{
@@ -1217,7 +1217,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna E
                 else if(frutaLoca === 32){
                     if(player != "e1" && e1 === 0){
-                        document.getElementById('e1').style.backgroundColor = "darkgreen";
+                        document.getElementById('e1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e1 = 1;
                     }
                     else{
@@ -1226,7 +1226,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 33){
                     if(player != "e2" && e2 === 0){
-                        document.getElementById('e2').style.backgroundColor = "darkgreen";
+                        document.getElementById('e2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e2 = 1;
                     }
                     else{
@@ -1235,7 +1235,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 34){
                     if(player != "e3" && e3 === 0){
-                        document.getElementById('e3').style.backgroundColor = "darkgreen";
+                        document.getElementById('e3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e3 = 1;
                     }
                     else{
@@ -1244,7 +1244,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 35){
                     if(player != "e4" && e4 === 0){
-                        document.getElementById('e4').style.backgroundColor = "darkgreen";
+                        document.getElementById('e4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e4 = 1;
                     }
                     else{
@@ -1253,7 +1253,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 36){
                     if(player != "e5" && e5 === 0){
-                        document.getElementById('e5').style.backgroundColor = "darkgreen";
+                        document.getElementById('e5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e5 = 1;
                     }
                     else{
@@ -1262,7 +1262,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 37){
                     if(player != "e6" && e6 === 0){
-                        document.getElementById('e6').style.backgroundColor = "darkgreen";
+                        document.getElementById('e6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e6 = 1;
                     }
                     else{
@@ -1271,7 +1271,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 38){
                     if(player != "e7" && e7 === 0){
-                        document.getElementById('e7').style.backgroundColor = "darkgreen";
+                        document.getElementById('e7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e7 = 1;
                     }
                     else{
@@ -1280,7 +1280,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 39){
                     if(player != "e8" && e8 === 0){
-                        document.getElementById('e8').style.backgroundColor = "darkgreen";
+                        document.getElementById('e8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         e8 = 1;
                     }
                     else{
@@ -1290,7 +1290,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna F
                 else if(frutaLoca === 40){
                     if(player != "f1" && f1 === 0){
-                        document.getElementById('f1').style.backgroundColor = "darkgreen";
+                        document.getElementById('f1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f1 = 1;
                     }
                     else{
@@ -1299,7 +1299,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 41){
                     if(player != "f2" && f2 === 0){
-                        document.getElementById('f2').style.backgroundColor = "darkgreen";
+                        document.getElementById('f2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f2 = 1;
                     }
                     else{
@@ -1308,7 +1308,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 42){
                     if(player != "f3" && f3 === 0){
-                        document.getElementById('f3').style.backgroundColor = "darkgreen";
+                        document.getElementById('f3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f3 = 1;
                     }
                     else{
@@ -1317,7 +1317,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 43){
                     if(player != "f4" && f4 === 0){
-                        document.getElementById('f4').style.backgroundColor = "darkgreen";
+                        document.getElementById('f4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f4 = 1;
                     }
                     else{
@@ -1326,7 +1326,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 44){
                     if(player != "f5" && f5 === 0){
-                        document.getElementById('f5').style.backgroundColor = "darkgreen";
+                        document.getElementById('f5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f5 = 1;
                     }
                     else{
@@ -1335,7 +1335,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 45){
                     if(player != "f6" && f6 === 0){
-                        document.getElementById('f6').style.backgroundColor = "darkgreen";
+                        document.getElementById('f6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f6 = 1;
                     }
                     else{
@@ -1344,7 +1344,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 46){
                     if(player != "f7" && f7 === 0){
-                        document.getElementById('f7').style.backgroundColor = "darkgreen";
+                        document.getElementById('f7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f7 = 1;
                     }
                     else{
@@ -1353,7 +1353,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 47){
                     if(player != "f8" && f8 === 0){
-                        document.getElementById('f8').style.backgroundColor = "darkgreen";
+                        document.getElementById('f8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         f8 = 1;
                     }
                     else{
@@ -1363,7 +1363,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna G
                 else if(frutaLoca === 48){
                     if(player != "g1" && g1 === 0){
-                        document.getElementById('g1').style.backgroundColor = "darkgreen";
+                        document.getElementById('g1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g1 = 1;
                     }
                     else{
@@ -1372,7 +1372,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 49){
                     if(player != "g2" && g2 === 0){
-                        document.getElementById('g2').style.backgroundColor = "darkgreen";
+                        document.getElementById('g2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g2 = 1;
                     }
                     else{
@@ -1381,7 +1381,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 50){
                     if(player != "g3" && g3 === 0){
-                        document.getElementById('g3').style.backgroundColor = "darkgreen";
+                        document.getElementById('g3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g3 = 1;
                     }
                     else{
@@ -1390,7 +1390,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 51){
                     if(player != "g4" && g4 === 0){
-                        document.getElementById('g4').style.backgroundColor = "darkgreen";
+                        document.getElementById('g4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g4 = 1;
                     }
                     else{
@@ -1399,7 +1399,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 52){
                     if(player != "g5" && g5 === 0){
-                        document.getElementById('g5').style.backgroundColor = "darkgreen";
+                        document.getElementById('g5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g5 = 1;
                     }
                     else{
@@ -1408,7 +1408,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 53){
                     if(player != "g6" && g6 === 0){
-                        document.getElementById('g6').style.backgroundColor = "darkgreen";
+                        document.getElementById('g6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g6 = 1;
                     }
                     else{
@@ -1417,7 +1417,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 54){
                     if(player != "g7" && g7 === 0){
-                        document.getElementById('g7').style.backgroundColor = "darkgreen";
+                        document.getElementById('g7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g7 = 1;
                     }
                     else{
@@ -1426,7 +1426,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 55){
                     if(player != "g8" && g8 === 0){
-                        document.getElementById('g8').style.backgroundColor = "darkgreen";
+                        document.getElementById('g8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         g8 = 1;
                     }
                     else{
@@ -1436,7 +1436,7 @@ for(var y = 1; y < 11; y++){
                 //Coluna H
                 else if(frutaLoca === 56){
                     if(player != "h1" && h1 === 0){
-                        document.getElementById('h1').style.backgroundColor = "darkgreen";
+                        document.getElementById('h1').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h1 = 1;
                     }
                     else{
@@ -1445,7 +1445,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 57){
                     if(player != "h2" && h2 === 0){
-                        document.getElementById('h2').style.backgroundColor = "darkgreen";
+                        document.getElementById('h2').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h2 = 1;
                     }
                     else{
@@ -1454,7 +1454,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 58){
                     if(player != "h3" && h3 === 0){
-                        document.getElementById('h3').style.backgroundColor = "darkgreen";
+                        document.getElementById('h3').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h3 = 1;
                     }
                     else{
@@ -1463,7 +1463,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 59){
                     if(player != "h4" && h4 === 0){
-                        document.getElementById('h4').style.backgroundColor = "darkgreen";
+                        document.getElementById('h4').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h4 = 1;
                     }
                     else{
@@ -1472,7 +1472,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 60){
                     if(player != "h5" && h5 === 0){
-                        document.getElementById('h5').style.backgroundColor = "darkgreen";
+                        document.getElementById('h5').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h5 = 1;
                     }
                     else{
@@ -1481,7 +1481,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 61){
                     if(player != "h6" && h6 === 0){
-                        document.getElementById('h6').style.backgroundColor = "darkgreen";
+                        document.getElementById('h6').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h6 = 1;
                     }
                     else{
@@ -1490,7 +1490,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 62){
                     if(player != "h7" && h7 === 0){
-                        document.getElementById('h7').style.backgroundColor = "darkgreen";
+                        document.getElementById('h7').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h7 = 1;
                     }
                     else{
@@ -1499,7 +1499,7 @@ for(var y = 1; y < 11; y++){
                 }
                 else if(frutaLoca === 63){
                     if(player != "h8" && h8 === 0){
-                        document.getElementById('h8').style.backgroundColor = "darkgreen";
+                        document.getElementById('h8').style.backgroundImage = "url('files/img/apples/green-apple.png')";
                         h8 = 1;
                     }
                     else{
@@ -1519,59 +1519,64 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a2').style.backgroundImage = "none";
                     }
                     else if(a2 === 2){
                         a2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "a2"){
                     player = "a3";
                     document.getElementById('a2').style.backgroundColor = "transparent";
-                    document.getElementById('a3').style.backgroundColor = "#555";
                     if(a3 === 1){
                         a3 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a3').style.backgroundImage = "none";
                     }
                     else if(a3 === 2){
                         a3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "a3"){
                     player = "a4";
                     document.getElementById('a3').style.backgroundColor = "transparent";
-                    document.getElementById('a4').style.backgroundColor = "#555";
                     if(a4 === 1){
                         a4 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a4').style.backgroundImage = "none";
                     }
                     else if(a4 === 2){
                         a4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "a4"){
                     player = "a5";
                     document.getElementById('a4').style.backgroundColor = "transparent";
-                    document.getElementById('a5').style.backgroundColor = "#555";
                     if(a5 === 1){
                         a5 = 0;
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a5').style.backgroundImage = "none";
                     }
                     else if(a5 === 2){
                         a5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "a5"){
@@ -1583,11 +1588,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a6').style.backgroundImage = "none";
                     }
                     else if(a6 === 2){
                         a6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "a6"){
@@ -1599,11 +1606,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a7').style.backgroundImage = "none";
                     }
                     else if(a7 === 2){
                         a7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "a7"){
@@ -1615,11 +1624,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a8').style.backgroundImage = "none";
                     }
                     else if(a8 === 2){
                         a8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('a8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b1"){
@@ -1631,11 +1642,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b2').style.backgroundImage = "none";
                     }
                     else if(b2 === 2){
                         b2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b2"){
@@ -1647,11 +1660,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b3').style.backgroundImage = "none";
                     }
                     else if(b3 === 2){
                         b3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b3"){
@@ -1663,11 +1678,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b4').style.backgroundImage = "none";
                     }
                     else if(b4 === 2){
                         b4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b4"){
@@ -1679,11 +1696,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b5').style.backgroundImage = "none";
                     }
                     else if(b5 === 2){
                         b5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b5"){
@@ -1695,11 +1714,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b6').style.backgroundImage = "none";
                     }
                     else if(b6 === 2){
                         b6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b6"){
@@ -1711,11 +1732,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b7').style.backgroundImage = "none";
                     }
                     else if(b7 === 2){
                         b7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "b7"){
@@ -1727,11 +1750,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b8').style.backgroundImage = "none";
                     }
                     else if(b8 === 2){
                         b8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('b8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c1"){
@@ -1743,11 +1768,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c2').style.backgroundImage = "none";
                     }
                     else if(c2 === 2){
                         c2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c2"){
@@ -1759,11 +1786,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c3').style.backgroundImage = "none";
                     }
                     else if(c3 === 2){
                         c3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c3"){
@@ -1775,11 +1804,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c4').style.backgroundImage = "none";
                     }
                     else if(c4 === 2){
                         c4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c4"){
@@ -1791,11 +1822,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c5').style.backgroundImage = "none";
                     }
                     else if(c5 === 2){
                         c5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c5"){
@@ -1807,11 +1840,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c6').style.backgroundImage = "none";
                     }
                     else if(c6 === 2){
                         c6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c6"){
@@ -1823,11 +1858,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c7').style.backgroundImage = "none";
                     }
                     else if(c7 === 2){
                         c7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "c7"){
@@ -1839,11 +1876,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c8').style.backgroundImage = "none";
                     }
                     else if(c8 === 2){
                         c8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('c8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d1"){
@@ -1855,11 +1894,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d2').style.backgroundImage = "none";
                     }
                     else if(d2 === 2){
                         d2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d2"){
@@ -1871,11 +1912,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d3').style.backgroundImage = "none";
                     }
                     else if(d3 === 2){
                         d3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d3"){
@@ -1887,11 +1930,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d4').style.backgroundImage = "none";
                     }
                     else if(d4 === 2){
                         d4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d4"){
@@ -1903,11 +1948,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d5').style.backgroundImage = "none";
                     }
                     else if(d5 === 2){
                         d5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d5"){
@@ -1919,11 +1966,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d6').style.backgroundImage = "none";
                     }
                     else if(d6 === 2){
                         d6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d6"){
@@ -1935,11 +1984,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d7').style.backgroundImage = "none";
                     }
                     else if(d7 === 2){
                         d7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "d7"){
@@ -1951,11 +2002,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d8').style.backgroundImage = "none";
                     }
                     else if(d8 === 2){
                         d8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('d8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e1"){
@@ -1967,11 +2020,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e2').style.backgroundImage = "none";
                     }
                     else if(e2 === 2){
                         e2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e2"){
@@ -1983,11 +2038,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e3').style.backgroundImage = "none";
                     }
                     else if(e3 === 2){
                         e3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e3"){
@@ -1999,11 +2056,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e4').style.backgroundImage = "none";
                     }
                     else if(e4 === 2){
                         e4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e4"){
@@ -2015,11 +2074,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e5').style.backgroundImage = "none";
                     }
                     else if(e5 === 2){
                         e5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e5"){
@@ -2031,11 +2092,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e6').style.backgroundImage = "none";
                     }
                     else if(e6 === 2){
                         e6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e6"){
@@ -2047,11 +2110,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e7').style.backgroundImage = "none";
                     }
                     else if(e7 === 2){
                         e7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "e7"){
@@ -2063,11 +2128,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e8').style.backgroundImage = "none";
                     }
                     else if(e8 === 2){
                         e8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('e8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f1"){
@@ -2079,11 +2146,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f2').style.backgroundImage = "none";
                     }
                     else if(f2 === 2){
                         f2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f2"){
@@ -2095,11 +2164,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f3').style.backgroundImage = "none";
                     }
                     else if(f3 === 2){
                         f3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f3"){
@@ -2111,11 +2182,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f4').style.backgroundImage = "none";
                     }
                     else if(f4 === 2){
                         f4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f4"){
@@ -2127,11 +2200,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f5').style.backgroundImage = "none";
                     }
                     else if(f5 === 2){
                         f5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f5"){
@@ -2143,11 +2218,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f6').style.backgroundImage = "none";
                     }
                     else if(f6 === 2){
                         f6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f6"){
@@ -2159,11 +2236,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f7').style.backgroundImage = "none";
                     }
                     else if(f7 === 2){
                         f7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "f7"){
@@ -2175,11 +2254,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f8').style.backgroundImage = "none";
                     }
                     else if(f8 === 2){
                         f8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('f8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g1"){
@@ -2191,11 +2272,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g2').style.backgroundImage = "none";
                     }
                     else if(g2 === 2){
                         g2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g2"){
@@ -2207,11 +2290,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g3').style.backgroundImage = "none";
                     }
                     else if(g3 === 2){
                         g3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g3"){
@@ -2223,11 +2308,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g4').style.backgroundImage = "none";
                     }
                     else if(g4 === 2){
                         g4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g4"){
@@ -2239,11 +2326,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g5').style.backgroundImage = "none";
                     }
                     else if(g5 === 2){
                         g5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g5"){
@@ -2255,11 +2344,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g6').style.backgroundImage = "none";
                     }
                     else if(g6 === 2){
                         g6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g6"){
@@ -2271,11 +2362,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g7').style.backgroundImage = "none";
                     }
                     else if(g7 === 2){
                         g7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "g7"){
@@ -2287,11 +2380,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g8').style.backgroundImage = "none";
                     }
-                    else if(g2 === 2){
+                    else if(g8 === 2){
                         g2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('g8').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h1"){
@@ -2303,11 +2398,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h2').style.backgroundImage = "none";
                     }
                     else if(h2 === 2){
                         h2 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h2').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h2"){
@@ -2319,11 +2416,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h3').style.backgroundImage = "none";
                     }
                     else if(h3 === 2){
                         h3 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h3').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h3"){
@@ -2335,11 +2434,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h4').style.backgroundImage = "none";
                     }
                     else if(h4 === 2){
                         h4 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h4').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h4"){
@@ -2351,11 +2452,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h5').style.backgroundImage = "none";
                     }
                     else if(h5 === 2){
                         h5 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h5').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h5"){
@@ -2367,11 +2470,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h6').style.backgroundImage = "none";
                     }
                     else if(h6 === 2){
                         h6 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h6').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h6"){
@@ -2383,11 +2488,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h7').style.backgroundImage = "none";
                     }
                     else if(h7 === 2){
                         h7 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h7').style.backgroundImage = "none";
                     }
                 }
                 else if(player === "h7"){
@@ -2399,11 +2506,13 @@ for(var y = 1; y < 11; y++){
                         pont = pont + 100;
                         frutasAtivas--;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h8').style.backgroundImage = "none";
                     }
                     else if(h8 === 2){
                         h8 = 0;
                         pont = pont + pontFrutaVermelha;
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
+                        document.getElementById('h8').style.backgroundImage = "none";
                     }
                 }
                 else{}
