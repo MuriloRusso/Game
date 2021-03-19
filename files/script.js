@@ -77,7 +77,7 @@ for(var y = 1; y < 11; y++){
                         a1 = 2;
                         setTimeout(function(){
                             a1 = 0;
-                            document.getElementById('a1').style.backgroundColor = "transparent";
+                            document.getElementById('a1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -90,7 +90,7 @@ for(var y = 1; y < 11; y++){
                         a2 = 2;
                         setTimeout(function(){
                             a2 = 0;
-                            document.getElementById('a2').style.backgroundColor = "transparent";
+                            document.getElementById('a2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -103,7 +103,7 @@ for(var y = 1; y < 11; y++){
                         a3 = 2;
                         setTimeout(function(){
                             a3 = 0;
-                            document.getElementById('a3').style.backgroundColor = "transparent";
+                            document.getElementById('a3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -116,7 +116,7 @@ for(var y = 1; y < 11; y++){
                         a4 = 2;
                         setTimeout(function(){
                             a4 = 0;
-                            document.getElementById('a4').style.backgroundColor = "transparent";
+                            document.getElementById('a4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -129,7 +129,7 @@ for(var y = 1; y < 11; y++){
                         a5 = 2;
                         setTimeout(function(){
                             a5 = 0;
-                            document.getElementById('a5').style.backgroundColor = "transparent";
+                            document.getElementById('a5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -142,7 +142,7 @@ for(var y = 1; y < 11; y++){
                         a6 = 2;
                         setTimeout(function(){
                             a6 = 0;
-                            document.getElementById('a6').style.backgroundColor = "transparent";
+                            document.getElementById('a6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -155,7 +155,7 @@ for(var y = 1; y < 11; y++){
                         a7 = 2;
                         setTimeout(function(){
                             a7 = 0;
-                            document.getElementById('a7').style.backgroundColor = "transparent";
+                            document.getElementById('a7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -168,7 +168,7 @@ for(var y = 1; y < 11; y++){
                         a8 = 2;
                         setTimeout(function(){
                             a8 = 0;
-                            document.getElementById('a8').style.backgroundColor = "transparent";
+                            document.getElementById('a8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -182,7 +182,7 @@ for(var y = 1; y < 11; y++){
                         b1 = 2;
                         setTimeout(function(){
                             b1 = 0;
-                            document.getElementById('b1').style.backgroundColor = "transparent";
+                            document.getElementById('b1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -195,7 +195,7 @@ for(var y = 1; y < 11; y++){
                         b2 = 2;
                         setTimeout(function(){
                             b2 = 0;
-                            document.getElementById('b2').style.backgroundColor = "transparent";
+                            document.getElementById('b2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -208,7 +208,7 @@ for(var y = 1; y < 11; y++){
                         b3 = 2;
                         setTimeout(function(){
                             b3 = 0;
-                            document.getElementById('b3').style.backgroundColor = "transparent";
+                            document.getElementById('b3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -221,7 +221,7 @@ for(var y = 1; y < 11; y++){
                         b4 = 2;
                         setTimeout(function(){
                             b4 = 0;
-                            document.getElementById('b4').style.backgroundColor = "transparent";
+                            document.getElementById('b4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -234,7 +234,7 @@ for(var y = 1; y < 11; y++){
                         b5 = 2;
                         setTimeout(function(){
                             b5 = 0;
-                            document.getElementById('b5').style.backgroundColor = "transparent";
+                            document.getElementById('b5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -247,7 +247,7 @@ for(var y = 1; y < 11; y++){
                         b6 = 2;
                         setTimeout(function(){
                             b6 = 0;
-                            document.getElementById('b6').style.backgroundColor = "transparent";
+                            document.getElementById('b6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -260,7 +260,7 @@ for(var y = 1; y < 11; y++){
                         b7 = 2;
                         setTimeout(function(){
                             b7 = 0;
-                            document.getElementById('b7').style.backgroundColor = "transparent";
+                            document.getElementById('b7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -273,7 +273,7 @@ for(var y = 1; y < 11; y++){
                         b8 = 2;
                         setTimeout(function(){
                             b8 = 0;
-                            document.getElementById('b8').style.backgroundColor = "transparent";
+                            document.getElementById('b8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -287,7 +287,7 @@ for(var y = 1; y < 11; y++){
                         c1 = 2;
                         setTimeout(function(){
                             c1 = 0;
-                            document.getElementById('c1').style.backgroundColor = "transparent";
+                            document.getElementById('c1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -300,7 +300,7 @@ for(var y = 1; y < 11; y++){
                         c2 = 2;
                         setTimeout(function(){
                             c2 = 0;
-                            document.getElementById('c2').style.backgroundColor = "transparent";
+                            document.getElementById('c2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -313,7 +313,7 @@ for(var y = 1; y < 11; y++){
                         c3 = 2;
                         setTimeout(function(){
                             c3 = 0;
-                            document.getElementById('c3').style.backgroundColor = "transparent";
+                            document.getElementById('c3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -326,7 +326,7 @@ for(var y = 1; y < 11; y++){
                         c4 = 2;
                         setTimeout(function(){
                             c4 = 0;
-                            document.getElementById('c4').style.backgroundColor = "transparent";
+                            document.getElementById('c4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -339,7 +339,7 @@ for(var y = 1; y < 11; y++){
                         c5 = 2;
                         setTimeout(function(){
                             c5 = 0;
-                            document.getElementById('c5').style.backgroundColor = "transparent";
+                            document.getElementById('c5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -352,7 +352,7 @@ for(var y = 1; y < 11; y++){
                         c6 = 2;
                         setTimeout(function(){
                             c6 = 0;
-                            document.getElementById('c6').style.backgroundColor = "transparent";
+                            document.getElementById('c6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -365,7 +365,7 @@ for(var y = 1; y < 11; y++){
                         c7 = 2;
                         setTimeout(function(){
                             c7 = 0;
-                            document.getElementById('c7').style.backgroundColor = "transparent";
+                            document.getElementById('c7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -378,7 +378,7 @@ for(var y = 1; y < 11; y++){
                         c8 = 2;
                         setTimeout(function(){
                             c8 = 0;
-                            document.getElementById('c8').style.backgroundColor = "transparent";
+                            document.getElementById('c8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -392,7 +392,7 @@ for(var y = 1; y < 11; y++){
                         d1 = 2;
                         setTimeout(function(){
                             d1 = 0;
-                            document.getElementById('d1').style.backgroundColor = "transparent";
+                            document.getElementById('d1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -405,7 +405,7 @@ for(var y = 1; y < 11; y++){
                         d2 = 2;
                         setTimeout(function(){
                             d2 = 0;
-                            document.getElementById('d2').style.backgroundColor = "transparent";
+                            document.getElementById('d2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -418,7 +418,7 @@ for(var y = 1; y < 11; y++){
                         d3 = 2;
                         setTimeout(function(){
                             d3 = 0;
-                            document.getElementById('d3').style.backgroundColor = "transparent";
+                            document.getElementById('d3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -431,7 +431,7 @@ for(var y = 1; y < 11; y++){
                         d4 = 2;
                         setTimeout(function(){
                             d4 = 0;
-                            document.getElementById('d4').style.backgroundColor = "transparent";
+                            document.getElementById('d4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -444,7 +444,7 @@ for(var y = 1; y < 11; y++){
                         d5 = 2;
                         setTimeout(function(){
                             d5 = 0;
-                            document.getElementById('d5').style.backgroundColor = "transparent";
+                            document.getElementById('d5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -457,7 +457,7 @@ for(var y = 1; y < 11; y++){
                         d6 = 2;
                         setTimeout(function(){
                             d6 = 0;
-                            document.getElementById('d6').style.backgroundColor = "transparent";
+                            document.getElementById('d6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -470,7 +470,7 @@ for(var y = 1; y < 11; y++){
                         d7 = 2;
                         setTimeout(function(){
                             d7 = 0;
-                            document.getElementById('d7').style.backgroundColor = "transparent";
+                            document.getElementById('d7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -483,7 +483,7 @@ for(var y = 1; y < 11; y++){
                         d8 = 2;
                         setTimeout(function(){
                             d8 = 0;
-                            document.getElementById('d8').style.backgroundColor = "transparent";
+                            document.getElementById('d8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -497,7 +497,7 @@ for(var y = 1; y < 11; y++){
                         e1 = 2;
                         setTimeout(function(){
                             e1 = 0;
-                            document.getElementById('e1').style.backgroundColor = "transparent";
+                            document.getElementById('e1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -510,7 +510,7 @@ for(var y = 1; y < 11; y++){
                         e2 = 2;
                         setTimeout(function(){
                             e2 = 0;
-                            document.getElementById('e2').style.backgroundColor = "transparent";
+                            document.getElementById('e2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -523,7 +523,7 @@ for(var y = 1; y < 11; y++){
                         e3 = 2;
                         setTimeout(function(){
                             e3 = 0;
-                            document.getElementById('e3').style.backgroundColor = "transparent";
+                            document.getElementById('e3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -536,7 +536,7 @@ for(var y = 1; y < 11; y++){
                         e4 = 2;
                         setTimeout(function(){
                             e4 = 0;
-                            document.getElementById('e4').style.backgroundColor = "transparent";
+                            document.getElementById('e4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -549,7 +549,7 @@ for(var y = 1; y < 11; y++){
                         e5 = 2;
                         setTimeout(function(){
                             e5 = 0;
-                            document.getElementById('e5').style.backgroundColor = "transparent";
+                            document.getElementById('e5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -562,7 +562,7 @@ for(var y = 1; y < 11; y++){
                         e6 = 2;
                         setTimeout(function(){
                             e6 = 0;
-                            document.getElementById('e6').style.backgroundColor = "transparent";
+                            document.getElementById('e6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -575,7 +575,7 @@ for(var y = 1; y < 11; y++){
                         e7 = 2;
                         setTimeout(function(){
                             e7 = 0;
-                            document.getElementById('e7').style.backgroundColor = "transparent";
+                            document.getElementById('e7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -588,7 +588,7 @@ for(var y = 1; y < 11; y++){
                         e8 = 2;
                         setTimeout(function(){
                             e8 = 0;
-                            document.getElementById('e8').style.backgroundColor = "transparent";
+                            document.getElementById('e8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -602,7 +602,7 @@ for(var y = 1; y < 11; y++){
                         f1 = 2;
                         setTimeout(function(){
                             f1 = 0;
-                            document.getElementById('f1').style.backgroundColor = "transparent";
+                            document.getElementById('f1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -615,7 +615,7 @@ for(var y = 1; y < 11; y++){
                         f2 = 2;
                         setTimeout(function(){
                             f2 = 0;
-                            document.getElementById('f2').style.backgroundColor = "transparent";
+                            document.getElementById('f2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -628,7 +628,7 @@ for(var y = 1; y < 11; y++){
                         f3 = 2;
                         setTimeout(function(){
                             f3 = 0;
-                            document.getElementById('f3').style.backgroundColor = "transparent";
+                            document.getElementById('f3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -641,7 +641,7 @@ for(var y = 1; y < 11; y++){
                         f4 = 2;
                         setTimeout(function(){
                             f4 = 0;
-                            document.getElementById('f4').style.backgroundColor = "transparent";
+                            document.getElementById('f4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -654,7 +654,7 @@ for(var y = 1; y < 11; y++){
                         f5 = 2;
                         setTimeout(function(){
                             f5 = 0;
-                            document.getElementById('f5').style.backgroundColor = "transparent";
+                            document.getElementById('f5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -667,7 +667,7 @@ for(var y = 1; y < 11; y++){
                         f6 = 2;
                         setTimeout(function(){
                             f6 = 0;
-                            document.getElementById('f6').style.backgroundColor = "transparent";
+                            document.getElementById('f6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -680,7 +680,7 @@ for(var y = 1; y < 11; y++){
                         f7 = 2;
                         setTimeout(function(){
                             f7 = 0;
-                            document.getElementById('f7').style.backgroundColor = "transparent";
+                            document.getElementById('f7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -693,7 +693,7 @@ for(var y = 1; y < 11; y++){
                         f8 = 2;
                         setTimeout(function(){
                             f8 = 0;
-                            document.getElementById('f8').style.backgroundColor = "transparent";
+                            document.getElementById('f8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -707,7 +707,7 @@ for(var y = 1; y < 11; y++){
                         g1 = 2;
                         setTimeout(function(){
                             g1 = 0;
-                            document.getElementById('g1').style.backgroundColor = "transparent";
+                            document.getElementById('g1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -720,7 +720,7 @@ for(var y = 1; y < 11; y++){
                         g2 = 2;
                         setTimeout(function(){
                             g2 = 0;
-                            document.getElementById('g2').style.backgroundColor = "transparent";
+                            document.getElementById('g2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -733,7 +733,7 @@ for(var y = 1; y < 11; y++){
                         g3 = 2;
                         setTimeout(function(){
                             g3 = 0;
-                            document.getElementById('g3').style.backgroundColor = "transparent";
+                            document.getElementById('g3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -746,7 +746,7 @@ for(var y = 1; y < 11; y++){
                         g4 = 2;
                         setTimeout(function(){
                             g4 = 0;
-                            document.getElementById('g4').style.backgroundColor = "transparent";
+                            document.getElementById('g4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -759,7 +759,7 @@ for(var y = 1; y < 11; y++){
                         g5 = 2;
                         setTimeout(function(){
                             g5 = 0;
-                            document.getElementById('g5').style.backgroundColor = "transparent";
+                            document.getElementById('g5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -772,7 +772,7 @@ for(var y = 1; y < 11; y++){
                         g6 = 2;
                         setTimeout(function(){
                             g6 = 0;
-                            document.getElementById('g6').style.backgroundColor = "transparent";
+                            document.getElementById('g6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -785,7 +785,7 @@ for(var y = 1; y < 11; y++){
                         g7 = 2;
                         setTimeout(function(){
                             g7 = 0;
-                            document.getElementById('g7').style.backgroundColor = "transparent";
+                            document.getElementById('g7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -798,7 +798,7 @@ for(var y = 1; y < 11; y++){
                         g8 = 2;
                         setTimeout(function(){
                             g8 = 0;
-                            document.getElementById('g8').style.backgroundColor = "transparent";
+                            document.getElementById('g8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -812,7 +812,7 @@ for(var y = 1; y < 11; y++){
                         h1 = 2;
                         setTimeout(function(){
                             h1 = 0;
-                            document.getElementById('h1').style.backgroundColor = "transparent";
+                            document.getElementById('h1').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -825,7 +825,7 @@ for(var y = 1; y < 11; y++){
                         h2 = 2;
                         setTimeout(function(){
                             h2 = 0;
-                            document.getElementById('h2').style.backgroundColor = "transparent";
+                            document.getElementById('h2').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -838,7 +838,7 @@ for(var y = 1; y < 11; y++){
                         h3 = 2;
                         setTimeout(function(){
                             h3 = 0;
-                            document.getElementById('h3').style.backgroundColor = "transparent";
+                            document.getElementById('h3').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -851,7 +851,7 @@ for(var y = 1; y < 11; y++){
                         h4 = 2;
                         setTimeout(function(){
                             h4 = 0;
-                            document.getElementById('h4').style.backgroundColor = "transparent";
+                            document.getElementById('h4').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -864,7 +864,7 @@ for(var y = 1; y < 11; y++){
                         h5 = 2;
                         setTimeout(function(){
                             h5 = 0;
-                            document.getElementById('h5').style.backgroundColor = "transparent";
+                            document.getElementById('h5').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -877,7 +877,7 @@ for(var y = 1; y < 11; y++){
                         h6 = 2;
                         setTimeout(function(){
                             h6 = 0;
-                            document.getElementById('h6').style.backgroundColor = "transparent";
+                            document.getElementById('h6').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -890,7 +890,7 @@ for(var y = 1; y < 11; y++){
                         h7 = 2;
                         setTimeout(function(){
                             h7 = 0;
-                            document.getElementById('h7').style.backgroundColor = "transparent";
+                            document.getElementById('h7').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
@@ -903,7 +903,7 @@ for(var y = 1; y < 11; y++){
                         h8 = 2;
                         setTimeout(function(){
                             h8 = 0;
-                            document.getElementById('h8').style.backgroundColor = "transparent";
+                            document.getElementById('h8').style.backgroundImage = "none";
                         }, timeActived);
                     }
                     else{
