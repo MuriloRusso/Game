@@ -1,11 +1,11 @@
-        var player = "a1";
-        var pont = 0;
-        var frutaLoca;
-        var frutaVermelhaLoca;
-        var a1, a2, a3, a4, a5, a6, a7, a8, b1, b2, b3, b4, b5, b6, b7, b8, c1, c2, c3, c4, c5, c6, c7, c8, d1, d2, d3, d4, d5, d6, d7, d8, e1, e2, e3, e4, e5, e6, e7, e8, f1, f2, f3, f4, f5, f6, f7, f8, g1, g2, g3, g4, g5, g6, g7, g8, g9, h1, h2, h3, h4, h5, h6, h7, h8;
-        var frutasAtivas = 0;
-        var dificuldade = 11;
-        var isGameOn = false;
+var player = "a1";
+var pont = 0;
+var frutaLoca;
+var frutaVermelhaLoca;
+var a1, a2, a3, a4, a5, a6, a7, a8, b1, b2, b3, b4, b5, b6, b7, b8, c1, c2, c3, c4, c5, c6, c7, c8, d1, d2, d3, d4, d5, d6, d7, d8, e1, e2, e3, e4, e5, e6, e7, e8, f1, f2, f3, f4, f5, f6, f7, f8, g1, g2, g3, g4, g5, g6, g7, g8, g9, h1, h2, h3, h4, h5, h6, h7, h8;
+var frutasAtivas = 0;
+var dificuldade = 11;
+var isGameOn = false;
 var frutasVerdes = 0;
 var pontFrutaVermelha = 500;
 var isGameMuted = false;
@@ -13,60 +13,156 @@ var somFruta = new Audio();
 var somFrutaVermelha = new Audio();
 somFruta.src = 'files/som/coin.wav'
 somFrutaVermelha.src = 'files/som/coin-2.wav'
+var nivelDificuldade = 2;
 
-        function aumentarDificuldade(){
-            if(frutasVerdes < 6){
-                dificuldade = 11;
-            }
-            else if(frutasVerdes > 6 && frutasVerdes < 11){
-                dificuldade = 10;
-            }
-            else if(frutasVerdes > 11 && frutasVerdes < 16){
-                dificuldade = 9;
-            }
-            else if(frutasVerdes > 16 && frutasVerdes < 21){
-                dificuldade = 8;
-            }
-            else if(frutasVerdes > 21 && frutasVerdes < 26){
-                dificuldade = 7;
-            }
-            else if(frutasVerdes > 26 && frutasVerdes < 31){
-                dificuldade = 6;
-            }
-            else if(frutasVerdes > 51 && frutasVerdes < 101){
-                dificuldade = 5;
-            }
-            else if(frutasVerdes > 101){
-                dificuldade = 4;
-            }
-        }
-        function iniciar(){
-            a1= 0; a2= 0; a3= 0; a4= 0; a5= 0; a6= 0; a7= 0; a8= 0; b1= 0; b2= 0; b3= 0; b4= 0; b5= 0; b6= 0; b7= 0; b8= 0; c1= 0; c2= 0; c3= 0; c4= 0; c5= 0; c6= 0; c7= 0; c8= 0; d1= 0; d2= 0; d3= 0; d4= 0; d5= 0; d6= 0; d7= 0; d8= 0; e1= 0; e2= 0; e3= 0; e4=0; e5= 0; e6= 0; e7= 0; e8= 0; f1= 0; f2= 0; f3= 0; f4= 0; f5= 0; f6= 0; f7= 0; f8= 0; g1= 0; g2= 0; g3= 0; g4= 0; g5= 0; g6= 0; g7= 0; g8= 0; h1= 0; h2= 0; h3= 0; h4= 0; h5= 0; h6= 0; h7= 0; h8= 0;
-            isGameOn = true;
-            document.getElementById('tela-inicial').style.display = "none";
-            gerarFruta();
-            frutasAtivas++;
-            loopFrutaVermelha();
-            for(var x = 1; x < 9999; x++){
-                setTimeout(function(){
-                    if(frutasAtivas < dificuldade){
-                        gerarFruta();
-                        frutasAtivas++;
-                        frutasVerdes++;
-                        console.log(frutasAtivas);
-                        aumentarDificuldade();
-                    }
-                    else{
-                        isGameOn = false;
-                        document.getElementById('tela-inicial').style.display = "flex";
-                        document.getElementById('txt-tela-inicial').innerHTML = "Sua pontuação final foi: " + pont;
-                        document.getElementById('btn-tela-inicial').style.display = "none";
-                        document.getElementById('btn-reiniciar').style.display = "block";
-                    }
-                }, 700*x);
-            }
-        }
+function nivelInfantil(){
+    nivelDificuldade = 0;
+    document.getElementById('tela-dificuldade').style.display = 'none';
+    document.getElementById('tela-inicial').style.display = 'flex';
+}
+function nivelMobile(){
+    nivelDificuldade = 1;
+    document.getElementById('tela-dificuldade').style.display = 'none';
+    document.getElementById('tela-inicial').style.display = 'flex';
+}
+function nivelComputador(){
+    nivelDificuldade = 2;
+    document.getElementById('tela-dificuldade').style.display = 'none';
+    document.getElementById('tela-inicial').style.display = 'flex';
+}
+function nivelHard(){
+    nivelDificuldade = 3;
+    document.getElementById('tela-dificuldade').style.display = 'none';
+    document.getElementById('tela-inicial').style.display = 'flex';
+}
 
+function mudarDificuldade(){
+    document.getElementById('tela-inicial').style.display = 'none';
+    document.getElementById('tela-dificuldade').style.display = 'flex';
+}
+
+function aumentarDificuldade(){
+    if(nivelDificuldade === 0){
+        dificuldade = 50;
+    }
+    else if(nivelDificuldade === 1){
+        if(frutasVerdes < 6){
+            dificuldade = 16;
+        }
+        else if(frutasVerdes > 6 && frutasVerdes < 11){
+            dificuldade = 15;
+        }
+        else if(frutasVerdes > 11 && frutasVerdes < 16){
+            dificuldade = 14;
+        }
+        else if(frutasVerdes > 16 && frutasVerdes < 21){
+            dificuldade = 13;
+        }
+        else if(frutasVerdes > 21 && frutasVerdes < 26){
+            dificuldade = 12;
+        }
+        else if(frutasVerdes > 26 && frutasVerdes < 31){
+            dificuldade = 11;
+        }
+        else if(frutasVerdes > 51 && frutasVerdes < 101){
+            dificuldade = 10;
+        }
+        else if(frutasVerdes > 101 && frutasVerdes < 121){
+            dificuldade = 9;
+        }
+        else if(frutasVerdes > 121 && frutasVerdes < 131){
+            dificuldade = 8;
+        }
+        else if(frutasVerdes > 131 && frutasVerdes < 141){
+            dificuldade = 7;
+        }
+        else if(frutasVerdes > 141 && frutasVerdes < 151){
+            dificuldade = 6;
+        }
+        else if(frutasVerdes > 151 && frutasVerdes < 161){
+            dificuldade = 5;
+        }
+        else if(frutasVerdes > 151){
+            dificuldade = 4;
+        }
+    }
+    else if(nivelDificuldade === 2){
+        if(frutasVerdes < 6){
+            dificuldade = 11;
+        }
+        else if(frutasVerdes > 6 && frutasVerdes < 11){
+            dificuldade = 10;
+        }
+        else if(frutasVerdes > 11 && frutasVerdes < 16){
+            dificuldade = 9;
+        }
+        else if(frutasVerdes > 16 && frutasVerdes < 21){
+            dificuldade = 8;
+        }
+        else if(frutasVerdes > 21 && frutasVerdes < 26){
+            dificuldade = 7;
+        }
+        else if(frutasVerdes > 26 && frutasVerdes < 31){
+            dificuldade = 6;
+        }
+        else if(frutasVerdes > 51 && frutasVerdes < 101){
+            dificuldade = 5;
+        }
+        else if(frutasVerdes > 101){
+            dificuldade = 4;
+        }
+    }
+    else if(nivelDificuldade === 3){
+        if(frutasVerdes < 6){
+            dificuldade = 8;
+        }
+        else if(frutasVerdes > 6 && frutasVerdes < 11){
+            dificuldade = 7;
+        }
+        else if(frutasVerdes > 11 && frutasVerdes < 16){
+            dificuldade = 6;
+        }
+        else if(frutasVerdes > 16 && frutasVerdes < 21){
+            dificuldade = 5;
+        }
+        else if(frutasVerdes > 21 && frutasVerdes < 26){
+            dificuldade = 4;
+        }
+        else if(frutasVerdes > 26){
+            dificuldade = 3;
+        }
+    }
+}
+
+function iniciar(){
+    a1= 0; a2= 0; a3= 0; a4= 0; a5= 0; a6= 0; a7= 0; a8= 0; b1= 0; b2= 0; b3= 0; b4= 0; b5= 0; b6= 0; b7= 0; b8= 0; c1= 0; c2= 0; c3= 0; c4= 0; c5= 0; c6= 0; c7= 0; c8= 0; d1= 0; d2= 0; d3= 0; d4= 0; d5= 0; d6= 0; d7= 0; d8= 0; e1= 0; e2= 0; e3= 0; e4=0; e5= 0; e6= 0; e7= 0; e8= 0; f1= 0; f2= 0; f3= 0; f4= 0; f5= 0; f6= 0; f7= 0; f8= 0; g1= 0; g2= 0; g3= 0; g4= 0; g5= 0; g6= 0; g7= 0; g8= 0; h1= 0; h2= 0; h3= 0; h4= 0; h5= 0; h6= 0; h7= 0; h8= 0;
+    isGameOn = true;
+    document.getElementById('tela-inicial').style.display = "none";
+    gerarFruta();
+    frutasAtivas++;
+    loopFrutaVermelha();
+    for(var x = 1; x < 9999; x++){
+        setTimeout(function(){
+            if(frutasAtivas < dificuldade){
+                gerarFruta();
+                frutasAtivas++;
+                frutasVerdes++;
+                console.log(frutasAtivas);
+                aumentarDificuldade();
+            }
+            else{
+                isGameOn = false;
+                document.getElementById('tela-inicial').style.display = "flex";
+                document.getElementById('txt-tela-inicial').innerHTML = "Sua pontuação final foi: " + pont;
+                document.getElementById('btn-tela-inicial').style.display = "none";
+                document.getElementById('btn-reiniciar').style.display = "block";
+                document.getElementById('btn-mudar-dificuldade').style.display = 'block';
+                x = 9999;
+                console.log(x);
+            }
+        }, 700*x);
+    }
+}
 function loopFrutaVermelha(){
     for(var y = 1; y < 11; y++){
         var timeRed = Math.floor(Math.random() * 30000);
@@ -75,6 +171,7 @@ function loopFrutaVermelha(){
         }, timeRed*y);
     }
 }
+
         function gerarFrutaVermelha(){
             var timeActived = 5000;
             if(isGameOn === true){
@@ -933,10 +1030,6 @@ function tocarSomVermelho(){
     }
     else{}
 }
-
-
-
-
 
 
         function gerarFruta(){

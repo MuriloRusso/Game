@@ -14,7 +14,18 @@
   <body>
     <h2 id="pont">Pontuação: 0</h2>
     <div class="container">
-        <div id="tela-inicial">
+        <div id="tela-dificuldade">
+            <h2>Escolha a Dificuldade que você quer jogar</h2>
+            <a onclick="nivelInfantil()">Infantil</a>
+            <small>Recomendado para crianças de até 7 anos.</small>
+            <a onclick="nivelMobile()">Mobile</a>
+            <small>Recomendado caso você esteja jogando de um dispositivo mobile(celular/tablet).</small>
+            <a onclick="nivelComputador()">Computador</a>
+            <small>Recomendado caso você esteja jogando de um computador.</small>
+            <a onclick="nivelHard()">Hard</a>
+            <small>Recomendado caso você esteja familiarizado com o jogo, e queira um desafio maior.</small>
+        </div>
+        <div id="tela-inicial" style="display: none">
             <h2 id="txt-tela-inicial"></h2>
             <div class="sinopse">
                 <h1>Maze Fruit</h1>
@@ -30,6 +41,7 @@
             </div>
             <a href="#" id="btn-tela-inicial" onclick="iniciar()">Iniciar</a>
 <!--            <a href="#" id="btn-voltar-pause" onclick="voltar()" style="display: none">Voltar</a>-->
+            <a href="#" id="btn-mudar-dificuldade" onclick="mudarDificuldade()" style="display: none">Mudar Dificuldade</a>
             <a href="#" id="btn-reiniciar" onclick="reiniciar()" style="display: none">Reiniciar</a>
         </div>
         <div id="h1">H1</div><div id="h2">H2</div><div id="h3">H3</div><div id="h4">H4</div><div id="h5">H5</div><div id="h6">H6</div><div id="h7">H7</div><div id="h8">H8</div>

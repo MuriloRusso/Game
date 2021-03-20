@@ -19,7 +19,7 @@ body{
     background-color: aliceblue;
     color: black;
 }
-.container #tela-inicial{
+.container #tela-inicial, .container #tela-dificuldade{
     width: 416px;
     height: 100vh;
     display: flex;
@@ -30,13 +30,17 @@ body{
     flex-direction: column;
     font-size: 20px;
 }
-.container #tela-inicial a{
+.container #tela-inicial a, .container #tela-dificuldade a{
     width: 200px;
     height: 50px;
     background-color: orange;
     color: white; 
     text-decoration: none;
     font-size: 28px;
+}
+.container #tela-inicial #btn-mudar-dificuldade{
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 .container div {
     width: 50px;
