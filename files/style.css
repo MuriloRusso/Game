@@ -1,78 +1,119 @@
 *{
-              margin: 0;
-              padding: 0;
-          }
-          body{
-              background-color: #222;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-              color: white;
-          }
-          .container{
-              border: 1px solid black;
-              width: 416px;
-              height: auto;
-              display: flex;
-              flex-wrap: wrap;
-              background-color: aliceblue;
-              color: black;
-          }
-          .container #tela-inicial{
-              width: 416px;
-              height: 100vh;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background-color: rgba(0,0,0,0.7);
-              position: absolute;   
-              color: white;
-              flex-direction: column;
-              font-size: 20px;
-          }
-          .container #tela-inicial a{
-              width: 200px;
-              height: 50px;
-              background-color: orange;
-              color: white; 
-              text-decoration: none;
-              font-size: 28px;
-          }
-          .container div {
-              width: 50px;
-              height: 50px;
-              border: 1px solid black;
-              font-size: 0;
-              text-align: center;
-              line-height: 50px;
-              transition: 0.2s ease;
-              background-size: 100% 100%;
-          }
-          #a1{
-              background-color: #555;
-          }
-          .control{
-              width: 416px;
-              height: auto;
-              display: none;
-              flex-direction: column;
-          }
-          .container-arrow{
-              height: 100%;
-              width: 100%;
-              display: flex;
-              justify-content: center;
-          }
-          .container-arrow:nth-child(2){
-              justify-content: space-around;
-          }
-          .arrow{
-              background-color: firebrick;
-              width: 80px;
-              height: 60px;
-              background-size: 100% 100%;
-          }
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.container{
+    border: 1px solid black;
+    width: 416px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    color: black;
+}
+.container #tela-inicial{
+    width: 416px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;   
+    color: white;
+    flex-direction: column;
+    font-size: 20px;
+}
+.container #tela-inicial a{
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    color: white; 
+    text-decoration: none;
+    font-size: 28px;
+}
+.container div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 0;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.2s ease;
+    background-size: 100% 100%;
+}
+#a1{
+    background-color: #555;
+}
+.control{
+    width: 416px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+}
+.container-arrow{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-arrow:nth-child(2){
+    justify-content: space-around;
+}
+.arrow{
+    background-color: firebrick;
+    width: 80px;
+    height: 60px;
+    background-size: 100% 100%;
+}
+.container .tutorial{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    padding-bottom: 5px;
+}
+.container .sinopse{
+    flex-direction: column;
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    color: black;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-bottom: 5px;
+}
+.container .sinopse h1{
+    font-size: 25px;
+}
+.container .sinopse p{
+    font-size: 20px;    
+}
+.container .tutorial img{
+    width: 50px;
+    height: 50px;
+}
+.container .tutorial h1{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+.container .tutorial p{
+    font-size: 20px;
+    color: black;
+    line-height: 1;
+}
 #top{
     background-image: url(img/arrow/top.png);
 }
@@ -85,42 +126,42 @@
 #down{
     background-image: url(img/arrow/bottom.png);
 }
-          @media (max-width: 1000px) and (min-width: 0px){
-              h2{
-                  font-size: 30px;
-              }
-              .container{
-                  width: 100%;
-                  height: 45vh;
-                  justify-content: center;
-              }
-              .container #tela-inicial{
-                  width: 100%;
-                  height: 100vh;
-                  font-size: 15px;
-              }
-              .container #tela-inicial a{
-                  width: 200px;
-                  height: 70px;
-                  font-size: 30px;
-                  line-height: 70px;
-              }
-              .container div {
-                  width: 11.9%;
-                  height: 11.9%;
-              }
-              .control{
-                  margin-top: 2vh;
-                  width: 100%;
-                  height: 40vh;
-                  display: flex;
-                  flex-direction: column;
-              }
-              .arrow{
-                  width: 30%;
-                  height: 100%;
-                  border-radius: 100%;
-              }
+@media (max-width: 1000px) and (min-width: 0px){
+    h2{
+        font-size: 30px;
+    }
+    .container{
+        width: 100%;
+        height: 45vh;
+        justify-content: center;
+    }
+    .container #tela-inicial{
+        width: 100%;
+        height: 100vh;
+        font-size: 15px;
+    }
+    .container #tela-inicial a{
+        width: 200px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .container div {
+        width: 11.9%;
+        height: 11.9%;
+    }
+    .control{
+        margin-top: 2vh;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow{
+        width: 30%;
+        height: 100%;
+        border-radius: 100%;
+    }
 }
 @media (orientation: landscape) and (max-width:1000px){
     body{
