@@ -14,22 +14,22 @@ var somFruta = new Audio();
 var somFrutaVermelha = new Audio();
 somFruta.src = 'files/som/coin.wav'
 somFrutaVermelha.src = 'files/som/coin-2.wav'
-var nivelDificuldade = 2;
+var nivelDificuldade;
 
 function nivelInfantil(){
-    nivelDificuldade = 0;
+    nivelDificuldade = "Infantil";
     sairTelaDificuldade();
 }
 function nivelMobile(){
-    nivelDificuldade = 1;
+    nivelDificuldade = "Mobile";
     sairTelaDificuldade();
 }
 function nivelComputador(){
-    nivelDificuldade = 2;
+    nivelDificuldade = "Computador";
     sairTelaDificuldade();
 }
 function nivelHard(){
-    nivelDificuldade = 3;
+    nivelDificuldade = "Hard";
     sairTelaDificuldade();
 }
 function sairTelaDificuldade(){
@@ -55,10 +55,10 @@ function mudarDificuldade(){
 }
 
 function aumentarDificuldade(){
-    if(nivelDificuldade === 0){
+    if(nivelDificuldade === "Infantil"){
         dificuldade = 50;
     }
-    else if(nivelDificuldade === 1){
+    else if(nivelDificuldade === "Mobile"){
         if(frutasVerdes < 6){
             dificuldade = 16;
         }
@@ -99,7 +99,7 @@ function aumentarDificuldade(){
             dificuldade = 4;
         }
     }
-    else if(nivelDificuldade === 2){
+    else if(nivelDificuldade === "Computador"){
         if(frutasVerdes < 6){
             dificuldade = 11;
         }
@@ -125,7 +125,7 @@ function aumentarDificuldade(){
             dificuldade = 4;
         }
     }
-    else if(nivelDificuldade === 3){
+    else if(nivelDificuldade === "Hard"){
         if(frutasVerdes < 6){
             dificuldade = 8;
         }
@@ -168,9 +168,10 @@ function iniciar(){
                 aumentarDificuldade();
             }
             else{
+                document.getElementById('txt-tela-inicial').style.display = 'block';
                 isGameOn = false;
                 document.getElementById('tela-inicial').style.display = "flex";
-                document.getElementById('txt-tela-inicial').innerHTML = "Sua pontuação final foi: " + pont;
+                document.getElementById('txt-tela-inicial').innerHTML = "Sua pontuação final foi: " + pont + " na dificuldade " + nivelDificuldade;
             }
         }, 700*x);
     }

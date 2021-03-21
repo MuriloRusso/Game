@@ -139,7 +139,7 @@ body{
 #btn-mute{
     display: none;
 }
-@media (max-width: 1000px) and (min-width: 0px){
+@media (max-width: 700px) and (min-width: 0px){
     h2{
         font-size: 30px;
     }
@@ -169,31 +169,31 @@ body{
     .control{
         margin-top: 2vh;
         width: 100%;
-        height: 40vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
     }
     .arrow{
-        width: 30%;
+        width: 25%;
         height: 100%;
         border-radius: 100%;
     }
     #btn-mute{
-        display: block;
+/*        display: block;*/
         border-radius: 100%;
         background-color: firebrick;
         position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 70px;
-        height: 70px;
+        right: 5px;
+        bottom: 5px;
+        width: 45px;
+        height: 45px;
         background-image: url(img/mute/no-muted.png);
         background-size: 80%; 80%;    
         background-position: center; 
         background-repeat: no-repeat;
     }
 }
-@media (orientation: landscape) and (max-width:1000px){
+@media (orientation: landscape) and (max-width:700px){
     body{
         flex-direction: row;
         flex-wrap: wrap;
