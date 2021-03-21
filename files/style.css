@@ -19,7 +19,7 @@ body{
     background-color: aliceblue;
     color: black;
 }
-.container #tela-inicial, .container #tela-dificuldade{
+.container #tela-inicial, .container #tela-inicial #tela-dificuldade{
     width: 416px;
     height: 100vh;
     display: flex;
@@ -84,7 +84,7 @@ body{
     background-color: aliceblue;
     padding-bottom: 5px;
 }
-.container .sinopse{
+.container #sinopse{
     flex-direction: column;
     display: flex;
     background-color: aliceblue;
@@ -97,10 +97,10 @@ body{
     margin-top: 50px;
     padding-bottom: 5px;
 }
-.container .sinopse h1{
+.container #sinopse h1{
     font-size: 25px;
 }
-.container .sinopse p{
+.container #sinopse p{
     font-size: 20px;    
 }
 .container .tutorial img{

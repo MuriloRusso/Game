@@ -14,28 +14,28 @@
   <body>
     <h2 id="pont">Pontuação: 0</h2>
     <div class="container">
-        <div id="tela-dificuldade">
-            <h2>Escolha a Dificuldade que você quer jogar</h2>
-            <a onclick="nivelInfantil()">Infantil</a>
-            <small>Recomendado para crianças de até 7 anos.</small>
-            <a onclick="nivelMobile()">Mobile</a>
-            <small>Recomendado caso você esteja jogando de um dispositivo mobile(celular/tablet).</small>
-            <a onclick="nivelComputador()">Computador</a>
-            <small>Recomendado caso você esteja jogando de um computador.</small>
-            <a onclick="nivelHard()">Hard</a>
-            <small>Recomendado caso você esteja familiarizado com o jogo, e queira um desafio maior.</small>
-        </div>
-        <div id="tela-inicial" style="display: none">
+        <div id="tela-inicial">
+            <div id="tela-dificuldade">
+                <h2>Escolha a Dificuldade que você quer jogar</h2>
+                <a href="#" onclick="nivelInfantil()">Infantil</a>
+                <small>Recomendado para crianças de até 7 anos.</small>
+                <a href="#" onclick="nivelMobile()">Mobile</a>
+                <small>Recomendado caso você esteja jogando de um dispositivo mobile(celular/tablet).</small>
+                <a href="#" onclick="nivelComputador()">Computador</a>
+                <small>Recomendado caso você esteja jogando de um computador.</small>
+                <a href="#" onclick="nivelHard()">Hard</a>
+                <small>Recomendado caso você esteja familiarizado com o jogo, e queira um desafio maior.</small>
+            </div>
             <h2 id="txt-tela-inicial"></h2>
-            <div class="sinopse">
+            <div id="sinopse" style="display: none">
                 <h1>Maze Fruit</h1>
                 <p>O objetivo do jogo é capturar o maior números de maçãs possíveis, quanto mais maçãs vc capturar, mais pontuará.</p>
             </div>
-            <div class="tutorial">
+            <div class="tutorial" id="tut-1" style="display: none">
                 <img src="files/img/apples/green-apple.png">
                 <p>As maçãs verdes somam 100 pontos, aparecem constatemente, e ficam dísponiveis por tempo ilimitado</p>
             </div>
-            <div class="tutorial">
+            <div class="tutorial" id="tut-2" style="display: none">
                 <img src="files/img/apples/red-apple.png">
                 <p>As maçãs vermelhas somam 500 pontos, só aparecem de vez enquando, e ficam dísponiveis por tempo limitado.</p>
             </div>
