@@ -5105,7 +5105,7 @@ function tocarSomVermelho(){
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
                         document.getElementById('c8').style.backgroundImage = "none";
                     }
-                    else if(a1 === 2){
+                    else if(c8 === 2){
                         c8 = 0;
                         pont = pont + pontFrutaVermelha; tocarSomVermelho();
                         document.getElementById('pont').innerHTML = "Pontuação: " + pont;
