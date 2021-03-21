@@ -37,6 +37,11 @@ body{
     color: white; 
     text-decoration: none;
     font-size: 28px;
+    line-height: 50px;
+}
+.container #tela-dificuldade small, .container #tela-dificuldade h2{
+    line-height: 1;
+    margin: 10px;
 }
 .container #tela-inicial #btn-mudar-dificuldade{
     margin-bottom: 20px;
@@ -78,6 +83,7 @@ body{
 }
 .container .tutorial{
     display: flex;
+    align-items: center;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -94,7 +100,7 @@ body{
     color: black;
     border: none;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 5px;
     padding-bottom: 5px;
 }
 .container #sinopse h1{
@@ -136,19 +142,22 @@ body{
     }
     .container{
         width: 100%;
-        height: 45vh;
+        height: auto;
         justify-content: center;
     }
-    .container #tela-inicial{
+    .container #tela-inicial, .container #tela-inicial #tela-dificuldade{
         width: 100%;
         height: 100vh;
         font-size: 15px;
     }
-    .container #tela-inicial a{
-        width: 200px;
-        height: 70px;
+    .container #tela-inicial a, .container #tela-dificuldade a{
+        width: 180px;
+        height: 50px;
         font-size: 30px;
-        line-height: 70px;
+        line-height: 50px;
+    }
+    .container #tela-dificuldade small, .container #tela-dificuldade h2 {
+        width: 85%;
     }
     .container div {
         width: 11.9%;
@@ -177,7 +186,7 @@ body{
         text-align: center;
     }
     .container{
-        width: 50%;
+        width: 100%;
         height: 70vh;
     }
     .container div{
@@ -185,17 +194,18 @@ body{
         height: 11.5%;
     }
     .container #tela-inicial{
-        width: 139%;
+        width: 100%;
         font-size: 20px;
         height: 89vh;
     }
     .container #tela-inicial h2{
         width: 100%;
-        margin-left: 250px;
     }
-    .container #tela-inicial a{
-        margin-left: 30%;
-        width: 30%;
+    .container #tela-inicial a, .container #tela-dificuldade a{
+        width: 20%;
+        height: 35px;
+        font-size: 20px;
+        line-height: 35px;
     }
     .control{
         width: 45%;

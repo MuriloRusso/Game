@@ -39,7 +39,11 @@ function sairTelaDificuldade(){
     document.getElementById('tut-1').style.display = 'flex';    
     document.getElementById('tut-2').style.display = 'flex';
     if(isPrimeiraPartida === false){
+        document.getElementById('btn-mudar-dificuldade').style.display = "block";
         document.getElementById('btn-reiniciar').style.display = "block";
+    }
+    else{
+        document.getElementById('btn-tela-inicial').style.display = "block";
     }
 }
 
