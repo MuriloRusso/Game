@@ -5908,9 +5908,11 @@ $(document).ready(function(){
 function mutar(){
     if(isGameMuted === false){
         isGameMuted = true;
+        document.getElementById('btn-mute').style.backgroundImage = "url('files/img/mute/muted.png')";
     }
     else{
         isGameMuted = false;
+        document.getElementById('btn-mute').style.backgroundImage = "url('files/img/mute/no-muted.png')";
     }
 }
 /*$(document).ready(function(){

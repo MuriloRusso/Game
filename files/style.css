@@ -136,13 +136,16 @@ body{
 #down{
     background-image: url(img/arrow/bottom.png);
 }
+#btn-mute{
+    display: none;
+}
 @media (max-width: 1000px) and (min-width: 0px){
     h2{
         font-size: 30px;
     }
     .container{
         width: 100%;
-        height: auto;
+        height: 45vh;
         justify-content: center;
     }
     .container #tela-inicial, .container #tela-inicial #tela-dificuldade{
@@ -174,6 +177,20 @@ body{
         width: 30%;
         height: 100%;
         border-radius: 100%;
+    }
+    #btn-mute{
+        display: block;
+        border-radius: 100%;
+        background-color: firebrick;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 70px;
+        height: 70px;
+        background-image: url(img/mute/no-muted.png);
+        background-size: 80%; 80%;    
+        background-position: center; 
+        background-repeat: no-repeat;
     }
 }
 @media (orientation: landscape) and (max-width:1000px){
