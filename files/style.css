@@ -19,7 +19,7 @@ body{
     background-color: aliceblue;
     color: black;
 }
-.container #tela-inicial, .container #tela-inicial #tela-dificuldade{
+#tela-inicial, .container #tela-inicial #tela-dificuldade{
     width: 416px;
     height: 100vh;
     display: flex;
@@ -186,7 +186,7 @@ body{
         text-align: center;
     }
     .container{
-        width: 100%;
+        width: 50%;
         height: 70vh;
     }
     .container div{
@@ -197,6 +197,12 @@ body{
         width: 100%;
         font-size: 20px;
         height: 89vh;
+        position: absolute;
+        left: 0;
+        align-items: center;
+    }
+    .container #sinopse, .container .tutorial{
+        width: 90%;
     }
     .container #tela-inicial h2{
         width: 100%;
